@@ -1,0 +1,5 @@
+HPGe
+
+NaI
+
+Coincidence
