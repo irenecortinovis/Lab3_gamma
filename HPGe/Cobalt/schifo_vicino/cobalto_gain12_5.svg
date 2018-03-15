@@ -1,0 +1,283 @@
+<svg viewBox="0 0 567 366" xmlns="http://www.w3.org/2000/svg">
+<title>
+cobalto_gain12_5.svg
+</title>
+<desc>
+Creator: ROOT Version 5.18/00b
+CreationDate: Thu Mar 15 09:37:52 2018
+</desc>
+<defs>
+</defs>
+<rect x="0" y="0" width="567" height="366" fill="#f2f2f2"/>
+<path d="M0,366l2,-2v-362h563l2,-2h-567v366z" fill="white"/>
+<path d="M0,366l2,-2h563v-362l2,-2v366h-567z" fill="#a9a9a9"/>
+<rect x="57" y="37" width="453" height="292" fill="#f2f2f2"/>
+<path d="M57,329l1,-1v-290h451l1,-1h-453v292z" fill="white"/>
+<path d="M57,329l1,-1h451v-290l1,-1v292h-453z" fill="#a9a9a9"/>
+<rect x="57" y="37" width="453" height="292" fill="none" stroke="black"/>
+<path d="M57,329v-51v31v-14h1v-15v26v-22h1v18v-14v3h1v7v-1v2v-8v2h1v4v-2v1v-1v1v-4v1h1v2v-1v2v-1v1v-1v1v-2v1h1v-1v2v-2v1v-1v2v-1h1v-1v1v-1v2v-1v1v-2v1v-1v2h1v-1v1v-1v1v-2v2v-1v1v-1h1v1v-2v3v-2v1v-1v1v-2v1h1v1v-1v1v-2v3v-2v1h1v-1v2v-2v2v-1v1v-2v1h1v
+-1v2v-1v1v-2v2v-2v3v-3v1h1v1v-1v1v-2v2v-1v1v-1v1v-1v1h1v-1v1v-1v1v-2v2v-1v1v-2v1v-1h1v2v-2v2v-1v1v-1v1h1v-2v1v-1v1v-1v2v-1v1v-3v2h1v-1v1v-2v2v-1v1v-1v1v-1v1v-2h1v2v-1v1v-2v1v-1v2v-2v1h1v-2v1v-1v1v-2v3v-2v1v-2v1h1v-1v1v-1v1v-1v1v-1v2v-2v1v-1v1h1v-1v1
+v-1v1v-2v1v-1v2v-1v1v-1v1v-1h1v1v-1v1v-2v3v-2v1v-1h1v1v-2v2v-1v1v-1v2v-2v2v-2v1v-1v1h1v-1v2v-1v1v-2v1h1v-1v2v-2v2v-2v2v-1v1v-1v1v-2v2h1v-1v2v-2v1v-1v1v-1v1v-3v3h1v1v-2v1v-1v2v-1v1v-1h1v1v-2v2v-1v1v-1v1v-1h1v2v-2v1v-2v3v-2v1v-1v2v-2v2v-2h1v2v-2v2v-3v
+2v-1v2h1v-1v1v-1v1v-1v1v-1v1v-1h1v1v-1v2v-2v1v-1v1v-1v2v-2v1h1v1v-2v2v-2v1v-1v2v-1h1v1v-1v2v-2v1v-1v1v-1h1v-1v2v-1v1v-2v2v-2v2h1v-1v1v-1v1v-1v1v-1v1v-1v2v-1v1v-2h1v2v-1v1v-2v2v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v2v-2v2v-2v1h1v2v-3v2v-2v1v-1v2v-2v2v-3v2h1v
+-1v2v-1v1v-1v1v-3v3v-1v1h1v-1v1v-2v2v-2v3v-4v3v-1v1h1v-2v2v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v2v-3v2v-1h1v2v-2v1v-1v1v-1v1v-1v2v-1h1v1v-2v2v-2v1h1v-1v2v-1v1v-2v2v-2h1v2v-1v1v-1v2v-2v1h1v-1v1v-1v1v-2v2h1v-1v2v-3v1v-1v3v-3v2v-1h1v2v-2v1v-1v1v-1v1v-1v1v-1v1
+h1v-1v1v-1v2v-2v2v-2h1v2v-2v1v-1v2v-2v1v-1v1v-1v1h1v-1v2v-1v1v-2v2v-2v2v-1h1v1v-2v2v-1v1v-2v2v-1h1v1v-2v1v-1v2v-1v1v-1h1v1v-1v1v-2v2v-1v1v-1h1v1v-1v1v-1v1v-3v2v-1v3v-3h1v2v-2v2v-1v1v-2v2v-2v3v-2v1v-1h1v1v-1v1v-1v1v-1v2v-2v2v-2v1v-1h1v1v-1v1v-1v1v-1v
+1v-1v1h1v-1v1v-1v1v-2v2v-1v1v-1v1v-1h1v2v-3v2v-1v2v-2v2v-2h1v2v-3v2v-2v2v-2v2h1v-1v1v-1v1v-1v2v-2v2v-2v1v-2h1v2v-1v1v-1v1v-1v1v-1h1v1v-1v1v-2v2v-1v1v-1v1v-1v1h1v1v-2v1v-1v1v-1v1v-1v1v-2v2h1v-1v1v-1v1v-2v2v-2v1h1v1v-1v1v-1v2v-3v2h1v-2v2v-2v2v-2v3h1v
+-2v1v-1v1v-2v2v-1v1v-1v1h1v-1v1v-2v2v-1v1v-1h1v-1v2v-1v1v-1v1v-1v2v-3v2v-1h1v2v-3v2v-1v1v-2v2v-2v2h1v-2v2v-1v1v-1v1v-1v1v-2v2h1v-1v1v-1v1v-1v1v-1v1v-1v1v-2v1v-1h1v2v-2v1v-1v2v-1v2v-2v1v-2v2v-1h1v-1v1v-1v1v-1v2v-3v3v-1h1v-1v2v-1v1v-2v2v-2v2v-2v1h1v1v
+-1v1v-2v1v-1v1v-1v2v-2v2v-1h1v-1v2v-2v1v-1v1v-1v1v-1h1v2v-2v1v-1v1v-1v1h1v-1v1v-1v2v-2v1v-1v1v-1v1v-1v1h1v-1v1v-1v2v-2v2h1v-2v1v-2v2v-2v2v-1v1v-1v1h1v-2v2v-2v2v-1v1v-1v1v-2h1v2v-2v2v-2v1v-1v2v-1h1v-1v2v-1v1v-1v1v-2v1v-1h1v2v-3v2v-1v2h1v-3v3v-2v1v-1h
+1v-1v3v-2v1v-1v1v-1v1v-1v1v-1h1v1v-2v1v-1v2v-2v2v-2h1v2v-2v2v-2v2v-1v1v-1h1v-1v2v-1v2v-3v1v-1v1h1v1v-2v2v-2v1v-1v2v-2h1v1v-1v1v-1v2v-2v1v-1v1h1v-1v1v-1v1v-1v1v-1v1v-1v1v-1h1v1v-2v2v-1v1v-1v2v-2h1v1v-2v1v-1v1h1v1v-2v1v-1v2v-2h1v1v-1v1v-1v1v-2v3v-2h1v
+1v-2v2v-1v1v-1v1v-2v1h1v1v-2v1v-1v2v-3v2v-1h1v2v-1v1v-2v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-2v1v-1v2v-2v1h1v1v-2v2v-2v2v-2v2v-1h1v1v-1v1v-2v1v-1v2v-2v1h1v-1v1v-2v2v-1v1v-1h1v2v-2v1v-1v1v-2v2v-1h1v-1v2v-2v2v-1v1v-1v1v-1v1v-3v2v-1h1v1v-1v1v-1v1v-2v1v-1h1v1v
+-1v2v-2v2v-2v2h1v-2v2v-2v1v-2v2v-1v1v-1h1v-1v2v-1v1v-1v1v-1v1v-2v2v-1h1v1v-2v1v-1v2v-2v1v-1h1v1v-1v1v-2v2v-2v2v-2v2v-1h1v-1v1v-2v2v-1v2v-2v1v-2v1h1v1v-2v2v-2v1v-2v2v-2v2v-2v3v-3h1v2v-1v1v-1v1v-2v2v-1h1v-1v4v-3v1v-2h1v2v-3v2v-2v2v-1v1h1v-2v2v-1v2v-3v
+2v-2v2v-1h1v-1v1v-1v2v-3v2v-1h1v-1v2v-2v1v-1v1v-1v2v-3v2v-2h1v3v-2v1v-2v2v-2v1h1v-2v2v-1v1v-1v1v-1v1v-2v2v-1h1v-2v2v-1v1v-1v1v-1v1v-2h1v1v-1v1v-1v1v-1v1v-1v1v-2v2h1v-2v1v-1v3v-3v2v-2v1v-1h1v-1v2v-2v1v-1v2v-1v1v-2v1v-1h1v1v-2v2v-2v1v-1v1v-2v1v-2v2h1v
+1v-2v2v-2v1v-1h1v-1v2v-2v1v-2v2v-1v1v-2v1v-1v1h1v-1v1v-1v2v-2v1v-2v2v-1v1h1v-3v2v-2v2v-1v1v-2h1v1v-2v2v-1v1v-2v2v-1v2v-3h1v-1v3v-2v2v-3v2v-2v2v-2v3h1v-2v1v-1v1v-3v3v-2v2v-1v1v-1h1v-1v2v-1v1v-2v3v-3v2h1v1v-3v3v-3v5v-1h1v1v-1v1v-1v3v-2v1v-1v2h1v1v-1v2
+v-1v2v-1v3h1v-1v1v-1v1v-1v1v-1v1v-2v2h1v2v-2v1v-1v1v-1v2v-1v1h1v-2v2v-1v1v-1v1h1v-2v3v-3v2h1v1v-1v2v-1v1v-2v1h1v1v-2v1v-1v1v-1v1v-1v2v-2h1v2v-2v2v-2v2v-2v2v-1h1v-1v3v-2v1v-1v1v-1v2v-2h1v2v-1v1v-3v2v-1v1v-1v2v-2v2h1v-1v1v-2v1v-1v2v-1v1v-1v1h1v-1v1v-1
+v1v-1v1v-1v1v-1v2v-2v2v-2h1v1v-1v2v-2v2v-2v2v-2v2v-1h1v-1v1v-1v2v-1v1v-2v2v-2h1v3v-2v2v-2v2v-2v3v-3h1v-1v2v-2v3v-2v1v-3v2h1v1v-1v1v-2v2v-1v1v-1v2v-3v1h1v2v-2v1v-2v2v-1h1v-1v2v-2v2v-2v1h1v-1v2v-2v1v-1v1v-1v1h1v-1v2v-2v2v-2v1v-1v2v-2v2h1v-2v1v-2v2v-1v
+2v-2v1v-1v2v-2h1v2v-2v1v-1v2v-2v1h1v2v-2v2h1v-1v1v-1v2v-1v3v-2v1h1v1v-1v1v-1v3v-1h1v-1v2v-2v3v-2v1v-1v1v-2v1h1v-1v1v-1v1v-2v3v-2v1v-4v1v-1h1v1v-3v1v-2v2v-5v1v-1h1v-1v1v-4v1v-2v1v-3v2v-4v1v-5h1v3v-8v1v-4v1v-3v1v-4h1v-2v2v-18h1v-6v1v-2v1v-11h1v-160h1v
+-14v180h1v69h1v7v-1v2v-1v1h1v1v-1v1v-1v1v-2v3h1v1v-1v2v-2v2h1v-2v2v-2v2v-1v1v-1v1v-2v2h1v-1v2v-1v1h1v-1v1v-1v2v-1v1v-1v1v-1v1h1v-1v2v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v2v-2v1v-1v2v-1h1v1v-1v1v-1v1v-1v1h1v-1v2v-2v1v-1v1v-1v1h1v1v-2v2v-1v1v-1h1v1v-1v1
+v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1v-1h1v-1v1v-1v1h1v-1v1v-1v1v-2v2v-2h1v1v-3v1v-1h1v-2v1v-2v1v-2v1v-2h1v1v-3v2v-3v1v-4h1v-3v1v-2v1v-8h1v1v-14v1v-1h1v-3v1v-15h1v-4v1v-7v1v-2v1v-3v2v-7h1v-154h1v186h1v38h1v4v-1v2h1v-1v2v-1
+v1v-1v1v-1v1v-1h1v1v-1v1v-1h1v2v-2v2h1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1v-1v1h1v1v-2v1v-1v2h1v-1v1v-1v1v-1h1v-1v2v-1v1v-1v1v-2v2v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1
+h1v-1v1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1h1v-1v2v-2v1v-1h1v1v-1v1v-1v1v-1v1v-1v1h1v1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1v-1v1v-1h1v1v-1
+v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-2v2v-1v1h1v-1v1v-1v1v-1v1v-1v1v-1v1v-1v1h1v1v-2v1v-1v1v-1v1v-1h1v1v-1v1v-1v1h1v-1v2v-2v1h1v-1v1v-1v1v-1h1v1v-1v1v-1v1h1v-1v1v-1v1h1v-1v1v-1v1v-1h1v1v-1v2v-1h1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1h1v1v-1h1v1v-1v1v-1v1v-1h1v1
+v-1v1v-2v2v-1h1v1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v
+-1v1v-1v1v-1h1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1h1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1h1v2v-2v2v-1h2v-1v1v-1v1v-1v1h1v-1v1v-1v1h2v1v-2v2v-1h1v1v-1v1v-1h1v1v-1v1h1v-1v1v-1v1v-1h1v1v-2v2v-1h1v1v-1v1v-1v1v-1
+h1v1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1h1v1v-1h1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1h1v
+1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1h1v-1v1v-1v1h1v-1v1v-1v1h1v-1v1h1v1v-1h2v1v-1v1v-1h1v1v-1v1v-1v1v-1h1v1v-2v1v-1v1h1v1v-1v1h1v-1v1v-1v1v-1h1v1v-1h1v1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1v
+-1v1h1v-1v1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1h1v-1v1h1v-1v1v-1v1v-1v1v-1h1v1v-1v1h1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1h1v1v-1v1v-1h1v1v-1v1v-1v1h2v1v-1v1v-1h1v1v-1h1v1v-1v1v-1h2v1v
+-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1h1v1v-1v1v-1h1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1h1v1v-1h1v-1v1v-1v1h1v-1v1h1v-1v1h1v-1v1h2v1v-1v1v-1
+h1v1v-1h1v-1v2v-1v1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1
+v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1h4v1v-1h1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1v
+-1h1v1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1h2v1v-1h3v1v-1h1v1v-1h1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1
+v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1h2v-1v1h1v-1v1v-1v1v-1v1v-1v1v-1h1v1v-2h1v-1v3h1v1v-1v1v-1v1h12v1v-1h12v1v-1h1v1v-1v1v-1h1v1v-1v1
+v-1v1h1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1h1v-1v1h1v-1v1h1v-1v1h1v-1v1h1v
+-1v1v-1v1v-1v1h1v-1v1h2v-1v1h3v-1v1h5v-7v1v-2h1v2v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1h1v1v-2v1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1h1v1h1v-1v1v-1v1v-1v1h1v-1v1v-1v6z" fill="#ffff00"/>
+<path d="M57,290v-12v31v-14h1v-15v26v-22h1v18v-14v3h1v7v-1v2v-8v2h1v4v-2v1v-1v1v-4v1h1v2v-1v2v-1v1v-1v1v-2v1h1v-1v2v-2v1v-1v2v-1h1v-1v1v-1v2v-1v1v-2v1v-1v2h1v-1v1v-1v1v-2v2v-1v1v-1h1v1v-2v3v-2v1v-1v1v-2v1h1v1v-1v1v-2v3v-2v1h1v-1v2v-2v2v-1v1v-2v1h1v
+-1v2v-1v1v-2v2v-2v3v-3v1h1v1v-1v1v-2v2v-1v1v-1v1v-1v1h1v-1v1v-1v1v-2v2v-1v1v-2v1v-1h1v2v-2v2v-1v1v-1v1h1v-2v1v-1v1v-1v2v-1v1v-3v2h1v-1v1v-2v2v-1v1v-1v1v-1v1v-2h1v2v-1v1v-2v1v-1v2v-2v1h1v-2v1v-1v1v-2v3v-2v1v-2v1h1v-1v1v-1v1v-1v1v-1v2v-2v1v-1v1h1v-1v1
+v-1v1v-2v1v-1v2v-1v1v-1v1v-1h1v1v-1v1v-2v3v-2v1v-1h1v1v-2v2v-1v1v-1v2v-2v2v-2v1v-1v1h1v-1v2v-1v1v-2v1h1v-1v2v-2v2v-2v2v-1v1v-1v1v-2v2h1v-1v2v-2v1v-1v1v-1v1v-3v3h1v1v-2v1v-1v2v-1v1v-1h1v1v-2v2v-1v1v-1v1v-1h1v2v-2v1v-2v3v-2v1v-1v2v-2v2v-2h1v2v-2v2v-3v
+2v-1v2h1v-1v1v-1v1v-1v1v-1v1v-1h1v1v-1v2v-2v1v-1v1v-1v2v-2v1h1v1v-2v2v-2v1v-1v2v-1h1v1v-1v2v-2v1v-1v1v-1h1v-1v2v-1v1v-2v2v-2v2h1v-1v1v-1v1v-1v1v-1v1v-1v2v-1v1v-2h1v2v-1v1v-2v2v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v2v-2v2v-2v1h1v2v-3v2v-2v1v-1v2v-2v2v-3v2h1v
+-1v2v-1v1v-1v1v-3v3v-1v1h1v-1v1v-2v2v-2v3v-4v3v-1v1h1v-2v2v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v2v-3v2v-1h1v2v-2v1v-1v1v-1v1v-1v2v-1h1v1v-2v2v-2v1h1v-1v2v-1v1v-2v2v-2h1v2v-1v1v-1v2v-2v1h1v-1v1v-1v1v-2v2h1v-1v2v-3v1v-1v3v-3v2v-1h1v2v-2v1v-1v1v-1v1v-1v1v-1v1
+h1v-1v1v-1v2v-2v2v-2h1v2v-2v1v-1v2v-2v1v-1v1v-1v1h1v-1v2v-1v1v-2v2v-2v2v-1h1v1v-2v2v-1v1v-2v2v-1h1v1v-2v1v-1v2v-1v1v-1h1v1v-1v1v-2v2v-1v1v-1h1v1v-1v1v-1v1v-3v2v-1v3v-3h1v2v-2v2v-1v1v-2v2v-2v3v-2v1v-1h1v1v-1v1v-1v1v-1v2v-2v2v-2v1v-1h1v1v-1v1v-1v1v-1v
+1v-1v1h1v-1v1v-1v1v-2v2v-1v1v-1v1v-1h1v2v-3v2v-1v2v-2v2v-2h1v2v-3v2v-2v2v-2v2h1v-1v1v-1v1v-1v2v-2v2v-2v1v-2h1v2v-1v1v-1v1v-1v1v-1h1v1v-1v1v-2v2v-1v1v-1v1v-1v1h1v1v-2v1v-1v1v-1v1v-1v1v-2v2h1v-1v1v-1v1v-2v2v-2v1h1v1v-1v1v-1v2v-3v2h1v-2v2v-2v2v-2v3h1v
+-2v1v-1v1v-2v2v-1v1v-1v1h1v-1v1v-2v2v-1v1v-1h1v-1v2v-1v1v-1v1v-1v2v-3v2v-1h1v2v-3v2v-1v1v-2v2v-2v2h1v-2v2v-1v1v-1v1v-1v1v-2v2h1v-1v1v-1v1v-1v1v-1v1v-1v1v-2v1v-1h1v2v-2v1v-1v2v-1v2v-2v1v-2v2v-1h1v-1v1v-1v1v-1v2v-3v3v-1h1v-1v2v-1v1v-2v2v-2v2v-2v1h1v1v
+-1v1v-2v1v-1v1v-1v2v-2v2v-1h1v-1v2v-2v1v-1v1v-1v1v-1h1v2v-2v1v-1v1v-1v1h1v-1v1v-1v2v-2v1v-1v1v-1v1v-1v1h1v-1v1v-1v2v-2v2h1v-2v1v-2v2v-2v2v-1v1v-1v1h1v-2v2v-2v2v-1v1v-1v1v-2h1v2v-2v2v-2v1v-1v2v-1h1v-1v2v-1v1v-1v1v-2v1v-1h1v2v-3v2v-1v2h1v-3v3v-2v1v-1h
+1v-1v3v-2v1v-1v1v-1v1v-1v1v-1h1v1v-2v1v-1v2v-2v2v-2h1v2v-2v2v-2v2v-1v1v-1h1v-1v2v-1v2v-3v1v-1v1h1v1v-2v2v-2v1v-1v2v-2h1v1v-1v1v-1v2v-2v1v-1v1h1v-1v1v-1v1v-1v1v-1v1v-1v1v-1h1v1v-2v2v-1v1v-1v2v-2h1v1v-2v1v-1v1h1v1v-2v1v-1v2v-2h1v1v-1v1v-1v1v-2v3v-2h1v
+1v-2v2v-1v1v-1v1v-2v1h1v1v-2v1v-1v2v-3v2v-1h1v2v-1v1v-2v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-2v1v-1v2v-2v1h1v1v-2v2v-2v2v-2v2v-1h1v1v-1v1v-2v1v-1v2v-2v1h1v-1v1v-2v2v-1v1v-1h1v2v-2v1v-1v1v-2v2v-1h1v-1v2v-2v2v-1v1v-1v1v-1v1v-3v2v-1h1v1v-1v1v-1v1v-2v1v-1h1v1v
+-1v2v-2v2v-2v2h1v-2v2v-2v1v-2v2v-1v1v-1h1v-1v2v-1v1v-1v1v-1v1v-2v2v-1h1v1v-2v1v-1v2v-2v1v-1h1v1v-1v1v-2v2v-2v2v-2v2v-1h1v-1v1v-2v2v-1v2v-2v1v-2v1h1v1v-2v2v-2v1v-2v2v-2v2v-2v3v-3h1v2v-1v1v-1v1v-2v2v-1h1v-1v4v-3v1v-2h1v2v-3v2v-2v2v-1v1h1v-2v2v-1v2v-3v
+2v-2v2v-1h1v-1v1v-1v2v-3v2v-1h1v-1v2v-2v1v-1v1v-1v2v-3v2v-2h1v3v-2v1v-2v2v-2v1h1v-2v2v-1v1v-1v1v-1v1v-2v2v-1h1v-2v2v-1v1v-1v1v-1v1v-2h1v1v-1v1v-1v1v-1v1v-1v1v-2v2h1v-2v1v-1v3v-3v2v-2v1v-1h1v-1v2v-2v1v-1v2v-1v1v-2v1v-1h1v1v-2v2v-2v1v-1v1v-2v1v-2v2h1v
+1v-2v2v-2v1v-1h1v-1v2v-2v1v-2v2v-1v1v-2v1v-1v1h1v-1v1v-1v2v-2v1v-2v2v-1v1h1v-3v2v-2v2v-1v1v-2h1v1v-2v2v-1v1v-2v2v-1v2v-3h1v-1v3v-2v2v-3v2v-2v2v-2v3h1v-2v1v-1v1v-3v3v-2v2v-1v1v-1h1v-1v2v-1v1v-2v3v-3v2h1v1v-3v3v-3v5v-1h1v1v-1v1v-1v3v-2v1v-1v2h1v1v-1v2
+v-1v2v-1v3h1v-1v1v-1v1v-1v1v-1v1v-2v2h1v2v-2v1v-1v1v-1v2v-1v1h1v-2v2v-1v1v-1v1h1v-2v3v-3v2h1v1v-1v2v-1v1v-2v1h1v1v-2v1v-1v1v-1v1v-1v2v-2h1v2v-2v2v-2v2v-2v2v-1h1v-1v3v-2v1v-1v1v-1v2v-2h1v2v-1v1v-3v2v-1v1v-1v2v-2v2h1v-1v1v-2v1v-1v2v-1v1v-1v1h1v-1v1v-1
+v1v-1v1v-1v1v-1v2v-2v2v-2h1v1v-1v2v-2v2v-2v2v-2v2v-1h1v-1v1v-1v2v-1v1v-2v2v-2h1v3v-2v2v-2v2v-2v3v-3h1v-1v2v-2v3v-2v1v-3v2h1v1v-1v1v-2v2v-1v1v-1v2v-3v1h1v2v-2v1v-2v2v-1h1v-1v2v-2v2v-2v1h1v-1v2v-2v1v-1v1v-1v1h1v-1v2v-2v2v-2v1v-1v2v-2v2h1v-2v1v-2v2v-1v
+2v-2v1v-1v2v-2h1v2v-2v1v-1v2v-2v1h1v2v-2v2h1v-1v1v-1v2v-1v3v-2v1h1v1v-1v1v-1v3v-1h1v-1v2v-2v3v-2v1v-1v1v-2v1h1v-1v1v-1v1v-2v3v-2v1v-4v1v-1h1v1v-3v1v-2v2v-5v1v-1h1v-1v1v-4v1v-2v1v-3v2v-4v1v-5h1v3v-8v1v-4v1v-3v1v-4h1v-2v2v-18h1v-6v1v-2v1v-11h1v-160h1v
+-14v180h1v69h1v7v-1v2v-1v1h1v1v-1v1v-1v1v-2v3h1v1v-1v2v-2v2h1v-2v2v-2v2v-1v1v-1v1v-2v2h1v-1v2v-1v1h1v-1v1v-1v2v-1v1v-1v1v-1v1h1v-1v2v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v2v-2v1v-1v2v-1h1v1v-1v1v-1v1v-1v1h1v-1v2v-2v1v-1v1v-1v1h1v1v-2v2v-1v1v-1h1v1v-1v1
+v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1v-1h1v-1v1v-1v1h1v-1v1v-1v1v-2v2v-2h1v1v-3v1v-1h1v-2v1v-2v1v-2v1v-2h1v1v-3v2v-3v1v-4h1v-3v1v-2v1v-8h1v1v-14v1v-1h1v-3v1v-15h1v-4v1v-7v1v-2v1v-3v2v-7h1v-154h1v186h1v38h1v4v-1v2h1v-1v2v-1
+v1v-1v1v-1v1v-1h1v1v-1v1v-1h1v2v-2v2h1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1v-1v1h1v1v-2v1v-1v2h1v-1v1v-1v1v-1h1v-1v2v-1v1v-1v1v-2v2v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1
+h1v-1v1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1h1v-1v2v-2v1v-1h1v1v-1v1v-1v1v-1v1v-1v1h1v1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1v-1v1v-1h1v1v-1
+v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-2v2v-1v1h1v-1v1v-1v1v-1v1v-1v1v-1v1v-1v1h1v1v-2v1v-1v1v-1v1v-1h1v1v-1v1v-1v1h1v-1v2v-2v1h1v-1v1v-1v1v-1h1v1v-1v1v-1v1h1v-1v1v-1v1h1v-1v1v-1v1v-1h1v1v-1v2v-1h1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1h1v1v-1h1v1v-1v1v-1v1v-1h1v1
+v-1v1v-2v2v-1h1v1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v
+-1v1v-1v1v-1h1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1h1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1h1v2v-2v2v-1h2v-1v1v-1v1v-1v1h1v-1v1v-1v1h2v1v-2v2v-1h1v1v-1v1v-1h1v1v-1v1h1v-1v1v-1v1v-1h1v1v-2v2v-1h1v1v-1v1v-1v1v-1
+h1v1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1h1v1v-1h1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1h1v
+1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1h1v-1v1v-1v1h1v-1v1v-1v1h1v-1v1h1v1v-1h2v1v-1v1v-1h1v1v-1v1v-1v1v-1h1v1v-2v1v-1v1h1v1v-1v1h1v-1v1v-1v1v-1h1v1v-1h1v1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1v
+-1v1h1v-1v1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1h1v-1v1h1v-1v1v-1v1v-1v1v-1h1v1v-1v1h1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1h1v1v-1v1v-1h1v1v-1v1v-1v1h2v1v-1v1v-1h1v1v-1h1v1v-1v1v-1h2v1v
+-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1h1v1v-1v1v-1h1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1h1v1v-1h1v-1v1v-1v1h1v-1v1h1v-1v1h1v-1v1h2v1v-1v1v-1
+h1v1v-1h1v-1v2v-1v1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1
+v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1h4v1v-1h1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1v
+-1h1v1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1h2v1v-1h3v1v-1h1v1v-1h1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1
+v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1h2v-1v1h1v-1v1v-1v1v-1v1v-1v1v-1h1v1v-2h1v-1v3h1v1v-1v1v-1v1h12v1v-1h12v1v-1h1v1v-1v1v-1h1v1v-1v1
+v-1v1h1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1h1v-1v1v-1v1v-1v1v-1h1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1h1v-1v1h1v-1v1h1v-1v1h1v-1v1h1v
+-1v1v-1v1v-1v1h1v-1v1h2v-1v1h3v-1v1h5v-7v1v-2h1v2v-1v1v-1v1v-1h1v1v-1v1v-1v1v-1v1v-1v1h1v1v-2v1v-1v1v-1v1v-1v1v-1v1h1v-1v1v-1v1v-1v1h1v1h1v-1v1v-1v1v-1v1h1v-1v1v-1v6" fill="none" stroke="black"/>
+<path d="M57,329h453" fill="none" stroke="black"/>
+<text x="459" y="359" fill="black" font-size="13" font-family="Helvetica" font-weight="bold">
+channel
+</text>
+<path d="M102,321v8" fill="none" stroke="black"/>
+<path d="M113,325v4" fill="none" stroke="black"/>
+<path d="M125,325v4" fill="none" stroke="black"/>
+<path d="M136,325v4" fill="none" stroke="black"/>
+<path d="M147,325v4" fill="none" stroke="black"/>
+<path d="M159,321v8" fill="none" stroke="black"/>
+<path d="M170,325v4" fill="none" stroke="black"/>
+<path d="M182,325v4" fill="none" stroke="black"/>
+<path d="M193,325v4" fill="none" stroke="black"/>
+<path d="M204,325v4" fill="none" stroke="black"/>
+<path d="M216,321v8" fill="none" stroke="black"/>
+<path d="M227,325v4" fill="none" stroke="black"/>
+<path d="M238,325v4" fill="none" stroke="black"/>
+<path d="M250,325v4" fill="none" stroke="black"/>
+<path d="M261,325v4" fill="none" stroke="black"/>
+<path d="M272,321v8" fill="none" stroke="black"/>
+<path d="M284,325v4" fill="none" stroke="black"/>
+<path d="M295,325v4" fill="none" stroke="black"/>
+<path d="M306,325v4" fill="none" stroke="black"/>
+<path d="M318,325v4" fill="none" stroke="black"/>
+<path d="M329,321v8" fill="none" stroke="black"/>
+<path d="M340,325v4" fill="none" stroke="black"/>
+<path d="M352,325v4" fill="none" stroke="black"/>
+<path d="M363,325v4" fill="none" stroke="black"/>
+<path d="M374,325v4" fill="none" stroke="black"/>
+<path d="M386,321v8" fill="none" stroke="black"/>
+<path d="M397,325v4" fill="none" stroke="black"/>
+<path d="M409,325v4" fill="none" stroke="black"/>
+<path d="M420,325v4" fill="none" stroke="black"/>
+<path d="M431,325v4" fill="none" stroke="black"/>
+<path d="M443,321v8" fill="none" stroke="black"/>
+<path d="M454,325v4" fill="none" stroke="black"/>
+<path d="M465,325v4" fill="none" stroke="black"/>
+<path d="M477,325v4" fill="none" stroke="black"/>
+<path d="M488,325v4" fill="none" stroke="black"/>
+<path d="M499,321v8" fill="none" stroke="black"/>
+<path d="M102,321v8" fill="none" stroke="black"/>
+<path d="M91,325v4" fill="none" stroke="black"/>
+<path d="M79,325v4" fill="none" stroke="black"/>
+<path d="M68,325v4" fill="none" stroke="black"/>
+<path d="M57,325v4" fill="none" stroke="black"/>
+<path d="M499,321v8" fill="none" stroke="black"/>
+<text x="87" y="343" fill="black" font-size="13" font-family="Helvetica" font-weight="bold">
+1000
+</text>
+<text x="144" y="343" fill="black" font-size="13" font-family="Helvetica" font-weight="bold">
+2000
+</text>
+<text x="200" y="343" fill="black" font-size="13" font-family="Helvetica" font-weight="bold">
+3000
+</text>
+<text x="257" y="343" fill="black" font-size="13" font-family="Helvetica" font-weight="bold">
+4000
+</text>
+<text x="314" y="343" fill="black" font-size="13" font-family="Helvetica" font-weight="bold">
+5000
+</text>
+<text x="370" y="343" fill="black" font-size="13" font-family="Helvetica" font-weight="bold">
+6000
+</text>
+<text x="427" y="343" fill="black" font-size="13" font-family="Helvetica" font-weight="bold">
+7000
+</text>
+<text x="484" y="343" fill="black" font-size="13" font-family="Helvetica" font-weight="bold">
+8000
+</text>
+<path d="M57,329v-292" fill="none" stroke="black"/>
+<g transform="rotate(-90,26,82)">
+<text x="26" y="82" fill="black" font-size="13" font-family="Helvetica" font-weight="bold">
+counts
+</text>
+</g>
+<path d="M70,329h-13" fill="none" stroke="black"/>
+<path d="M63,323h-6" fill="none" stroke="black"/>
+<path d="M63,317h-6" fill="none" stroke="black"/>
+<path d="M63,311h-6" fill="none" stroke="black"/>
+<path d="M70,304h-13" fill="none" stroke="black"/>
+<path d="M63,298h-6" fill="none" stroke="black"/>
+<path d="M63,292h-6" fill="none" stroke="black"/>
+<path d="M63,286h-6" fill="none" stroke="black"/>
+<path d="M70,280h-13" fill="none" stroke="black"/>
+<path d="M63,273h-6" fill="none" stroke="black"/>
+<path d="M63,267h-6" fill="none" stroke="black"/>
+<path d="M63,261h-6" fill="none" stroke="black"/>
+<path d="M70,255h-13" fill="none" stroke="black"/>
+<path d="M63,248h-6" fill="none" stroke="black"/>
+<path d="M63,242h-6" fill="none" stroke="black"/>
+<path d="M63,236h-6" fill="none" stroke="black"/>
+<path d="M70,230h-13" fill="none" stroke="black"/>
+<path d="M63,223h-6" fill="none" stroke="black"/>
+<path d="M63,217h-6" fill="none" stroke="black"/>
+<path d="M63,211h-6" fill="none" stroke="black"/>
+<path d="M70,205h-13" fill="none" stroke="black"/>
+<path d="M63,198h-6" fill="none" stroke="black"/>
+<path d="M63,192h-6" fill="none" stroke="black"/>
+<path d="M63,186h-6" fill="none" stroke="black"/>
+<path d="M70,180h-13" fill="none" stroke="black"/>
+<path d="M63,174h-6" fill="none" stroke="black"/>
+<path d="M63,167h-6" fill="none" stroke="black"/>
+<path d="M63,161h-6" fill="none" stroke="black"/>
+<path d="M70,155h-13" fill="none" stroke="black"/>
+<path d="M63,149h-6" fill="none" stroke="black"/>
+<path d="M63,142h-6" fill="none" stroke="black"/>
+<path d="M63,136h-6" fill="none" stroke="black"/>
+<path d="M70,130h-13" fill="none" stroke="black"/>
+<path d="M63,124h-6" fill="none" stroke="black"/>
+<path d="M63,117h-6" fill="none" stroke="black"/>
+<path d="M63,111h-6" fill="none" stroke="black"/>
+<path d="M70,105h-13" fill="none" stroke="black"/>
+<path d="M63,99h-6" fill="none" stroke="black"/>
+<path d="M63,92h-6" fill="none" stroke="black"/>
+<path d="M63,86h-6" fill="none" stroke="black"/>
+<path d="M70,80h-13" fill="none" stroke="black"/>
+<path d="M63,74h-6" fill="none" stroke="black"/>
+<path d="M63,68h-6" fill="none" stroke="black"/>
+<path d="M63,61h-6" fill="none" stroke="black"/>
+<path d="M70,55h-13" fill="none" stroke="black"/>
+<path d="M70,55h-13" fill="none" stroke="black"/>
+<path d="M63,49h-6" fill="none" stroke="black"/>
+<path d="M63,43h-6" fill="none" stroke="black"/>
+<text x="46" y="335" fill="black" font-size="13" font-family="Helvetica" font-weight="bold">
+0
+</text>
+<text x="23" y="311" fill="black" font-size="13" font-family="Helvetica" font-weight="bold">
+2000
+</text>
+<text x="23" y="285" fill="black" font-size="13" font-family="Helvetica" font-weight="bold">
+4000
+</text>
+<text x="23" y="260" fill="black" font-size="13" font-family="Helvetica" font-weight="bold">
+6000
+</text>
+<text x="23" y="236" fill="black" font-size="13" font-family="Helvetica" font-weight="bold">
+8000
+</text>
+<text x="16" y="211" fill="black" font-size="13" font-family="Helvetica" font-weight="bold">
+10000
+</text>
+<text x="16" y="186" fill="black" font-size="13" font-family="Helvetica" font-weight="bold">
+12000
+</text>
+<text x="16" y="161" fill="black" font-size="13" font-family="Helvetica" font-weight="bold">
+14000
+</text>
+<text x="16" y="136" fill="black" font-size="13" font-family="Helvetica" font-weight="bold">
+16000
+</text>
+<text x="16" y="111" fill="black" font-size="13" font-family="Helvetica" font-weight="bold">
+18000
+</text>
+<text x="16" y="86" fill="black" font-size="13" font-family="Helvetica" font-weight="bold">
+20000
+</text>
+<text x="16" y="61" fill="black" font-size="13" font-family="Helvetica" font-weight="bold">
+22000
+</text>
+<rect x="6" y="2" width="112" height="18" fill="#f2f2f2"/>
+<path d="M7,20v1h112v-18h-1v17z" fill="black"/>
+<path d="M6,20v-18h112v18h-112z" fill="none" stroke="black"/>
+<text x="18" y="18" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+Calibrazione
+</text>
+<rect x="442" y="2" width="114" height="102" fill="#f2f2f2"/>
+<path d="M444,104v1h113v-102h-1v101z" fill="black"/>
+<path d="M442,104v-102h114v102h-114z" fill="none" stroke="black"/>
+<text x="447" y="23" fill="black" font-size="17" font-family="Helvetica" font-weight="bold">
+Calibrazione
+</text>
+<path d="M442,28h114" fill="none" stroke="black"/>
+<text x="447" y="47" fill="black" font-size="15" font-family="Helvetica" font-weight="bold">
+Entries 
+</text>
+<text x="512" y="47" fill="black" font-size="15" font-family="Helvetica" font-weight="bold">
+ 8192
+</text>
+<text x="447" y="73" fill="black" font-size="15" font-family="Helvetica" font-weight="bold">
+Mean  
+</text>
+<text x="504" y="73" fill="black" font-size="15" font-family="Helvetica" font-weight="bold">
+   2575
+</text>
+<text x="447" y="99" fill="black" font-size="15" font-family="Helvetica" font-weight="bold">
+RMS   
+</text>
+<text x="504" y="99" fill="black" font-size="15" font-family="Helvetica" font-weight="bold">
+   1523
+</text>
+<rect x="6" y="2" width="112" height="18" fill="#f2f2f2"/>
+<path d="M7,20v1h112v-18h-1v17z" fill="black"/>
+<path d="M6,20v-18h112v18h-112z" fill="none" stroke="black"/>
+<text x="18" y="18" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+Calibrazione
+</text>
+</svg>

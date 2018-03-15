@@ -1,0 +1,12 @@
+ADC Conversions Number : 391926
+Time (ms) : 182857
+Live Time (ms) : 178270
+N957 Start Acquisition mode 1 : Ok
+Acquisition running ...
+
+Hit 'r' to reset histogram, any other to quit ...
+Any other to quit ...
+ADC Conversions Number : 1302500
+Time (ms) : 612470
+Live Time (ms) : 598949
+

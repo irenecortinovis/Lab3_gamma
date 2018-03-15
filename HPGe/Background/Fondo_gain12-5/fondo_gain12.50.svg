@@ -1,0 +1,476 @@
+<svg viewBox="0 0 567 384" xmlns="http://www.w3.org/2000/svg">
+<title>
+/home/particelle2/Scrivania/Lab_2018/Lab_programs/Dati/Fondo/fondo_gain12.50.svg
+</title>
+<desc>
+Creator: ROOT Version 5.18/00b
+CreationDate: Mon Mar 12 12:05:52 2018
+</desc>
+<defs>
+</defs>
+<rect x="0" y="0" width="567" height="384" fill="#f2f2f2"/>
+<path d="M0,384l2,-2v-380h563l2,-2h-567v384z" fill="white"/>
+<path d="M0,384l2,-2h563v-380l2,-2v384h-567z" fill="#a9a9a9"/>
+<rect x="55" y="39" width="454" height="308" fill="#f2f2f2"/>
+<path d="M55,347l1,-1v-306h452l1,-1h-454v308z" fill="white"/>
+<path d="M55,347l1,-1h452v-306l1,-1v308h-454z" fill="#a9a9a9"/>
+<rect x="55" y="39" width="454" height="308" fill="none" stroke="black"/>
+<rect x="55" y="39" width="454" height="308" fill="#f2f2f2"/>
+<path d="M55,347l1,-1v-306h452l1,-1h-454v308z" fill="white"/>
+<path d="M55,347l1,-1h452v-306l1,-1v308h-454z" fill="#a9a9a9"/>
+<rect x="55" y="39" width="454" height="308" fill="none" stroke="black"/>
+<path d="M55,347v-289v34h1v-30v56v-38v33v-47v36v-2v1v-25v39v-43v13h1v-17v29v-23v22v-1v18v-42v25v-9v23v-52v40v-28v21v-23v17h1v-19v32v-11v11v-44v46v-35v39v-3v9v-38v56v-54v52h1v-48v14v-11v27v-20v26v-48v32v-27v52v-39v12v-4v9h1v27v-57v59v-35v10v-35v31v
+-29v40v-16h1v-21v34v-24v19v-32v54v-30v6v-10v14h1v-30v54v-39v28v-6v36v-57v26v-9v8v-17v28h1v-14v18v-22v34v-23v14v-31v44v-20h1v-3v24v-22v28v-34v41v-23v9v-22h1v31v-39v33v-7v17v-18v12v-23v20v-7v10v-28v3v-3h1v-6v51v-13v35v-42v27v-28v8v-3v35v-36h1v-20v30v
+-8v34v-35v3v-2v18v-43v46v-25v38v-23h1v-15v15v-33v48v-10v9v-40v71v-28h1v-13v24v-28v34v-47v28v-9v26h1v-34v30v-30v26v-13v32v-38v31v-4v6h1v1v-15v28v-42v22v-14v14v-8v32v-18v3v-22v20h1v-11v30v-18v16v-9v7v-23v21v-22v26v-26v6v-21v36h1v1v-25v21v-27v20v-11v32
+v-13v7v-13v6v-4v8h1v-18v4v-1v30v-24v21v-22v22v-17v20v-10h1v-1v9v-19v18v-26v10v-15v28v-14v38v-47v48h1v11v-57v24v-18v26v-13v10v-4v8v-10v15v-11h1v14v-24v42v-53v26v-13v27v-19v5v-12v17v-17h1v-14v31v-4v3v-11v17v-12v11v-4v12v-9v7v-11v10v-1h1v-30v9v-118v123
+v-9v20v-12v6v-4v11v-5h1v-6v28v-4v5v-23v18v-12v21v-9v9v-21v9v-7h1v16v-24v26v-22v24v-17v20v-10v3v-18h1v35v-23v16v-13v9v-6v4v-19v19h1v-9v22v-32v22v-22v31v-23v18v-14v3h1v15v-15v19v-21v4v-20v18v-7v21v-14v21h1v-44v38v-3v5v-19v26v-10v3v-19v19v-27v33v-28v3h
+1v17v-1v2v-10v35v-46v29v-13v10v-10v10v-1v16v-26h1v19v-18v9v-4v4v-10v22v-21v8v-4v13v-16h1v-4v15v-24v8v-35v55v-10v12v-5h1v-18v45v-35v9v-9v8v-5v5v-1v4v-7v12v-13h1v-11v26v-19v23v-5v9v-21v10v-7v13v-20v19h1v-20v20v-19v14v-3v6v-14v12v-1v10v-17v9h1v-4v19v
+-29v21v-20v18v-22v21v-1h1v-19v23v-9v10v-24v28v-17v10v-19v12h1v2v-6v6v-6v24v-24v2v-2v14v-4v7h1v-6v4v-14v9v-4v1v-24v13v-23v15v-17v42v-8v16h1v-6v8v-25v20v-9v4v-4v9v-9v12v-17v18v-17v8v-15h1v26v-22v20v-21v10v-32v5v-50v32v-8v39h1v26v-10v5v-13v13v-12v17v
+-17v16v-8v8v-9h1v9v-16v13v-6v18v-16v3v-5v17v-16h1v7v-4v5v-13v12v-21v23v-10v11v-10h1v9v-4v3v-4v14v-19v17v-13v7v-2h1v-4v3v-2v17v-35v30v-17v7v-2v2v-14h1v15v-12v20v-17v10v-10v18v-12v3h1v1v-5v5v-5v3v-8v10v-6v4v-11v13v-4v16v-14h1v-6v8v-10v10v-4v8v-8v9v-19
+v25h1v-19v7v-4v9v-8v8v-10v14v-10v9v-4v2v-6v4v-21v9h1v12v-15v13v-15v15v-9v13v-18v12v-11v12h1v-1v8v-7v4v-9v10v-11v14v-14h1v10v-12v16v-4v3v-9v1v-4v13v-12v8v-6v5v-2h1v-1v4v-6v14v-12v5v-1v4v-12v15v-11h1v8v-16v9v-7v18v-17v12v-8v10v-13v20v-8v1h1v-11v6v-5v4
+v-5v15v-12v17v-19v9v-7h1v10v-10v7v-3v4v-11v15v-21v13v-4v11h1v-8v7v-11v9v-15v11v-7v6v-4v11v-12v6h1v-9v21v-18v14v-8v2v-11v16v-11v10v-15v3v-3v9h1v-6v5v-4v13v-13v7v-7v13v-19v19v-9h1v10v-14v9v-6v10v-17v17v-13v14v-13v7h1v-10v16v-15v9v-10v9v-6v13v-11v5h1v
+-5v5v-5v9v-5v5v-16v22v-20v14v-9v9v-3h1v-10v6v-5v11v-6v7v-7v4v-11v15v-1h1v-3v7v-15v13v-7v4v-3v5v-2h1v-6v13v-9v3v-8v8v-7v11v-9v2h1v4v-9v5v-6v2v-30v16v-3v6v-4v11v-2h1v19v-19v12v-3v4v-7v12v-12v8v-13v9v-8v7h1v-8v17v-4v4v-10v9v-5v5v-13v8h1v-6v9v-9v13v-10v
+8v-8v1v-8v6h1v13v-12v4v-3v7v-13v14v-14v6v-4v8v-4v7v-7h1v4v-6v1v-1v10v-6v9v-8v5v-12h1v12v-9v16v-23v17v-5v4v-9v5v-6v9v-8v9h1v-4v3v-4v4v-7v5v-3v2v-12v8v-2v10v-9h1v3v-4v13v-13v7v-3v6v-13v10v-3v2v-1h1v-8v4v-3v12v-6v5v-9v11v-10v3v-8v14h1v-12v15v-9v9v-12v
+12v-15h1v7v-8v13v-9v6v-7v11v-11v4v-2v2v-13v18v-7h1v-6v4v-64v77v-4v4v-4v4v-11h1v15v-20v17v-16v12v-3v4v-5h1v-8v9v-9v4v-1v6v-2v6v-9v7v-5v6v-5v1h1v-1v4v-9v10v-3v6v-11v9v-4v2v-3v4v-14v10v-12h1v12v-5v3v-83v85v-5h1v8v-3v5v-5v4v-4v4v-4v4v-3v4h1v-9v12v-8v3v
+-8v4v-7v12v-4v8v-9v2v-9h1v12v-12v12v-6v10v-14v13v-11v3v-5v11v-9h1v16v-20v20v-13v6v-15v17v-19v15v-4v5v-6h1v-4v10v-6v9v-7v9v-10v5v-6v10h1v-7v2v-5v11v-2v5v-9v2v-1v5v-5v4v-4v1h1v2v-9v6v-3v3v-1v4v-12v10v-6v6v-5v9h1v-11v5v-4v6v-5v8v-7v3v-4v5v-7v6v-3v2h1v
+-3v3v-7v15v-13v10v-12v11h1v-9v3v-3v5v-2v3v-4v9v-8v4h1v2v-2v3v-8v7v-9v10v-7v7v-4v4v-3h1v-2v4v-7v4v-5v10v-8v2v-7v3v-4v8v-2v6v-8h1v10v-10v10v-4v4v-6v2v-5v3v-4v9v-14h1v10v-8v8v-5v8v-2v4v-11v3v-5v11v-7h1v-8v11v-3v5v-6v10v-10v2v-1v9v-10h1v-1v11v-14v9v-4v9
+v-11v9v-7v7h1v-4v2v-4v6v-3v3v-6v7v-8v5v-5v8v-1h1v-7v4v-4v7v-9v9v-12v10v-6v6h1v6v-16v8v-4v9v-8v5v-13v15v-20v12v-7h1v13v-4v6v-2v2v-12v17v-9v5v-7v3v-5v5h1v1v-2v8v-11v7v-6v6v-4v4v-7v9h1v-5v7v-10v7v-4v4v-9v8v-4v2v-9h1v12v-3v3v-4v4v-9v10v-9v8v-8v7h1v1v-8v
+11v-6v3v-9v14v-8v2v-6h1v8v-5v4v-5v1v-3v7v-7v6v-7h1v8v-10v9v-11v4v-2v6v-4v8v-7v6v-2v2h1v-7v5v-4v7v-1v2v-5v3v-4v12v-15v13v-13h1v8v-4v5v-9v8v-12v13v-5v3v-8h1v12v-11v4v-12v19v-11v5v-6v6v-2v6h1v-4v4v-8v7v-8v7v-12v9v-8v8h1v4v-4v7v-6v3v-1v4v-6v3v-7v12v-8v7
+v-7h1v-9v12v-9v8v-4v8v-8v5v-9h1v-1v13v-4v4v-12v10v-4v2v-2v6v-8v6v-8h1v10v-12v9v-3v7v-11v10v-3v1v-1h1v-4v4v-1v1v-1v2v-9v4v-4v7v-9v11h1v-6v9v-4v1v-6v8v-2v4v-9v3v-8v8h1v2v-8v6v-7v8v-7v8v-2v1v-3v2v-11h1v12v-7v11v-9v6v-5v7v-11v7h1v1v-3v4v-2v1v-7v8v-4v3h1
+v-4v9v-9v5v-4v3v-4v7v-6v7v-7v2h1v-12v10v-7v3v-5v11v-4v4v-2v2h1v-6v8v-1v1v-4v6v-4v2v-1v4v-5v5v-5v2v-4h1v8v-13v8v-1v1v-3v7v-11v6v-6v6v-8h1v10v-8v10v-8v9v-4v3v-7h1v5v-8v6v-2v7v-8v5v-5v4v-5v8v-6h1v3v-4v5v-10v13v-9v9v-8v4v-1v1h1v4v-4v4v-11v12v-5v5v-9v5v
+-6v5v-1v1h1v-1v4v-12v13v-13v8v-8v9v-7v11v-9v5h1v3v-15v15v-20v10v-35v17v-8v34h1v-6v9v-4v3v-10v12v-8v4v-4h1v6v-4v1v-3v4v-5v5v-2v2v-2h1v4v-3v1v-9v12v-9v8v-3v1v-4v8v-5h1v-1v1v-7v7v-4v7v-3v3v-7v4v-1v2v-5h1v4v-1v4v-15v15v-7v9v-5v4v-3v3v-1h1v-6v8v-5v1v-4v8
+v-9v11v-15v11h1v-7v4v-3v3v-4v9v-9v7v-6v6v-7h1v9v-13v8v-3v6v-3v4v-4v4v-7v6h1v-8v4v-6v4v-1v3v-4v2v-7v10v-18v8h1v-16v31v-10v6v-4v4v-4v3v-3v4h1v-5v7v-2v3v-4v3v-6v3v-5v4v-4v2h1v6v-4v6v-9v5v-8v11v-4v1v-6v9h1v-8v8v-12v5v-2v6v-4v6v-13v10v-1h1v5v-1v1v-4v3v-4
+v5v-7v8v-4v2v-6v7h1v-12v8v-3v6v-7v5v-5v8v-1h1v-6v6v-7v8v-7v4v-2v2v-5v7v-8h1v8v-7v5v-4v8v-6v2v-6v9v-4v4v-9h1v6v-4v7v-4v1v-2v4v-7v8v-5v2v-1v3v-4v1h1v5v-6v4v-2v2v-7v7v-4v2v-2v4v-6h1v-1v7v-4v5v-7v7v-5h1v4v-10v8v-4v6v-10v8v-2v2v-1h1v4v-5v4v-8v8v-6v8v-6v5
+v-4h1v1v-4v6v-4v5v-13v13v-8v9v-9h1v9v-1v3v-6v3v-4v3v-3h1v-1v5v-5v5v-12v12v-4v3v-3v3v-10v4h1v6v-3v5v-14v10v-6v8v-7v7v-2v3v-3v2v-4h1v5v-8v5v-2v1v-1v2v-5v5v-1h1v-3v3v-1v1v-3v6v-6v7v-4v3v-4v2h1v-2v1v-3v3v-4v5v-2v2v-1v3v-7v7v-3h1v3v-11v8v-4v4v-5v6v-2v6h1
+v-10v9v-11v11v-4v7v-7v4v-1v1v-1v2v-5h1v3v-3v4v-5v1v-7v7v-5h1v-3v11v-7v7v-4v4v-7v8v-9h1v6v-2v4v-11v5v-13v8v-5v10v-2v4h1v5v-5v5v-7v2v-3v7v-2v3v-7v7v-1h1v-3v3v-10v11v-3v3v-3v6v-10v3v-3v6h1v-4v2v-1v4v-5v5v-5v2v-4v7v-11v7v-1h1v4v-4v2v-1v3v-11v9v-2v4v-3v4
+h1v-8v8v-8v7v-8v10v-8h1v4v-4v3v-9v12v-3v3v-2v4v-6v5v-1h1v-10v12v-9v7v-6v6v-4v2v-6v5v-1v5v-7h1v4v-5v7v-10v12v-8v4v-4v3v-3v7h1v-13v9v-3v2v-3v9v-6v2v-8v8h1v2v-6v2v-3v7v-4v4v-4v1v-4v7v-3v4v-3h1v-1v4v-5v2v-6v9v-5v2v-1v3v-6v3h1v5v-8v3v-3v6v-13v15v-8v4v-5v
+3h1v4v-7v3v-6v11v-3v2v-7v8v-3h1v-1v3v-10v8v-2v1v-5v6v-4v6v-2h1v-6v8v-7v8v-4v3v-6v6v-6h1v6v-8v10v-8v7v-4v1v-1h1v3v-6v2v-6v10v-7v7v-3v3v-7v8v-8v7h1v-6v6v-6v3v-5v8v-4v4v-7v11v-8h1v2v-2v5v-5v4v-7v7v-7v4v-12v9v-1v7h1v-8v6v-4v7v-4v1v-2v2v-4v3v-1h1v4v-3v3v
+-10v8v-1v7v-10v2v-3v5v-1h1v4v-8v7v-8v12v-7v4v-5v4v-2v2h1v-2v2v-2v3v-3v4v-5v5v-6v5v-3v3v-3v3h1v-1v4v-6v3v-1v2v-2v1h1v-1v2v-12v3v-3v4v-10v14h1v-2v6v-5v7v-4v1v-5v4v-3v7h1v-4v2v-4v3v-5v6v-6v5v-4v4h1v3v-3v3v-6v4v-8v10v-10v10v-7v5h1v-4v6v-7v5v-2v4v-4v2v-2
+v4v-2h1v-5v5v-4v2v-6v7v-1v1v-7v10h1v-4v2v-5v5v-5v4v-3v3v-1v1v-1h1v-4v4v-2v4v-5v7v-7v5v-4h1v-4v7v-5v6v-2v1v-1v4v-3h1v3v-6v3v-3v6v-4v1v-4v7v-11h1v8v-8v7v-4v6v-5v7v-6v3v-4v4h1v-3v6v-6v4v-4v4v-2v2v-2v4h1v-3v1v-2v4v-6v3v-3v4v-1h1v-3v3v-7v10v-4v1v-3v6v-2h
+1v2v-6v3v-3v6v-6v4v-1v1v-4v4h1v-2v2v-6v6v-2v4v-4v4v-3h1v3v-4v4v-3v3v-4v1h1v1v-4v6v-8v2v-1v5v-2v4v-3v1h1v-1v3v-4v1v-1v4v-4v1v-4v5v-6v8v-2h1v-2v2v-2v2v-4v4v-2v4v-6v6v-3h1v-1v2v-2v2v-4v4v-1v3v-6v3v-4v5h1v-1v1v-4v6v-3v1v-4v3v-3v6v-3v1v-2v2v-2h1v4v-3v1v
+-8v10v-10v8v-2v4v-3h1v3v-2v2v-6v4v-1v3v-3v3v-4v2h1v2v-3v3v-4v2v-5v7v-2v2v-4v1h1v-3v4v-1v1v-2v4v-4v1h1v3v-3v1v-1v3v-4v2v-1v1v-4v6h1v-4v1v-3v3v-1v2v-1v3v-2v2v-4v1h1v3v-4v1v-1v4v-4v2v-2h1v2v-2v4v-4v4v-2v2v-4v2v-2v2h1v-4v3v-131v3v-33h1v160v-2v4v-1v3v-3v
+3h1v-3v3v-2v2v-4v2v-2v4v-4v1h1v-1v4v-7v7v-4v2v-1v3v-2h1v2v-2v2v-2v2v-3v3v-3v3v-3v3v-2h1v2v-6v4v-2v1v-3v4v-1v1h1v2v-3v1v-2v1v-1v1v-3v6v-3v1v-2v2h1v2v-2v2v-3v3v-3v3v-6v3v-3v6h1v-4v4v-3v3v-6v2v-3v1v-1v4h1v1v-2v2v-2v4v-6v6v-2v2v-3v1v-1v1h1v2v-3v3v-3v3v
+-4v4v-3v1h1v2v-4v4v-2v2v-6v4v-1v3h1v-2v2v-3v3v-6v6v-7v7v-2v2v-3h1v3v-2v2v-3v1v-2v4v-2v2v-2v2v-3v1h1v-1v3v-2v2v-3v3v-3v3v-3v1h1v2v-4v4v-3v3v-2v2v-2v2v-4v4v-3v3h1v-2v2v-3v3v-3v3v-3v1h1v2v-3v3v-2v2v-2v2h1v-3v3v-2v2v-2v2v-3v3v-3h1v3v-4v4v-2v2v-3v3v-3v3v
+-2v2v-2v2h1v-4v4v-4v2v-2v4v-2v2v-4v4v-3v1h1v-1v3v-4v1v-4v7v-4v2h1v2v-6v3v-4v1v-2v6v-2v4h1v-2v2v-2v2v-2v2v-3v3v-2v2v-2h1v-4v6v-3v3v-4v4v-2h1v2v-3v3v-3v3h1v-2v2v-2v2v-7v5v-2v1v-1h1v1v-3v6v-3v3v-3h1v1v-2v4v-2v2v-6v6v-2v2v-2v2h1v-4v4v-3v3v-2v2v-3v1v-2v4
+h1v-3v3v-3v3v-3v3v-3v1h1v2v-2v2v-2v2v-6v6v-6v6h1v-3v1v-2v2v-1v3v-2v2v-2v2h1v-3v3v-2v2v-3v3v-2v2v-2h1v2v-3v3v-2v2v-2v2v-2v2h1v-4v4v-2v2v-2v2v-3v3v-2h1v2v-2v2v-4v4v-2v2v-3v3v-3h1v3v-2v2v-3v3v-2v2v-3h1v3v-3v3v-3v3v-3v3v-2v2h1v-2v2v-3v3v-2v2v-3v3v-2v2h1
+v-2v2v-2v2v-3v3v-2v2v-2v2v-2v2v-2h1v2v-2v2v-3v3v-2v2v-2v2v-2v2h1v-2v2v-3v3v-2v2v-2v2v-2v2v-3v3h1v-2v2v-3v3v-2v2v-3v3h1v-2v2v-7v4v-3v6v-6v6v-2v2h1v-2v2v-3v3v-3v3v-2v2h1v-3v3v-2v2h1v-3v3v-2v2v-4v4v-2v2h1v-2v2v-3v3v-2v2v-2v2v-2h1v2v-3v3v-2v2v-4v1v-3h1v
+2v-13v9v-4v12v-3h1v3v-2v2v-3v3v-2v2v-2v2v-2v2h1v-2v2v-2v2v-3v3v-2v2v-3h1v3v-3v3v-2v2v-2v2v-3v3v-2h1v2v-2v2v-2v2v-2v2v-2v2h1v-2v2v-2v2v-2v2v-2v2h1v-2v2v-2v2v-2v2v-2v2v-3v3h1v-3v3v-2v2v-3v3v-2v2v-2v2h1v-3v3v-2v2v-2v2v-2v2v-2h1v2v-2v2v-4v4v-2v2v-2h1v2v
+-3v3v-2v2v-2v2v-2v2h1v-2v2v-3v3v-4v4v-3v3v-2v2h1v-3v1v-1v3v-2v2v-2v2v-2h1v2v-2v2v-2v2v-6v6v-3v1v-1h1v3v-3v3v-2v2v-2v2v-3h1v3v-2v2v-2v2v-2v2v-4v4v-3v3h1v-2v2v-3v3v-2v2h1v-2v2v-3v3v-2v2v-3v3h1v-2v2v-2v2v-3v1v-1v3h1v-3v3v-2v2v-2v2v-2v2v-3h1v3v-2v2v-2v2
+v-2v2v-2v2v-2v2h1v-2v2v-2v2v-2v2v-2v2v-3v3h1v-3v3v-2v2v-2v2v-4v4v-2h1v-1v3v-2v2v-3v3v-3v3v-2v2v-2h1v2v-2v2v-2v2v-3v3v-4v4h1v-4v4v-3v3v-3v3v-2h1v2v-2v2v-2v2v-2v2v-2v2v-2v2h1v-2v2v-2v2v-2v2v-2v2v-2v2h1v-2v2v-2v2v-3v3v-2v2v-3v3h1v-3v3v-2v2v-2v2v-2v2v-6
+h1v6v-3v3v-2v2h1v-2v2v-3v3v-2v2h1v-2v2v-3v3v-3v3v-2v2v-2v2h1v-2v2v-2h1v2v-2v2v-3v3v-3v1h1v2v-3v3v-2v2h1v-3v3v-2v2v-2v2v-2v2h1v-2v2v-2v2h1v-2v2v-2v2v-2v2v-3v3h1v-2v2v-2v2v-3v3h1v-2v2v-3v3v-2v2v-2v2v-2v2h1v-3v3v-3v3v-3v3v-2v2v-3v1h1v2v-3v3v-2v2v-2v2v
+-2v2h1v-2v2v-2v2v-3v3v-2v2v-2v2v-2h1v2v-3v3v-2v2v-2v2v-2h1v2v-3v3v-2v2v-3v1v-1v3v-3v3v-2h1v2v-2v2v-2v2v-3v3v-2v2h1v-2v2v-2v2v-2v2h1v-2v2v-2v2v-2v2v-4v4v-2h1v2v-2v2v-2v2v-3h1v3v-3v3v-2v2v-2v2v-2h1v-1v3v-2v2v-3v3v-3v3v-2v2v-2v2h1v-3v3v-2v2v-2h1v2v-2v2
+v-2v2v-2v2v-2v2v-2v2h1v-3v3v-2v2v-4v4v-6h1v4v-1v1v-4v6v-4v4v-2v2h1v-2v2v-2v2v-4v4v-3v3v-2v2h1v-2v2v-4v4v-3v3v-4v2v-1v1h1v2v-2v2v-3v3v-2v2h1v-3v3v-2v2v-2v2v-3v3v-2h1v2v-4v4v-2v2v-2v2h1v-3v3v-3h1v3v-6v6v-3v3v-2v2v-3v3v-2v2v-2h1v2v-3v3v-2v2v-2v2v-2v2h1
+v-2v2v-2v2v-2v2v-3v3v-2v2v-3v3v-2v2h1v-2v2v-2v2v-2v2v-2v2v-3v3h1v-2v2v-3v3v-2v2v-2v2v-3v3v-2v2h1v-3v3v-4v4v-3v3v-2v2v-2v2h1v-4v4v-2v2v-3v3v-3v3v-3v1h1v2v-2v2v-2v2v-2v2v-2v2v-2v2v-2v2v-3h1v3v-4v4v-2v2v-3v3v-3v1v-1v3h1v-6v4v-2v2v-2v2v-6v8h1v-2v2v-2v2v
+-3v3v-2h1v2v-3v3v-2v2v-2v2v-3v3v-2v2h1v-2v2v-3v3v-2v2v-3v3v-2v2h1v-3v3v-2v2v-2v2v-3v3v-2v2v-2v2v-2h1v2v-2v2v-2v2v-3v3v-2v2v-6v6h1v-2v2v-2v2v-2v2v-2v2v-2v2h1v-2v2v-3v3v-2v2v-2v2h1v-2v2v-4v4v-2v2h1v-2v2v-2v2v-2h1v2v-2v2h1v-2v2v-3v3v-3v3v-3v3v-3v1h1v2v
+-2v2v-2h1v2v-2v2v-2v2v-2v2v-4v4h1v-2v2v-3v3v-2v2v-2v2h1v-3v1v-1v3v-2v2h1v-3v3v-2v2v-2v2v-2v2h1v-3v3v-3v3v-3v3v-4v2v-2v2h1v2v-2v2v-3v1v-1v1h1v2v-3v3v-2v2v-2h1v2v-2v2v-2v2v-2h1v2v-2v2v-2v2v-3v3v-2h1v2v-2v2v-2v2v-3v3v-3v3v-2h1v2v-2v2v-2v2v-4v4v-2v2h1v
+-2v2v-2v2v-2v2v-2v2v-2v2h1v-3v3v-2v2v-3v3h1v-2v2v-2v2v-2v2v-3v3v-2h1v2v-3v3v-2v2v-2v2v-2v2v-4v4v-2h1v2v-2v2v-2v2v-2v2v-4v4h1v-3v3v-3v3v-2v2v-2v2v-2v2v-2h1v-2v4v-2v2v-2v2v-4v4v-3v3h1v-3v3v-3v3v-3v1h1v2v-2v2v-2v2v-2v2h1v-2v2v-3v3v-2v2v-2h1v2v-3v3v-3v3
+v-4v4h1v-3v3v-2v2v-2v2v-2v2v-2v2v-3h1v3v-2v2v-2v2v-2v2v-2h1v2v-2v2v-3v3h1v-2v2v-2v2v-2h1v2v-2v2v-3v1v-1v3v-3v1v-1h1v3v-3v3v-2v2v-2v2h1v-2v2v-2v2v-2v2v-2h1v2h1v-2v2v-2v2v-2v2h1v-2v2v-2v2v-3v3h1v-2v2v-2v2h1v-2v2v-4v4v-2v2h1v-2h1v2v-2v2v-2v2v-2v2h1v-2v
+2h1v-2v2v-2v2h2v-2v2h1v-2v2v-2v2v-2v2h2v-2v2h1v-2v2v-2v2h2v-2v2v-2v2h1v-2v2v-2h1v2v-2v2v-2v2h1v-2v2v-2v2h2v-2v2h1v-2v2h1v-2v2h1v-6v6v-23v4v-8v7h1v-1v18v-1v4v-2h1v2h1v-2v2v-2v2h1v-2v2v-2v2h1v-4v4v-2v2v-3v3h9v-2v2h1v-2v2h11v-2v2h5v-2v2h4v-2v2h3v-6v3v
+-7v6v-4v5v-7v6v-3v4h1v-7v6v-3v4v-1v1v-1v1v-5v6v-1v1v-5h1v5v-8v8v-4v3v-3v3v-1v1v-5v5v-7v2h1v6v-4v2v-7v9v-8v8v-6v4v-4h1v5v-3v3v-1v4v-6v6h1v-3v1v-2v2v-5v4v-3v3v-3v6v-8h1v6v-6v4v-3v4v-1v2v-5h1v-7v11v-3v4v-6v8z" fill="#ffff00"/>
+<path d="M55,58v34h1v-30v56v-38v33v-47v36v-2v1v-25v39v-43v13h1v-17v29v-23v22v-1v18v-42v25v-9v23v-52v40v-28v21v-23v17h1v-19v32v-11v11v-44v46v-35v39v-3v9v-38v56v-54v52h1v-48v14v-11v27v-20v26v-48v32v-27v52v-39v12v-4v9h1v27v-57v59v-35v10v-35v31v-29v40v
+-16h1v-21v34v-24v19v-32v54v-30v6v-10v14h1v-30v54v-39v28v-6v36v-57v26v-9v8v-17v28h1v-14v18v-22v34v-23v14v-31v44v-20h1v-3v24v-22v28v-34v41v-23v9v-22h1v31v-39v33v-7v17v-18v12v-23v20v-7v10v-28v3v-3h1v-6v51v-13v35v-42v27v-28v8v-3v35v-36h1v-20v30v-8v34v
+-35v3v-2v18v-43v46v-25v38v-23h1v-15v15v-33v48v-10v9v-40v71v-28h1v-13v24v-28v34v-47v28v-9v26h1v-34v30v-30v26v-13v32v-38v31v-4v6h1v1v-15v28v-42v22v-14v14v-8v32v-18v3v-22v20h1v-11v30v-18v16v-9v7v-23v21v-22v26v-26v6v-21v36h1v1v-25v21v-27v20v-11v32v-13v7
+v-13v6v-4v8h1v-18v4v-1v30v-24v21v-22v22v-17v20v-10h1v-1v9v-19v18v-26v10v-15v28v-14v38v-47v48h1v11v-57v24v-18v26v-13v10v-4v8v-10v15v-11h1v14v-24v42v-53v26v-13v27v-19v5v-12v17v-17h1v-14v31v-4v3v-11v17v-12v11v-4v12v-9v7v-11v10v-1h1v-30v9v-118v123v-9v20
+v-12v6v-4v11v-5h1v-6v28v-4v5v-23v18v-12v21v-9v9v-21v9v-7h1v16v-24v26v-22v24v-17v20v-10v3v-18h1v35v-23v16v-13v9v-6v4v-19v19h1v-9v22v-32v22v-22v31v-23v18v-14v3h1v15v-15v19v-21v4v-20v18v-7v21v-14v21h1v-44v38v-3v5v-19v26v-10v3v-19v19v-27v33v-28v3h1v17v
+-1v2v-10v35v-46v29v-13v10v-10v10v-1v16v-26h1v19v-18v9v-4v4v-10v22v-21v8v-4v13v-16h1v-4v15v-24v8v-35v55v-10v12v-5h1v-18v45v-35v9v-9v8v-5v5v-1v4v-7v12v-13h1v-11v26v-19v23v-5v9v-21v10v-7v13v-20v19h1v-20v20v-19v14v-3v6v-14v12v-1v10v-17v9h1v-4v19v-29v21v
+-20v18v-22v21v-1h1v-19v23v-9v10v-24v28v-17v10v-19v12h1v2v-6v6v-6v24v-24v2v-2v14v-4v7h1v-6v4v-14v9v-4v1v-24v13v-23v15v-17v42v-8v16h1v-6v8v-25v20v-9v4v-4v9v-9v12v-17v18v-17v8v-15h1v26v-22v20v-21v10v-32v5v-50v32v-8v39h1v26v-10v5v-13v13v-12v17v-17v16v-8
+v8v-9h1v9v-16v13v-6v18v-16v3v-5v17v-16h1v7v-4v5v-13v12v-21v23v-10v11v-10h1v9v-4v3v-4v14v-19v17v-13v7v-2h1v-4v3v-2v17v-35v30v-17v7v-2v2v-14h1v15v-12v20v-17v10v-10v18v-12v3h1v1v-5v5v-5v3v-8v10v-6v4v-11v13v-4v16v-14h1v-6v8v-10v10v-4v8v-8v9v-19v25h1v-19
+v7v-4v9v-8v8v-10v14v-10v9v-4v2v-6v4v-21v9h1v12v-15v13v-15v15v-9v13v-18v12v-11v12h1v-1v8v-7v4v-9v10v-11v14v-14h1v10v-12v16v-4v3v-9v1v-4v13v-12v8v-6v5v-2h1v-1v4v-6v14v-12v5v-1v4v-12v15v-11h1v8v-16v9v-7v18v-17v12v-8v10v-13v20v-8v1h1v-11v6v-5v4v-5v15v
+-12v17v-19v9v-7h1v10v-10v7v-3v4v-11v15v-21v13v-4v11h1v-8v7v-11v9v-15v11v-7v6v-4v11v-12v6h1v-9v21v-18v14v-8v2v-11v16v-11v10v-15v3v-3v9h1v-6v5v-4v13v-13v7v-7v13v-19v19v-9h1v10v-14v9v-6v10v-17v17v-13v14v-13v7h1v-10v16v-15v9v-10v9v-6v13v-11v5h1v-5v5v-5v
+9v-5v5v-16v22v-20v14v-9v9v-3h1v-10v6v-5v11v-6v7v-7v4v-11v15v-1h1v-3v7v-15v13v-7v4v-3v5v-2h1v-6v13v-9v3v-8v8v-7v11v-9v2h1v4v-9v5v-6v2v-30v16v-3v6v-4v11v-2h1v19v-19v12v-3v4v-7v12v-12v8v-13v9v-8v7h1v-8v17v-4v4v-10v9v-5v5v-13v8h1v-6v9v-9v13v-10v8v-8v1v
+-8v6h1v13v-12v4v-3v7v-13v14v-14v6v-4v8v-4v7v-7h1v4v-6v1v-1v10v-6v9v-8v5v-12h1v12v-9v16v-23v17v-5v4v-9v5v-6v9v-8v9h1v-4v3v-4v4v-7v5v-3v2v-12v8v-2v10v-9h1v3v-4v13v-13v7v-3v6v-13v10v-3v2v-1h1v-8v4v-3v12v-6v5v-9v11v-10v3v-8v14h1v-12v15v-9v9v-12v12v-15h1
+v7v-8v13v-9v6v-7v11v-11v4v-2v2v-13v18v-7h1v-6v4v-64v77v-4v4v-4v4v-11h1v15v-20v17v-16v12v-3v4v-5h1v-8v9v-9v4v-1v6v-2v6v-9v7v-5v6v-5v1h1v-1v4v-9v10v-3v6v-11v9v-4v2v-3v4v-14v10v-12h1v12v-5v3v-83v85v-5h1v8v-3v5v-5v4v-4v4v-4v4v-3v4h1v-9v12v-8v3v-8v4v-7v
+12v-4v8v-9v2v-9h1v12v-12v12v-6v10v-14v13v-11v3v-5v11v-9h1v16v-20v20v-13v6v-15v17v-19v15v-4v5v-6h1v-4v10v-6v9v-7v9v-10v5v-6v10h1v-7v2v-5v11v-2v5v-9v2v-1v5v-5v4v-4v1h1v2v-9v6v-3v3v-1v4v-12v10v-6v6v-5v9h1v-11v5v-4v6v-5v8v-7v3v-4v5v-7v6v-3v2h1v-3v3v-7v
+15v-13v10v-12v11h1v-9v3v-3v5v-2v3v-4v9v-8v4h1v2v-2v3v-8v7v-9v10v-7v7v-4v4v-3h1v-2v4v-7v4v-5v10v-8v2v-7v3v-4v8v-2v6v-8h1v10v-10v10v-4v4v-6v2v-5v3v-4v9v-14h1v10v-8v8v-5v8v-2v4v-11v3v-5v11v-7h1v-8v11v-3v5v-6v10v-10v2v-1v9v-10h1v-1v11v-14v9v-4v9v-11v9v
+-7v7h1v-4v2v-4v6v-3v3v-6v7v-8v5v-5v8v-1h1v-7v4v-4v7v-9v9v-12v10v-6v6h1v6v-16v8v-4v9v-8v5v-13v15v-20v12v-7h1v13v-4v6v-2v2v-12v17v-9v5v-7v3v-5v5h1v1v-2v8v-11v7v-6v6v-4v4v-7v9h1v-5v7v-10v7v-4v4v-9v8v-4v2v-9h1v12v-3v3v-4v4v-9v10v-9v8v-8v7h1v1v-8v11v-6v3
+v-9v14v-8v2v-6h1v8v-5v4v-5v1v-3v7v-7v6v-7h1v8v-10v9v-11v4v-2v6v-4v8v-7v6v-2v2h1v-7v5v-4v7v-1v2v-5v3v-4v12v-15v13v-13h1v8v-4v5v-9v8v-12v13v-5v3v-8h1v12v-11v4v-12v19v-11v5v-6v6v-2v6h1v-4v4v-8v7v-8v7v-12v9v-8v8h1v4v-4v7v-6v3v-1v4v-6v3v-7v12v-8v7v-7h1v
+-9v12v-9v8v-4v8v-8v5v-9h1v-1v13v-4v4v-12v10v-4v2v-2v6v-8v6v-8h1v10v-12v9v-3v7v-11v10v-3v1v-1h1v-4v4v-1v1v-1v2v-9v4v-4v7v-9v11h1v-6v9v-4v1v-6v8v-2v4v-9v3v-8v8h1v2v-8v6v-7v8v-7v8v-2v1v-3v2v-11h1v12v-7v11v-9v6v-5v7v-11v7h1v1v-3v4v-2v1v-7v8v-4v3h1v-4v9v
+-9v5v-4v3v-4v7v-6v7v-7v2h1v-12v10v-7v3v-5v11v-4v4v-2v2h1v-6v8v-1v1v-4v6v-4v2v-1v4v-5v5v-5v2v-4h1v8v-13v8v-1v1v-3v7v-11v6v-6v6v-8h1v10v-8v10v-8v9v-4v3v-7h1v5v-8v6v-2v7v-8v5v-5v4v-5v8v-6h1v3v-4v5v-10v13v-9v9v-8v4v-1v1h1v4v-4v4v-11v12v-5v5v-9v5v-6v5v-1
+v1h1v-1v4v-12v13v-13v8v-8v9v-7v11v-9v5h1v3v-15v15v-20v10v-35v17v-8v34h1v-6v9v-4v3v-10v12v-8v4v-4h1v6v-4v1v-3v4v-5v5v-2v2v-2h1v4v-3v1v-9v12v-9v8v-3v1v-4v8v-5h1v-1v1v-7v7v-4v7v-3v3v-7v4v-1v2v-5h1v4v-1v4v-15v15v-7v9v-5v4v-3v3v-1h1v-6v8v-5v1v-4v8v-9v11v
+-15v11h1v-7v4v-3v3v-4v9v-9v7v-6v6v-7h1v9v-13v8v-3v6v-3v4v-4v4v-7v6h1v-8v4v-6v4v-1v3v-4v2v-7v10v-18v8h1v-16v31v-10v6v-4v4v-4v3v-3v4h1v-5v7v-2v3v-4v3v-6v3v-5v4v-4v2h1v6v-4v6v-9v5v-8v11v-4v1v-6v9h1v-8v8v-12v5v-2v6v-4v6v-13v10v-1h1v5v-1v1v-4v3v-4v5v-7v8
+v-4v2v-6v7h1v-12v8v-3v6v-7v5v-5v8v-1h1v-6v6v-7v8v-7v4v-2v2v-5v7v-8h1v8v-7v5v-4v8v-6v2v-6v9v-4v4v-9h1v6v-4v7v-4v1v-2v4v-7v8v-5v2v-1v3v-4v1h1v5v-6v4v-2v2v-7v7v-4v2v-2v4v-6h1v-1v7v-4v5v-7v7v-5h1v4v-10v8v-4v6v-10v8v-2v2v-1h1v4v-5v4v-8v8v-6v8v-6v5v-4h1v1
+v-4v6v-4v5v-13v13v-8v9v-9h1v9v-1v3v-6v3v-4v3v-3h1v-1v5v-5v5v-12v12v-4v3v-3v3v-10v4h1v6v-3v5v-14v10v-6v8v-7v7v-2v3v-3v2v-4h1v5v-8v5v-2v1v-1v2v-5v5v-1h1v-3v3v-1v1v-3v6v-6v7v-4v3v-4v2h1v-2v1v-3v3v-4v5v-2v2v-1v3v-7v7v-3h1v3v-11v8v-4v4v-5v6v-2v6h1v-10v9v
+-11v11v-4v7v-7v4v-1v1v-1v2v-5h1v3v-3v4v-5v1v-7v7v-5h1v-3v11v-7v7v-4v4v-7v8v-9h1v6v-2v4v-11v5v-13v8v-5v10v-2v4h1v5v-5v5v-7v2v-3v7v-2v3v-7v7v-1h1v-3v3v-10v11v-3v3v-3v6v-10v3v-3v6h1v-4v2v-1v4v-5v5v-5v2v-4v7v-11v7v-1h1v4v-4v2v-1v3v-11v9v-2v4v-3v4h1v-8v8
+v-8v7v-8v10v-8h1v4v-4v3v-9v12v-3v3v-2v4v-6v5v-1h1v-10v12v-9v7v-6v6v-4v2v-6v5v-1v5v-7h1v4v-5v7v-10v12v-8v4v-4v3v-3v7h1v-13v9v-3v2v-3v9v-6v2v-8v8h1v2v-6v2v-3v7v-4v4v-4v1v-4v7v-3v4v-3h1v-1v4v-5v2v-6v9v-5v2v-1v3v-6v3h1v5v-8v3v-3v6v-13v15v-8v4v-5v3h1v4v
+-7v3v-6v11v-3v2v-7v8v-3h1v-1v3v-10v8v-2v1v-5v6v-4v6v-2h1v-6v8v-7v8v-4v3v-6v6v-6h1v6v-8v10v-8v7v-4v1v-1h1v3v-6v2v-6v10v-7v7v-3v3v-7v8v-8v7h1v-6v6v-6v3v-5v8v-4v4v-7v11v-8h1v2v-2v5v-5v4v-7v7v-7v4v-12v9v-1v7h1v-8v6v-4v7v-4v1v-2v2v-4v3v-1h1v4v-3v3v-10v8v
+-1v7v-10v2v-3v5v-1h1v4v-8v7v-8v12v-7v4v-5v4v-2v2h1v-2v2v-2v3v-3v4v-5v5v-6v5v-3v3v-3v3h1v-1v4v-6v3v-1v2v-2v1h1v-1v2v-12v3v-3v4v-10v14h1v-2v6v-5v7v-4v1v-5v4v-3v7h1v-4v2v-4v3v-5v6v-6v5v-4v4h1v3v-3v3v-6v4v-8v10v-10v10v-7v5h1v-4v6v-7v5v-2v4v-4v2v-2v4v-2h
+1v-5v5v-4v2v-6v7v-1v1v-7v10h1v-4v2v-5v5v-5v4v-3v3v-1v1v-1h1v-4v4v-2v4v-5v7v-7v5v-4h1v-4v7v-5v6v-2v1v-1v4v-3h1v3v-6v3v-3v6v-4v1v-4v7v-11h1v8v-8v7v-4v6v-5v7v-6v3v-4v4h1v-3v6v-6v4v-4v4v-2v2v-2v4h1v-3v1v-2v4v-6v3v-3v4v-1h1v-3v3v-7v10v-4v1v-3v6v-2h1v2v-6
+v3v-3v6v-6v4v-1v1v-4v4h1v-2v2v-6v6v-2v4v-4v4v-3h1v3v-4v4v-3v3v-4v1h1v1v-4v6v-8v2v-1v5v-2v4v-3v1h1v-1v3v-4v1v-1v4v-4v1v-4v5v-6v8v-2h1v-2v2v-2v2v-4v4v-2v4v-6v6v-3h1v-1v2v-2v2v-4v4v-1v3v-6v3v-4v5h1v-1v1v-4v6v-3v1v-4v3v-3v6v-3v1v-2v2v-2h1v4v-3v1v-8v10v
+-10v8v-2v4v-3h1v3v-2v2v-6v4v-1v3v-3v3v-4v2h1v2v-3v3v-4v2v-5v7v-2v2v-4v1h1v-3v4v-1v1v-2v4v-4v1h1v3v-3v1v-1v3v-4v2v-1v1v-4v6h1v-4v1v-3v3v-1v2v-1v3v-2v2v-4v1h1v3v-4v1v-1v4v-4v2v-2h1v2v-2v4v-4v4v-2v2v-4v2v-2v2h1v-4v3v-131v3v-33h1v160v-2v4v-1v3v-3v3h1v-3
+v3v-2v2v-4v2v-2v4v-4v1h1v-1v4v-7v7v-4v2v-1v3v-2h1v2v-2v2v-2v2v-3v3v-3v3v-3v3v-2h1v2v-6v4v-2v1v-3v4v-1v1h1v2v-3v1v-2v1v-1v1v-3v6v-3v1v-2v2h1v2v-2v2v-3v3v-3v3v-6v3v-3v6h1v-4v4v-3v3v-6v2v-3v1v-1v4h1v1v-2v2v-2v4v-6v6v-2v2v-3v1v-1v1h1v2v-3v3v-3v3v-4v4v-3
+v1h1v2v-4v4v-2v2v-6v4v-1v3h1v-2v2v-3v3v-6v6v-7v7v-2v2v-3h1v3v-2v2v-3v1v-2v4v-2v2v-2v2v-3v1h1v-1v3v-2v2v-3v3v-3v3v-3v1h1v2v-4v4v-3v3v-2v2v-2v2v-4v4v-3v3h1v-2v2v-3v3v-3v3v-3v1h1v2v-3v3v-2v2v-2v2h1v-3v3v-2v2v-2v2v-3v3v-3h1v3v-4v4v-2v2v-3v3v-3v3v-2v2v-2
+v2h1v-4v4v-4v2v-2v4v-2v2v-4v4v-3v1h1v-1v3v-4v1v-4v7v-4v2h1v2v-6v3v-4v1v-2v6v-2v4h1v-2v2v-2v2v-2v2v-3v3v-2v2v-2h1v-4v6v-3v3v-4v4v-2h1v2v-3v3v-3v3h1v-2v2v-2v2v-7v5v-2v1v-1h1v1v-3v6v-3v3v-3h1v1v-2v4v-2v2v-6v6v-2v2v-2v2h1v-4v4v-3v3v-2v2v-3v1v-2v4h1v-3v3
+v-3v3v-3v3v-3v1h1v2v-2v2v-2v2v-6v6v-6v6h1v-3v1v-2v2v-1v3v-2v2v-2v2h1v-3v3v-2v2v-3v3v-2v2v-2h1v2v-3v3v-2v2v-2v2v-2v2h1v-4v4v-2v2v-2v2v-3v3v-2h1v2v-2v2v-4v4v-2v2v-3v3v-3h1v3v-2v2v-3v3v-2v2v-3h1v3v-3v3v-3v3v-3v3v-2v2h1v-2v2v-3v3v-2v2v-3v3v-2v2h1v-2v2v
+-2v2v-3v3v-2v2v-2v2v-2v2v-2h1v2v-2v2v-3v3v-2v2v-2v2v-2v2h1v-2v2v-3v3v-2v2v-2v2v-2v2v-3v3h1v-2v2v-3v3v-2v2v-3v3h1v-2v2v-7v4v-3v6v-6v6v-2v2h1v-2v2v-3v3v-3v3v-2v2h1v-3v3v-2v2h1v-3v3v-2v2v-4v4v-2v2h1v-2v2v-3v3v-2v2v-2v2v-2h1v2v-3v3v-2v2v-4v1v-3h1v2v-13v
+9v-4v12v-3h1v3v-2v2v-3v3v-2v2v-2v2v-2v2h1v-2v2v-2v2v-3v3v-2v2v-3h1v3v-3v3v-2v2v-2v2v-3v3v-2h1v2v-2v2v-2v2v-2v2v-2v2h1v-2v2v-2v2v-2v2v-2v2h1v-2v2v-2v2v-2v2v-2v2v-3v3h1v-3v3v-2v2v-3v3v-2v2v-2v2h1v-3v3v-2v2v-2v2v-2v2v-2h1v2v-2v2v-4v4v-2v2v-2h1v2v-3v3v
+-2v2v-2v2v-2v2h1v-2v2v-3v3v-4v4v-3v3v-2v2h1v-3v1v-1v3v-2v2v-2v2v-2h1v2v-2v2v-2v2v-6v6v-3v1v-1h1v3v-3v3v-2v2v-2v2v-3h1v3v-2v2v-2v2v-2v2v-4v4v-3v3h1v-2v2v-3v3v-2v2h1v-2v2v-3v3v-2v2v-3v3h1v-2v2v-2v2v-3v1v-1v3h1v-3v3v-2v2v-2v2v-2v2v-3h1v3v-2v2v-2v2v-2v2
+v-2v2v-2v2h1v-2v2v-2v2v-2v2v-2v2v-3v3h1v-3v3v-2v2v-2v2v-4v4v-2h1v-1v3v-2v2v-3v3v-3v3v-2v2v-2h1v2v-2v2v-2v2v-3v3v-4v4h1v-4v4v-3v3v-3v3v-2h1v2v-2v2v-2v2v-2v2v-2v2v-2v2h1v-2v2v-2v2v-2v2v-2v2v-2v2h1v-2v2v-2v2v-3v3v-2v2v-3v3h1v-3v3v-2v2v-2v2v-2v2v-6h1v6v
+-3v3v-2v2h1v-2v2v-3v3v-2v2h1v-2v2v-3v3v-3v3v-2v2v-2v2h1v-2v2v-2h1v2v-2v2v-3v3v-3v1h1v2v-3v3v-2v2h1v-3v3v-2v2v-2v2v-2v2h1v-2v2v-2v2h1v-2v2v-2v2v-2v2v-3v3h1v-2v2v-2v2v-3v3h1v-2v2v-3v3v-2v2v-2v2v-2v2h1v-3v3v-3v3v-3v3v-2v2v-3v1h1v2v-3v3v-2v2v-2v2v-2v2h1
+v-2v2v-2v2v-3v3v-2v2v-2v2v-2h1v2v-3v3v-2v2v-2v2v-2h1v2v-3v3v-2v2v-3v1v-1v3v-3v3v-2h1v2v-2v2v-2v2v-3v3v-2v2h1v-2v2v-2v2v-2v2h1v-2v2v-2v2v-2v2v-4v4v-2h1v2v-2v2v-2v2v-3h1v3v-3v3v-2v2v-2v2v-2h1v-1v3v-2v2v-3v3v-3v3v-2v2v-2v2h1v-3v3v-2v2v-2h1v2v-2v2v-2v2v
+-2v2v-2v2v-2v2h1v-3v3v-2v2v-4v4v-6h1v4v-1v1v-4v6v-4v4v-2v2h1v-2v2v-2v2v-4v4v-3v3v-2v2h1v-2v2v-4v4v-3v3v-4v2v-1v1h1v2v-2v2v-3v3v-2v2h1v-3v3v-2v2v-2v2v-3v3v-2h1v2v-4v4v-2v2v-2v2h1v-3v3v-3h1v3v-6v6v-3v3v-2v2v-3v3v-2v2v-2h1v2v-3v3v-2v2v-2v2v-2v2h1v-2v2v
+-2v2v-2v2v-3v3v-2v2v-3v3v-2v2h1v-2v2v-2v2v-2v2v-2v2v-3v3h1v-2v2v-3v3v-2v2v-2v2v-3v3v-2v2h1v-3v3v-4v4v-3v3v-2v2v-2v2h1v-4v4v-2v2v-3v3v-3v3v-3v1h1v2v-2v2v-2v2v-2v2v-2v2v-2v2v-2v2v-3h1v3v-4v4v-2v2v-3v3v-3v1v-1v3h1v-6v4v-2v2v-2v2v-6v8h1v-2v2v-2v2v-3v3v
+-2h1v2v-3v3v-2v2v-2v2v-3v3v-2v2h1v-2v2v-3v3v-2v2v-3v3v-2v2h1v-3v3v-2v2v-2v2v-3v3v-2v2v-2v2v-2h1v2v-2v2v-2v2v-3v3v-2v2v-6v6h1v-2v2v-2v2v-2v2v-2v2v-2v2h1v-2v2v-3v3v-2v2v-2v2h1v-2v2v-4v4v-2v2h1v-2v2v-2v2v-2h1v2v-2v2h1v-2v2v-3v3v-3v3v-3v3v-3v1h1v2v-2v2v
+-2h1v2v-2v2v-2v2v-2v2v-4v4h1v-2v2v-3v3v-2v2v-2v2h1v-3v1v-1v3v-2v2h1v-3v3v-2v2v-2v2v-2v2h1v-3v3v-3v3v-3v3v-4v2v-2v2h1v2v-2v2v-3v1v-1v1h1v2v-3v3v-2v2v-2h1v2v-2v2v-2v2v-2h1v2v-2v2v-2v2v-3v3v-2h1v2v-2v2v-2v2v-3v3v-3v3v-2h1v2v-2v2v-2v2v-4v4v-2v2h1v-2v2v
+-2v2v-2v2v-2v2v-2v2h1v-3v3v-2v2v-3v3h1v-2v2v-2v2v-2v2v-3v3v-2h1v2v-3v3v-2v2v-2v2v-2v2v-4v4v-2h1v2v-2v2v-2v2v-2v2v-4v4h1v-3v3v-3v3v-2v2v-2v2v-2v2v-2h1v-2v4v-2v2v-2v2v-4v4v-3v3h1v-3v3v-3v3v-3v1h1v2v-2v2v-2v2v-2v2h1v-2v2v-3v3v-2v2v-2h1v2v-3v3v-3v3v-4v4
+h1v-3v3v-2v2v-2v2v-2v2v-2v2v-3h1v3v-2v2v-2v2v-2v2v-2h1v2v-2v2v-3v3h1v-2v2v-2v2v-2h1v2v-2v2v-3v1v-1v3v-3v1v-1h1v3v-3v3v-2v2v-2v2h1v-2v2v-2v2v-2v2v-2h1v2h1v-2v2v-2v2v-2v2h1v-2v2v-2v2v-3v3h1v-2v2v-2v2h1v-2v2v-4v4v-2v2h1v-2h1v2v-2v2v-2v2v-2v2h1v-2v2h1v
+-2v2v-2v2h2v-2v2h1v-2v2v-2v2v-2v2h2v-2v2h1v-2v2v-2v2h2v-2v2v-2v2h1v-2v2v-2h1v2v-2v2v-2v2h1v-2v2v-2v2h2v-2v2h1v-2v2h1v-2v2h1v-6v6v-23v4v-8v7h1v-1v18v-1v4v-2h1v2h1v-2v2v-2v2h1v-2v2v-2v2h1v-4v4v-2v2v-3v3h9v-2v2h1v-2v2h11v-2v2h5v-2v2h4v-2v2h3v-6v3v-7v6v
+-4v5v-7v6v-3v4h1v-7v6v-3v4v-1v1v-1v1v-5v6v-1v1v-5h1v5v-8v8v-4v3v-3v3v-1v1v-5v5v-7v2h1v6v-4v2v-7v9v-8v8v-6v4v-4h1v5v-3v3v-1v4v-6v6h1v-3v1v-2v2v-5v4v-3v3v-3v6v-8h1v6v-6v4v-3v4v-1v2v-5h1v-7v11v-3v4v-6v8" fill="none" stroke="black"/>
+<path d="M274,344z" fill="none" stroke="#0000ff" stroke-width="2"/>
+<path d="M275,344z" fill="none" stroke="#0000ff" stroke-width="2"/>
+<path d="M276,344z" fill="none" stroke="#0000ff" stroke-width="2"/>
+<path d="M276,342v2" fill="none" stroke="#0000ff" stroke-width="2"/>
+<path d="M277,191v151" fill="none" stroke="#0000ff" stroke-width="2"/>
+<path d="M278,316v28" fill="none" stroke="#0000ff" stroke-width="2"/>
+<path d="M279,344z" fill="none" stroke="#0000ff" stroke-width="2"/>
+<path d="M280,344z" fill="none" stroke="#0000ff" stroke-width="2"/>
+<path d="M274,344h2v-1l1,-76l1,62l1,15h1" fill="none" stroke="#0000ff" stroke-width="2"/>
+<rect x="351" y="1" width="205" height="170" fill="#f2f2f2"/>
+<path d="M354,171v1h203v-168h-1v167z" fill="black"/>
+<path d="M351,171v-170h205v170h-205z" fill="none" stroke="black"/>
+<text x="409" y="16" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+Calibrazione
+</text>
+<path d="M351,18h205" fill="none" stroke="black"/>
+<text x="362" y="33" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+Entries 
+</text>
+<text x="508" y="33" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+ 8192
+</text>
+<text x="362" y="50" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+Mean  
+</text>
+<text x="500" y="50" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+   1005
+</text>
+<text x="362" y="67" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+RMS   
+</text>
+<text x="500" y="67" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+   1177
+</text>
+<text x="376" y="83" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+ / ndf 
+</text>
+<text x="370" y="78" fill="black" font-size="10" font-family="Helvetica" font-weight="bold">
+2
+</text>
+<text x="362" y="83" fill="black" font-size="14" font-family="Times">
+&#0967;
+</text>
+<text x="476" y="83" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+ 47.18 / 80
+</text>
+<text x="362" y="101" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+Prob  
+</text>
+<text x="496" y="101" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+ 0.9987
+</text>
+<text x="362" y="116" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+p0       
+</text>
+<text x="520" y="118" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+ 5.0
+</text>
+<text x="512" y="118" fill="black" font-size="14" font-family="Times">
+&#0769;
+</text>
+<text x="468" y="118" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+ 117.5 
+</text>
+<text x="362" y="133" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+p1       
+</text>
+<text x="523" y="135" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+ 0.1
+</text>
+<text x="515" y="135" fill="black" font-size="14" font-family="Times">
+&#0769;
+</text>
+<text x="470" y="135" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+  4112 
+</text>
+<text x="362" y="149" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+p2       
+</text>
+<text x="504" y="151" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+ 0.082
+</text>
+<text x="496" y="151" fill="black" font-size="14" font-family="Times">
+&#0769;
+</text>
+<text x="454" y="151" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+ 2.951 
+</text>
+<text x="362" y="167" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+p3       
+</text>
+<text x="504" y="168" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+ 0.153
+</text>
+<text x="496" y="168" fill="black" font-size="14" font-family="Times">
+&#0769;
+</text>
+<text x="451" y="168" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+ 1.517 
+</text>
+<path d="M55,347h454" fill="none" stroke="black"/>
+<text x="455" y="377" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+channel
+</text>
+<path d="M101,337v10" fill="none" stroke="black"/>
+<path d="M112,342v5" fill="none" stroke="black"/>
+<path d="M124,342v5" fill="none" stroke="black"/>
+<path d="M135,342v5" fill="none" stroke="black"/>
+<path d="M146,342v5" fill="none" stroke="black"/>
+<path d="M158,337v10" fill="none" stroke="black"/>
+<path d="M169,342v5" fill="none" stroke="black"/>
+<path d="M180,342v5" fill="none" stroke="black"/>
+<path d="M192,342v5" fill="none" stroke="black"/>
+<path d="M203,342v5" fill="none" stroke="black"/>
+<path d="M214,337v10" fill="none" stroke="black"/>
+<path d="M226,342v5" fill="none" stroke="black"/>
+<path d="M237,342v5" fill="none" stroke="black"/>
+<path d="M248,342v5" fill="none" stroke="black"/>
+<path d="M260,342v5" fill="none" stroke="black"/>
+<path d="M271,337v10" fill="none" stroke="black"/>
+<path d="M282,342v5" fill="none" stroke="black"/>
+<path d="M294,342v5" fill="none" stroke="black"/>
+<path d="M305,342v5" fill="none" stroke="black"/>
+<path d="M317,342v5" fill="none" stroke="black"/>
+<path d="M328,337v10" fill="none" stroke="black"/>
+<path d="M339,342v5" fill="none" stroke="black"/>
+<path d="M351,342v5" fill="none" stroke="black"/>
+<path d="M362,342v5" fill="none" stroke="black"/>
+<path d="M373,342v5" fill="none" stroke="black"/>
+<path d="M385,337v10" fill="none" stroke="black"/>
+<path d="M396,342v5" fill="none" stroke="black"/>
+<path d="M407,342v5" fill="none" stroke="black"/>
+<path d="M419,342v5" fill="none" stroke="black"/>
+<path d="M430,342v5" fill="none" stroke="black"/>
+<path d="M441,337v10" fill="none" stroke="black"/>
+<path d="M453,342v5" fill="none" stroke="black"/>
+<path d="M464,342v5" fill="none" stroke="black"/>
+<path d="M475,342v5" fill="none" stroke="black"/>
+<path d="M487,342v5" fill="none" stroke="black"/>
+<path d="M498,337v10" fill="none" stroke="black"/>
+<path d="M101,337v10" fill="none" stroke="black"/>
+<path d="M89,342v5" fill="none" stroke="black"/>
+<path d="M78,342v5" fill="none" stroke="black"/>
+<path d="M67,342v5" fill="none" stroke="black"/>
+<path d="M55,342v5" fill="none" stroke="black"/>
+<path d="M498,337v10" fill="none" stroke="black"/>
+<text x="84" y="360" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+1000
+</text>
+<text x="141" y="360" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+2000
+</text>
+<text x="198" y="360" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+3000
+</text>
+<text x="254" y="360" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+4000
+</text>
+<text x="311" y="360" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+5000
+</text>
+<text x="368" y="360" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+6000
+</text>
+<text x="424" y="360" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+7000
+</text>
+<text x="481" y="360" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+8000
+</text>
+<path d="M55,347v-308" fill="none" stroke="black"/>
+<g transform="rotate(-90,24,88)">
+<text x="24" y="88" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+counts
+</text>
+</g>
+<path d="M69,347h-14" fill="none" stroke="black"/>
+<path d="M62,340h-7" fill="none" stroke="black"/>
+<path d="M62,333h-7" fill="none" stroke="black"/>
+<path d="M62,327h-7" fill="none" stroke="black"/>
+<path d="M69,320h-14" fill="none" stroke="black"/>
+<path d="M62,314h-7" fill="none" stroke="black"/>
+<path d="M62,307h-7" fill="none" stroke="black"/>
+<path d="M62,301h-7" fill="none" stroke="black"/>
+<path d="M69,294h-14" fill="none" stroke="black"/>
+<path d="M62,288h-7" fill="none" stroke="black"/>
+<path d="M62,281h-7" fill="none" stroke="black"/>
+<path d="M62,275h-7" fill="none" stroke="black"/>
+<path d="M69,268h-14" fill="none" stroke="black"/>
+<path d="M62,262h-7" fill="none" stroke="black"/>
+<path d="M62,255h-7" fill="none" stroke="black"/>
+<path d="M62,249h-7" fill="none" stroke="black"/>
+<path d="M69,242h-14" fill="none" stroke="black"/>
+<path d="M62,236h-7" fill="none" stroke="black"/>
+<path d="M62,229h-7" fill="none" stroke="black"/>
+<path d="M62,222h-7" fill="none" stroke="black"/>
+<path d="M69,216h-14" fill="none" stroke="black"/>
+<path d="M62,209h-7" fill="none" stroke="black"/>
+<path d="M62,203h-7" fill="none" stroke="black"/>
+<path d="M62,196h-7" fill="none" stroke="black"/>
+<path d="M69,190h-14" fill="none" stroke="black"/>
+<path d="M62,183h-7" fill="none" stroke="black"/>
+<path d="M62,177h-7" fill="none" stroke="black"/>
+<path d="M62,170h-7" fill="none" stroke="black"/>
+<path d="M69,164h-14" fill="none" stroke="black"/>
+<path d="M62,157h-7" fill="none" stroke="black"/>
+<path d="M62,151h-7" fill="none" stroke="black"/>
+<path d="M62,144h-7" fill="none" stroke="black"/>
+<path d="M69,138h-14" fill="none" stroke="black"/>
+<path d="M62,131h-7" fill="none" stroke="black"/>
+<path d="M62,125h-7" fill="none" stroke="black"/>
+<path d="M62,118h-7" fill="none" stroke="black"/>
+<path d="M69,112h-14" fill="none" stroke="black"/>
+<path d="M62,105h-7" fill="none" stroke="black"/>
+<path d="M62,98h-7" fill="none" stroke="black"/>
+<path d="M62,92h-7" fill="none" stroke="black"/>
+<path d="M69,85h-14" fill="none" stroke="black"/>
+<path d="M62,79h-7" fill="none" stroke="black"/>
+<path d="M62,72h-7" fill="none" stroke="black"/>
+<path d="M62,66h-7" fill="none" stroke="black"/>
+<path d="M69,59h-14" fill="none" stroke="black"/>
+<path d="M69,59h-14" fill="none" stroke="black"/>
+<path d="M62,53h-7" fill="none" stroke="black"/>
+<path d="M62,46h-7" fill="none" stroke="black"/>
+<path d="M62,40h-7" fill="none" stroke="black"/>
+<text x="44" y="353" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+0
+</text>
+<text x="36" y="326" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+20
+</text>
+<text x="36" y="300" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+40
+</text>
+<text x="36" y="274" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+60
+</text>
+<text x="36" y="248" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+80
+</text>
+<text x="28" y="222" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+100
+</text>
+<text x="28" y="196" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+120
+</text>
+<text x="28" y="170" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+140
+</text>
+<text x="28" y="144" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+160
+</text>
+<text x="28" y="118" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+180
+</text>
+<text x="28" y="92" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+200
+</text>
+<text x="28" y="66" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+220
+</text>
+<rect x="351" y="1" width="205" height="170" fill="#f2f2f2"/>
+<path d="M354,171v1h203v-168h-1v167z" fill="black"/>
+<path d="M351,171v-170h205v170h-205z" fill="none" stroke="black"/>
+<text x="409" y="16" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+Calibrazione
+</text>
+<path d="M351,18h205" fill="none" stroke="black"/>
+<text x="362" y="33" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+Entries 
+</text>
+<text x="508" y="33" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+ 8192
+</text>
+<text x="362" y="50" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+Mean  
+</text>
+<text x="500" y="50" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+   1005
+</text>
+<text x="362" y="67" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+RMS   
+</text>
+<text x="500" y="67" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+   1177
+</text>
+<text x="376" y="83" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+ / ndf 
+</text>
+<text x="370" y="78" fill="black" font-size="10" font-family="Helvetica" font-weight="bold">
+2
+</text>
+<text x="362" y="83" fill="black" font-size="14" font-family="Times">
+&#0967;
+</text>
+<text x="476" y="83" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+ 47.18 / 80
+</text>
+<text x="362" y="101" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+Prob  
+</text>
+<text x="496" y="101" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+ 0.9987
+</text>
+<text x="362" y="116" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+p0       
+</text>
+<text x="520" y="118" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+ 5.0
+</text>
+<text x="512" y="118" fill="black" font-size="14" font-family="Times">
+&#0769;
+</text>
+<text x="468" y="118" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+ 117.5 
+</text>
+<text x="362" y="133" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+p1       
+</text>
+<text x="523" y="135" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+ 0.1
+</text>
+<text x="515" y="135" fill="black" font-size="14" font-family="Times">
+&#0769;
+</text>
+<text x="470" y="135" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+  4112 
+</text>
+<text x="362" y="149" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+p2       
+</text>
+<text x="504" y="151" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+ 0.082
+</text>
+<text x="496" y="151" fill="black" font-size="14" font-family="Times">
+&#0769;
+</text>
+<text x="454" y="151" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+ 2.951 
+</text>
+<text x="362" y="167" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+p3       
+</text>
+<text x="504" y="168" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+ 0.153
+</text>
+<text x="496" y="168" fill="black" font-size="14" font-family="Times">
+&#0769;
+</text>
+<text x="451" y="168" fill="black" font-size="14" font-family="Helvetica" font-weight="bold">
+ 1.517 
+</text>
+<rect x="6" y="1" width="118" height="20" fill="#f2f2f2"/>
+<path d="M8,21v1h117v-18h-1v17z" fill="black"/>
+<path d="M6,21v-20h118v20h-118z" fill="none" stroke="black"/>
+<text x="18" y="18" fill="black" font-size="15" font-family="Helvetica" font-weight="bold">
+Calibrazione
+</text>
+</svg>

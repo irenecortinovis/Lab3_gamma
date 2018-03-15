@@ -1,0 +1,2 @@
+coarse 10
+fine 2.50

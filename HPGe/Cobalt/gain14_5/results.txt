@@ -1,0 +1,7 @@
+bias      FWHM peak 1       FWHM peak 2
+
+3500
+3600
+3700
+3900
+4000
