@@ -1,0 +1,10 @@
+*.o
+*.exe
+
+*.png
+*.jpeg
+*.jpg
+*.eps
+
+*.tex
+*.pdf
