@@ -36,38 +36,12 @@ void easyfit()
 	std::cout << "Total number of events: " << sumtot << std::endl;
 
 //------------------------------------------------------------------------------
-// funzione per il fit del picco di segnale
-
-	TF1* fitfunc = new TF1 ("fitfunc","gaus+[3]",3295,3320); //3373,3403 2977,3007
-	fitfunc -> SetNpx (100000);
-	fitfunc -> SetLineWidth (2);
-	fitfunc -> SetLineColor (kBlue);
-	fitfunc -> SetParameter (0, 20000);
-	fitfunc -> SetParameter (1, 3304.);
-	fitfunc -> SetParameter (2, 10.);
-	fitfunc -> SetParameter (3, 1000.);
-
-
-//------------------------------------------------------------------------------
 // 	fit e plot dell'istogramma
 
 	//histo_dat -> Fit("fitfunc","R");
 	histo_dat -> Draw();
 	c2->Print("spectrum.png");
 
-	double amplitude = fitfunc -> GetParameter (0)*fitfunc -> GetParameter (2)*TMath::Sqrt(2*TMath::Pi());
-	double err_amplitude = amplitude*TMath::Sqrt((fitfunc -> GetParError (0)/fitfunc -> GetParameter (0))**2 + (fitfunc -> GetParError (2)/fitfunc -> GetParameter (2))**2);
-	double mean = fitfunc -> GetParameter (1);
-	double err_mean = fitfunc -> GetParError (1);
-	double FWHM = fitfunc -> GetParameter (2)*2.35;
-	double err_FWHM = fitfunc -> GetParError (2)*2.35;
-
-	std::cout << "\n\n************************************************" << std::endl;
-	std::cout << "**	parametri fit			      **" << std::endl;
-	std::cout << "\nArea:   " << amplitude << " +/- " << err_amplitude << std::endl;
-	std::cout << "media:   " << mean << " +/- " << err_mean << std::endl;
-	std::cout << "FWHM:   " << FWHM << " +/- " << err_FWHM << std::endl;
-	std::cout << "************************************************" << std::endl;
 
 
 }

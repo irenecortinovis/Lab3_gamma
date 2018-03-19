@@ -60,8 +60,6 @@ void easyfit_peak2()
 	histo_dat -> Draw();
 	c2->Print("peak2.png");
 
-	double amplitude = fitfunc -> GetParameter (0)*fitfunc -> GetParameter (2)*TMath::Sqrt(2*TMath::Pi());
-	double err_amplitude = amplitude*TMath::Sqrt((fitfunc -> GetParError (0)/fitfunc -> GetParameter (0))**2 + (fitfunc -> GetParError (2)/fitfunc -> GetParameter (2))**2);
   double mean1 = fitfunc -> GetParameter (1);
   double mean2 = fitfunc -> GetParameter (4);
   double err_mean1 = fitfunc -> GetParError (1);
