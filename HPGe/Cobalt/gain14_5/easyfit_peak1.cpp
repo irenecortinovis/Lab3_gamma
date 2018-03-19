@@ -83,15 +83,17 @@ int main(){
   double err_FWHM2 = fitfunc -> GetParError (5)*2.35;
 
 
-  TF1* signalfunc = new TF1 ("signalfunc","(fitfunc - pol1)",minx,maxx);
+  /*TF1* signalfunc = new TF1 ("signalfunc","(fitfunc - pol1)",minx,maxx);
   signalfunc -> SetNpx (100000);
   signalfunc -> FixParameter(0, fitfunc -> GetParameter(6));
   signalfunc -> FixParameter(1, fitfunc -> GetParameter(7));
   double maximum = signalfunc->GetMaximum(minx,maxx);
+  std::cout << "maximum value \t" << maximum << std::endl;*/
+
+  double maximum = fitfunc->GetMaximum(minx,maxx);
   std::cout << "maximum value \t" << maximum << std::endl;
 
-
-  TF1* diffunc = new TF1 ("diffunc","abs(-[9] +signalfunc)",minx,maxx);
+  TF1* diffunc = new TF1 ("diffunc","abs(-[9] + fitfunc)",minx,maxx);
   diffunc -> SetNpx (100000);
   diffunc -> FixParameter(9,maximum*0.5);
   std::cout << "mean1\t" << mean1 << std::endl;
