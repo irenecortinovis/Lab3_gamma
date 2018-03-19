@@ -1,4 +1,4 @@
-void easyfit_peak1()
+void easyfit()
 {
 	gROOT->Reset();
 	gStyle -> SetOptFit (1111);
@@ -7,23 +7,22 @@ void easyfit_peak1()
 
 //------------------------------------------------------------------------------
 // creazione e riempimento istogramma
-   	TCanvas* c2 = new TCanvas ("c2", "c2", 1200, 800);
-	TH1F* histo_dat = new TH1F ("Peak 1","Peak 1",8192,1,8192);
+  TCanvas* c2 = new TCanvas ("c2", "c2", 1200, 800);
+	TH1F* histo_dat = new TH1F ("Spectrum","Spectrum",8192,1,8192);
 	histo_dat -> SetFillColor (kYellow);
 	histo_dat -> SetXTitle ("channel");
 	histo_dat -> SetYTitle ("counts");
 	histo_dat -> SetAxisRange (200,8192,"X");
 	//histo_dat -> SetAxisRange (0,1000,"X");
 
-	std::cout << "inserisci il nome del file da analizzare (default -> histo.dat):   " << std::endl;
-	data_file = "histo.dat";
-	//std::cin >> data_file;
-
-/*	if (data_file->Data() == "");
+  data_file = "histo.dat";
+  //std::cout << "inserisci il nome del file da analizzare (default -> histo.dat):   " << std::endl;
+  //std::cin >> data_file;
+  /*if (data_file->Data() == "");
 	{
 		data_file = "histo.dat";
-	}
-  */
+	}*/
+
 	int sumtot = 0;
 	std::ifstream input (data_file.Data(), std::ios::in);
 	for (int bin=1;bin<=8192;bin++)
@@ -39,28 +38,22 @@ void easyfit_peak1()
 //------------------------------------------------------------------------------
 // funzione per il fit del picco di segnale
 
-	TF1* fitfunc = new TF1 ("fitfunc","gaus(0) + gaus(3)",5885,5950); //3373,3403 2977,3007
+	TF1* fitfunc = new TF1 ("fitfunc","gaus+[3]",3295,3320); //3373,3403 2977,3007
 	fitfunc -> SetNpx (100000);
 	fitfunc -> SetLineWidth (2);
 	fitfunc -> SetLineColor (kBlue);
-	fitfunc -> SetParameters (6000,5897,5,1500,5902,10);
-
-
-	/*TF1* fitfunc = new TF1 ("fitfunc","crystalball",3718,3760); //3373,3403 2977,3007
-	fitfunc -> SetNpx (100000);
-	fitfunc -> SetLineWidth (2);
-	fitfunc -> SetLineColor (kBlue);*/
-
-
-
+	fitfunc -> SetParameter (0, 20000);
+	fitfunc -> SetParameter (1, 3304.);
+	fitfunc -> SetParameter (2, 10.);
+	fitfunc -> SetParameter (3, 1000.);
 
 
 //------------------------------------------------------------------------------
 // 	fit e plot dell'istogramma
 
-	histo_dat -> Fit("fitfunc","R");
+	//histo_dat -> Fit("fitfunc","R");
 	histo_dat -> Draw();
-	c2->Print("peak1.svg");
+	c2->Print("spectrum.png");
 
 	double amplitude = fitfunc -> GetParameter (0)*fitfunc -> GetParameter (2)*TMath::Sqrt(2*TMath::Pi());
 	double err_amplitude = amplitude*TMath::Sqrt((fitfunc -> GetParError (0)/fitfunc -> GetParameter (0))**2 + (fitfunc -> GetParError (2)/fitfunc -> GetParameter (2))**2);
@@ -75,5 +68,6 @@ void easyfit_peak1()
 	std::cout << "media:   " << mean << " +/- " << err_mean << std::endl;
 	std::cout << "FWHM:   " << FWHM << " +/- " << err_FWHM << std::endl;
 	std::cout << "************************************************" << std::endl;
+
 
 }
