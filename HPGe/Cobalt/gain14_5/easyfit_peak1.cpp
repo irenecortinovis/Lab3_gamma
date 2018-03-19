@@ -56,18 +56,13 @@ int main(){
   //------------------------------------------------------------------------------
   // funzione per il fit del picco di segnale
 
-	TF1* fitfunc = new TF1 ("fitfunc","gaus(0) + gaus(3) + pol1(6)",5885,5950); //3373,3403 2977,3007
+  int minx = 5880;
+  int maxx = 5950;
+	TF1* fitfunc = new TF1 ("fitfunc","gaus(0) + gaus(3) + pol1(6)",minx,maxx); //3373,3403 2977,3007
 	fitfunc -> SetNpx (100000);
 	fitfunc -> SetLineWidth (2);
 	fitfunc -> SetLineColor (kBlue);
 	fitfunc -> SetParameters (6000,5897,5,1500,5902,10,50,0);
-
-
-	/*TF1* fitfunc = new TF1 ("fitfunc","crystalball",3718,3760); //3373,3403 2977,3007
-	fitfunc -> SetNpx (100000);
-	fitfunc -> SetLineWidth (2);
-	fitfunc -> SetLineColor (kBlue);*/
-
 
 
   //------------------------------------------------------------------------------
@@ -75,6 +70,7 @@ int main(){
 
 	histo_dat -> Fit("fitfunc","R");
 	histo_dat -> Draw();
+  histo_dat->GetXaxis()->SetRange(5860,5940);
 	c2->Print("peak1.png");
 
   double mean1 = fitfunc -> GetParameter (1);
@@ -87,30 +83,29 @@ int main(){
   double err_FWHM2 = fitfunc -> GetParError (5)*2.35;
 
 
-  TF1* signalfunc = new TF1 ("signalfunc","(fitfunc - pol1)",5885,5950);
+  TF1* signalfunc = new TF1 ("signalfunc","(fitfunc - pol1)",minx,maxx);
   signalfunc -> SetNpx (100000);
   signalfunc -> FixParameter(0, fitfunc -> GetParameter(6));
   signalfunc -> FixParameter(1, fitfunc -> GetParameter(7));
-  double maximum = signalfunc->GetMaximum(5885,5950);
+  double maximum = signalfunc->GetMaximum(minx,maxx);
   std::cout << "maximum value \t" << maximum << std::endl;
 
 
-  TF1* diffunc = new TF1 ("diffunc","abs(-[9] +signalfunc)",5885,5950);
+  TF1* diffunc = new TF1 ("diffunc","abs(-[9] +signalfunc)",minx,maxx);
   diffunc -> SetNpx (100000);
   diffunc -> FixParameter(9,maximum*0.5);
   std::cout << "mean1\t" << mean1 << std::endl;
-  double minimumX1 = diffunc->GetMinimumX(5885,mean1);
-  double minimumX2 = diffunc->GetMinimumX(mean1,5950);
+  double minimumX1 = diffunc->GetMinimumX(minx,mean1);
+  double minimumX2 = diffunc->GetMinimumX(mean1,maxx);
   std::cout << "min sx \t " << minimumX1 << std::endl;
   std::cout << "min dx \t " << minimumX2 << std::endl;
 
-  TCanvas* c3 = new TCanvas ("c3", "c3", 1200, 800);
+  /*TCanvas* c3 = new TCanvas ("c3", "c3", 1200, 800);
   c3->Divide(1,2);
   c3->cd(1);
   signalfunc -> Draw();
   c3->cd(2);
-  diffunc -> Draw();
-
+  diffunc -> Draw();*/
 
 
   double FWHM_tot = fabs(minimumX2-minimumX1);
