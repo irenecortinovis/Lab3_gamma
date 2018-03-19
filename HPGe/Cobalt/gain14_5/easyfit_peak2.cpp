@@ -12,6 +12,7 @@ c++ -o easyfit_peak2.o ../easyfit_peak2.cpp `root-config --cflags --glibs`
 #include <TMath.h>
 #include <TStyle.h>
 #include <TApplication.h>
+#include <TPad.h>
 
 
 int main(){
@@ -56,18 +57,19 @@ int main(){
 // funzione per il fit del picco di segnale
 
 
-
-	TF1* fitfunc = new TF1 ("fitfunc","gaus(0) + gaus(3)",6695,6725);
+  int minx = 6695;
+  int maxx = 6725;
+	TF1* fitfunc = new TF1 ("fitfunc","gaus(0) + gaus(3)",minx,maxx);
 	fitfunc -> SetNpx (100000);
 	fitfunc -> SetLineWidth (2);
 	fitfunc -> SetLineColor (kBlue);
 	fitfunc -> SetParameters (6000,6706,5,1500,6709,10);
 
-	TF1* fitfuncgaus1 = new TF1 ("fitfunc","gaus",6695,6725); //3373,3403 2977,3007
+	/*TF1* fitfuncgaus1 = new TF1 ("fitfunc","gaus",6695,6725); //3373,3403 2977,3007
 	fitfuncgaus1 -> SetNpx (100000);
 	fitfuncgaus1 -> SetLineWidth (2);
 	fitfuncgaus1 -> SetLineColor (kBlue);
-	fitfuncgaus1 -> SetParameters (6000,6706,5);
+	fitfuncgaus1 -> SetParameters (6000,6706,5);*/
 
 
 //------------------------------------------------------------------------------
@@ -75,6 +77,7 @@ int main(){
 
 	histo_dat -> Fit("fitfunc","R");
 	histo_dat -> Draw();
+  histo_dat->GetXaxis()->SetRange(6660,6760);
 	c2->Print("peak2.png");
 
   double mean1 = fitfunc -> GetParameter (1);
@@ -87,13 +90,13 @@ int main(){
   double err_FWHM2 = fitfunc -> GetParError (5)*2.35;
 
 
-  double maximum = fitfunc->GetMaximum(6695,6725);
+  double maximum = fitfunc->GetMaximum(minx,maxx);
   //std::cout << "maximum value \t" << maximum << std::endl;
-  TF1* diffunc = new TF1 ("diffunc","abs(fitfunc - [0])",6695,6725);
+  TF1* diffunc = new TF1 ("diffunc","abs(fitfunc - [0])",minx,maxx);
   diffunc -> SetNpx (100000);
   diffunc -> FixParameter(0, maximum*0.5);
-  double minimumX1 = diffunc->GetMinimumX(6695,mean2);
-  double minimumX2 = diffunc->GetMinimumX(mean2,6725);
+  double minimumX1 = diffunc->GetMinimumX(minx,mean2);
+  double minimumX2 = diffunc->GetMinimumX(mean2,maxx);
   //std::cout << "min sx \t " << minimumX1 << std::endl;
   //std::cout << "min dx \t " << minimumX2 << std::endl;
 
@@ -103,9 +106,9 @@ int main(){
 
 
   // 	fit e plot dell'istogramma con una gaussiana
-  double sigma_gaus1 = fitfuncgaus1 -> GetParameter(2);
+  /*double sigma_gaus1 = fitfuncgaus1 -> GetParameter(2);
   double sigma_gaus1_err = fitfuncgaus1 -> GetParError(2);
-  std::cout << "FWHM single gaussian:\t" << sigma_gaus1*2.35 << std::endl;
+  std::cout << "FWHM single gaussian:\t" << sigma_gaus1*2.35 << std::endl;*/
 
   Grafica->Run();
 
