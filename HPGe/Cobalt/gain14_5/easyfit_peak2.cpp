@@ -13,6 +13,7 @@ c++ -o easyfit_peak2.o ../easyfit_peak2.cpp `root-config --cflags --glibs`
 #include <TStyle.h>
 #include <TApplication.h>
 #include <TPad.h>
+#include <TROOT.h>
 
 
 int main(int argc, char * argv[]){
@@ -21,6 +22,10 @@ int main(int argc, char * argv[]){
          exit(1);
   }
 
+  TString opt = argv[2];
+  if(opt == "r")
+  	gROOT->SetBatch(kTRUE);
+	
   TApplication* Grafica = new TApplication("Grafica", 0, NULL);
 
   gStyle -> SetOptFit (1111);
@@ -111,7 +116,6 @@ int main(int argc, char * argv[]){
   output << FWHM_tot;
   output.close();
 
-  TString opt = argv[2];
   if(opt != "r")		//opzione per evitare il Run() dell'applicazione
         Grafica->Run();
 
