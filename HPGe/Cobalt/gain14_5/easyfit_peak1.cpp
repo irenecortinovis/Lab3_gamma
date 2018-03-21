@@ -9,13 +9,19 @@
 #include <TMath.h>
 #include <TStyle.h>
 #include <TApplication.h>
+#include <TROOT.h>
 
 int main(int argc, char *argv[]) {
 	if(argc < 2) {
 		std::cout << "Inserisci il nome del file sorgente come argomento!" << std::endl;
 		exit(1);
 	}
+	
+  TString opt = argv[2];
+  if(opt == "r")
+  	gROOT->SetBatch(kTRUE);
 
+	
   TApplication* Grafica = new TApplication("Grafica", 0, NULL);
 	gStyle -> SetOptFit (1111);
 	int counts=0;
@@ -118,7 +124,6 @@ int main(int argc, char *argv[]) {
   output << FWHM_tot;
   output.close();
 
-  TString opt = argv[2];
   if(opt != "r")		//opzione per evitare il Run() dell'applicazione
   	Grafica->Run();
 
