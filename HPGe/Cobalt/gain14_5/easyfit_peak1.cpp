@@ -1,7 +1,4 @@
-/*
-compile with:
-c++ -o easyfit_peak1.o ../easyfit_peak1.cpp `root-config --cflags --glibs`
-*/
+/* compile with: c++ -o easyfit_peak1.o ../easyfit_peak1.cpp `root-config --cflags --glibs` */
 
 #include <iostream>
 #include <fstream>
@@ -13,13 +10,16 @@ c++ -o easyfit_peak1.o ../easyfit_peak1.cpp `root-config --cflags --glibs`
 #include <TStyle.h>
 #include <TApplication.h>
 
-
-int main(){
+int main(int argc, char *argv[]) {
+	if(argc < 2) {
+		std::cout << "Inserisci il nome del file sorgente come argomento!" << std::endl;
+		exit(1);
+	}
 
   TApplication* Grafica = new TApplication("Grafica", 0, NULL);
 	gStyle -> SetOptFit (1111);
 	int counts=0;
-	TString data_file;
+	TString data_file, result_file;
 
 
   //------------------------------------------------------------------------------
@@ -32,7 +32,9 @@ int main(){
 	histo_dat -> SetAxisRange (200,8192,"X");
 	//histo_dat -> SetAxisRange (0,1000,"X");
 
-  data_file = "histo.dat";
+  //data_file = "histo.dat";
+  data_file = argv[1];
+  result_file = "results.txt";
   //std::cout << "inserisci il nome del file da analizzare (default -> histo.dat):   " << std::endl;
   //std::cin >> data_file;
   /*if (data_file->Data() == "");
@@ -112,7 +114,13 @@ int main(){
 
   double FWHM_tot = fabs(minimumX2-minimumX1);
   std::cout << "FWHM double gaussian:\t" << FWHM_tot << std::endl;
+  std::ofstream output (result_file.Data(), std::ios::app);	//apro il file in modalità append per non sovrascriverne il contenuto
+  output << FWHM_tot;
+  output.close();
 
-  Grafica->Run();
+  TString opt = argv[2];
+  if(opt != "r")		//opzione per evitare il Run() dell'applicazione
+  	Grafica->Run();
 
+  return 0;
 }
