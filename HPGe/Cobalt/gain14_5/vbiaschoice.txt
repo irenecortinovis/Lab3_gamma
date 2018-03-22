@@ -1,0 +1,5 @@
+peak1 migliore su 4100 ma guadagno sul peak 2 a 3900 è maggiore dello 0.2% perso sul peak1.
+errore sulla FWHM è l'errore dell'algoritmo Brent's method GetMinimumX()
+la FWHM dipende anche dal numero di counts, che dipende dal tempo, ma abbiamo tenuto un intervallo di tempo fisso per ogni misura (quindi errore radice di n)
+in ogni caso cambia poco, quindi decidiamo 3900.
+misure sotto 3000 fanno schifo quindi bene.
