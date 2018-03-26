@@ -8,3 +8,5 @@
 
 *.tex
 *.pdf
+
+*results.txt
