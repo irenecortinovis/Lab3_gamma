@@ -64,13 +64,22 @@ int main(int argc, char *argv[]) {
   //------------------------------------------------------------------------------
   // funzione per il fit del picco di segnale
 
-  int minx = 5880;
-  int maxx = 5950;
+  int minx = 2490;
+  int maxx = 2560;
+
+  //double gaussian
 	TF1* fitfunc = new TF1 ("fitfunc","gaus(0) + gaus(3) + pol1(6)",minx,maxx); //3373,3403 2977,3007
 	fitfunc -> SetNpx (100000);
 	fitfunc -> SetLineWidth (2);
 	fitfunc -> SetLineColor (kBlue);
-	fitfunc -> SetParameters (6000,5897,5,1500,5902,10,50,0);
+	fitfunc -> SetParameters (6000,2521,5,1500,2525,10,50,0);
+
+  //single gaussian
+  /*TF1* fitfunc = new TF1 ("fitfunc","gaus(0)",minx,maxx);
+	fitfunc -> SetNpx (100000);
+	fitfunc -> SetLineWidth (2);
+	fitfunc -> SetLineColor (kBlue);
+	fitfunc -> SetParameters (6000,2521,5);*/
 
 
   //------------------------------------------------------------------------------
@@ -78,9 +87,10 @@ int main(int argc, char *argv[]) {
 
 	histo_dat -> Fit("fitfunc","R");
 	histo_dat -> Draw();
-  histo_dat->GetXaxis()->SetRange(5860,5940);
+  histo_dat->GetXaxis()->SetRange(minx,maxx);
 	c2->Print("peak1.png");
 
+  //if double gaussian
   double mean1 = fitfunc -> GetParameter (1);
   double mean2 = fitfunc -> GetParameter (4);
   double err_mean1 = fitfunc -> GetParError (1);
@@ -91,43 +101,44 @@ int main(int argc, char *argv[]) {
   double err_FWHM2 = fitfunc -> GetParError (5)*2.35;
 
 
-  std::cout << "mean1\t" << mean1 << "\t +- \t" << err_mean1 << std::endl;
-
-
-  /*TF1* signalfunc = new TF1 ("signalfunc","(fitfunc - pol1)",minx,maxx);
-  signalfunc -> SetNpx (100000);
-  signalfunc -> FixParameter(0, fitfunc -> GetParameter(6));
-  signalfunc -> FixParameter(1, fitfunc -> GetParameter(7));
-  double maximum = signalfunc->GetMaximum(minx,maxx);
-  std::cout << "maximum value \t" << maximum << std::endl;*/
-
   double maximum = fitfunc->GetMaximum(minx,maxx);
-  std::cout << "maximum value \t" << maximum << std::endl;
+  //std::cout << "maximum value \t" << maximum << std::endl;
   double maximumx = fitfunc->GetMaximumX(minx,maxx);
   std::cout << "x of maximum value \t" << maximumx << std::endl;
 
   TF1* diffunc = new TF1 ("diffunc","abs(-[9] + fitfunc)",minx,maxx);
   diffunc -> SetNpx (100000);
   diffunc -> FixParameter(9,maximum*0.5);
-  std::cout << "mean1\t" << mean1 << std::endl;
+  std::cout << "mean1\t" << mean1 << "\t +- \t" << err_mean1 << std::endl;
   double minimumX1 = diffunc->GetMinimumX(minx,mean1);
   double minimumX2 = diffunc->GetMinimumX(mean1,maxx);
   std::cout << "min sx \t " << minimumX1 << std::endl;
   std::cout << "min dx \t " << minimumX2 << std::endl;
 
-  /*TCanvas* c3 = new TCanvas ("c3", "c3", 1200, 800);
-  c3->Divide(1,2);
-  c3->cd(1);
-  signalfunc -> Draw();
-  c3->cd(2);
-  diffunc -> Draw();*/
-
-
   double FWHM_tot = fabs(minimumX2-minimumX1);
   std::cout << "FWHM double gaussian:\t" << FWHM_tot << std::endl;
+
   std::ofstream output (result_file.Data(), std::ios::app);	//apro il file in modalità append per non sovrascriverne il contenuto
-  output << FWHM_tot;
+  output << maximumx;
   output.close();
+
+  //if single gaussian
+  /*double mean1 = fitfunc -> GetParameter (1);
+  double err_mean1 = fitfunc -> GetParError (1);
+  double FWHM1 = fitfunc -> GetParameter (2)*2.35;
+  double err_FWHM1 = fitfunc -> GetParError (2)*2.35;
+
+  std::cout << "mean value:\t" << mean1 << "\t +- \t" << err_mean1 << std::endl;
+  std::cout << "FWHM single gaussian:\t" << FWHM1 << "\t +- \t" << err_mean1 << std::endl;
+
+  std::ofstream output (result_file.Data(), std::ios::app);	//apro il file in modalità append per non sovrascriverne il contenuto
+  output << mean1;
+  output.close();*/
+
+
+
+
+
 
   if(opt != "r")		//opzione per evitare il Run() dell'applicazione
   	Grafica->Run();

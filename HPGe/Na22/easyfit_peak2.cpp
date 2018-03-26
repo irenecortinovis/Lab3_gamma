@@ -67,13 +67,13 @@ int main(int argc, char * argv[]){
 // funzione per il fit del picco di segnale
 
 
-  int minx = 6695;
-  int maxx = 6725;
+  int minx = 6390;
+  int maxx = 6430;
 	TF1* fitfunc = new TF1 ("fitfunc","gaus(0) + gaus(3)",minx,maxx);
 	fitfunc -> SetNpx (100000);
 	fitfunc -> SetLineWidth (2);
 	fitfunc -> SetLineColor (kBlue);
-	fitfunc -> SetParameters (6000,6706,5,1500,6709,10);
+	fitfunc -> SetParameters (6000,6409,5,1500,6412,10);
 
 	/*TF1* fitfuncgaus1 = new TF1 ("fitfunc","gaus",6695,6725); //3373,3403 2977,3007
 	fitfuncgaus1 -> SetNpx (100000);
@@ -87,7 +87,7 @@ int main(int argc, char * argv[]){
 
 	histo_dat -> Fit("fitfunc","R");
 	histo_dat -> Draw();
-  histo_dat->GetXaxis()->SetRange(6660,6760);
+  histo_dat->GetXaxis()->SetRange(minx,maxx);
 	c2->Print("peak2.png");
 
   double mean1 = fitfunc -> GetParameter (1);
@@ -99,7 +99,6 @@ int main(int argc, char * argv[]){
   double err_FWHM1 = fitfunc -> GetParError (2)*2.35;
   double err_FWHM2 = fitfunc -> GetParError (5)*2.35;
 
-  std::cout << "mean1\t" << mean1 << "\t +- \t" << err_mean1 << std::endl;
 
   double maximum = fitfunc->GetMaximum(minx,maxx);
   //std::cout << "maximum value \t" << maximum << std::endl;
@@ -109,6 +108,7 @@ int main(int argc, char * argv[]){
   TF1* diffunc = new TF1 ("diffunc","abs(fitfunc - [0])",minx,maxx);
   diffunc -> SetNpx (100000);
   diffunc -> FixParameter(0, maximum*0.5);
+  std::cout << "mean1\t" << mean1 << "\t +- \t" << err_mean1 << std::endl;
   double minimumX1 = diffunc->GetMinimumX(minx,mean2);
   double minimumX2 = diffunc->GetMinimumX(mean2,maxx);
   //std::cout << "min sx \t " << minimumX1 << std::endl;
@@ -117,7 +117,7 @@ int main(int argc, char * argv[]){
   double FWHM_tot = fabs(minimumX2-minimumX1);
   std::cout << "FWHM double gaussian:\t" << FWHM_tot << std::endl;
   std::ofstream output (result_file.Data(), std::ios::app);     //apro il file in modalità append per non sovrascriverne il contenuto
-  output << FWHM_tot;
+  output << maximumx;
   output.close();
 
   if(opt != "r")		//opzione per evitare il Run() dell'applicazione
