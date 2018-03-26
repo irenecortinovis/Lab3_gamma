@@ -1,0 +1,47 @@
+T_RISE (ns)	ERR_T_RISE (ns)		T_DECAY (micro s)	ERR_T_DECAY (micro s)		AMPLITUDE (mV)	ERR_AMPLITUDE (mV)
+
+202			1					37.0				0.4							116				1
+210			1					17.9				0.1							77.2			0.3
+116			2					6.2					0.1							23.3			0.2
+170			2					14.6				0.2							52.7			0.2
+158			2					17.4				0.1							74.7			0.3
+130			2					13.3				0.1							54.1			0.4
+224			1					27.3				0.1							94.4			0.6
+340			2					52.9				0.1							110				1
+388			2					53.3				0.1							107				1
+240			1					51.8				0.2							153				1
+
+
+t rise: dipende da punto di raccolta
+
+
+
+
+
+
+
+
+
+SHAPING TIME w1->w7 3 MICRO S
+
+
+T_RISE	T_DECAY (micro s) 	AMPLITUDE (V)
+
+6.5 	6.6					5.532	
+6.1		6.5					6.157
+6.1		6.5					5.814+0.344
+6.3		6.6					7.063+0.344
+6.3		6.6					7.063+0.344
+6.2		6.4					6.188+0.344
+6.2		6.4					6.190+0.344
+6.1		6.6					4.688+0.344	
+6.3		6.5					5.000+0.344		
+6.2		6.6					1.563+0.344		
+
+fattore 2?
+
+errori:
+errore di jona che misura male e irene approva molto
+oscilloscopio
+posizione particella decaduta: tempo di raccolta
+(ampiezza?)
