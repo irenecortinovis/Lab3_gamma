@@ -1,0 +1,6 @@
+sorgente		picco		picco_err	picco_teorico (keV)	picco_teorico_err (keV)
+Na-22 peak 1	2521.8		0.1			511.0				0.1
+Co-60 peak 1	5896.7		0.1			1173.2				0.1
+Na-22 peak 2	6409.8		0.1			1274.5				0.1
+Co-60 peak 2	6706.2		0.1			1332.5				0.1
+K-40			7354		1			1460.8				0.1
