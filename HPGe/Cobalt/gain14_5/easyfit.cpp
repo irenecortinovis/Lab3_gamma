@@ -14,7 +14,11 @@ c++ -o easyfit.o ../easyfit.cpp `root-config --cflags --glibs`
 #include <TApplication.h>
 
 
-int main(){
+int main(int argc, char * argv[]){
+  if(argc < 2) {
+  	std::cout << "Inserisci il nome del file sorgente come argomento!" << std::endl;
+        exit(1);
+  }
 
   TApplication* Grafica = new TApplication("Grafica", 0, NULL);
   //gStyle -> SetOptFit (1111);
@@ -31,7 +35,8 @@ int main(){
 	histo_dat -> SetAxisRange (200,8192,"X");
 	//histo_dat -> SetAxisRange (0,1000,"X");
 
-  data_file = "histo.dat";
+  //data_file = "histo.dat";
+  data_file = argv[1];
   //std::cout << "inserisci il nome del file da analizzare (default -> histo.dat):   " << std::endl;
   //std::cin >> data_file;
   /*if (data_file->Data() == "");
