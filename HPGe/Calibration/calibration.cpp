@@ -17,6 +17,7 @@ int main(){
 
 	TApplication* Grafica = new TApplication("Grafica", 0, NULL);
 	gStyle->SetOptFit(111);
+  gStyle->SetStatY(.45);
 
 	//create vectors for tgrapherrors
 	int n=5;
