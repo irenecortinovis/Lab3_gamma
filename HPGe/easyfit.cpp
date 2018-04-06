@@ -1,6 +1,6 @@
 /*
 compile with:
-g++ ../../easyfit_total.cpp  -o easyfit_total.o `root-config --cflags --glibs`
+g++ easyfit.cpp  -o easyfit.o `root-config --cflags --glibs`
 
 */
 
@@ -21,14 +21,16 @@ int main(int argc, char *argv[]) {
 		exit(1);
 	}
 
-  TString opt = argv[2];
-  if(opt == "r")
+  TString opt[2];
+  opt[0] = argv[2];
+  opt[1] = argv[3];
+  if(opt[0] == "r")
   	gROOT->SetBatch(kTRUE);
 
 
   TApplication* Grafica = new TApplication("Grafica", 0, NULL);
 	gStyle -> SetOptFit (1111);
-	TString data_file, result_file;
+	TString data_file, results_file;
 
 
 
@@ -83,6 +85,12 @@ int main(int argc, char *argv[]) {
 	histo_dat -> Draw();
 	c1->Print("spectrum.png");
 
+  std::ofstream output (results_file.Data(), std::ios::app);
+  if(opt[1] == "bias") {
+	results_file = "bias_choice.txt";
+	output.open (results_file.Data(), std::ios::app);
+  }
+
   //----------- CONFIG FILE ------------------------
   //  for each peak: 6 parameters
   //  minx, maxx, norm1, mean1, norm2, mean2
@@ -101,15 +109,17 @@ int main(int argc, char *argv[]) {
     peakfit->FitDiffFunc();
     peakfit->GetFWHMtot();
 
+    if(opt[1] == "bias") {
+	output << peakfit->FWHM_tot << "\t";
+    }
+
     delete peakfit;
   }
 
-
-
-
-
-
-
+  if(opt[1] == "bias") {
+	output << std::endl;
+	output.close();
+  }
 
 
   Grafica->Run();
