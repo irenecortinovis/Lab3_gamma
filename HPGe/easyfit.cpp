@@ -21,7 +21,7 @@ int main(int argc, char *argv[]) {
 		exit(1);
 	}
 
-  TString opt[2];
+  TString opt[2]; //HARDCODED
   opt[0] = argv[2];
   opt[1] = argv[3];
   if(opt[0] == "r")
@@ -50,8 +50,7 @@ int main(int argc, char *argv[]) {
   }
   std::cout << "Number of lines in text file: " << number_of_lines;
 
-  //int nPars = 6; //HARDCODED
-  int nPars = 4; //HARDCODED
+  int nPars = 7; //HARDCODED
   int nPeaks = number_of_lines/nPars;
 
 
@@ -92,32 +91,38 @@ int main(int argc, char *argv[]) {
 	output.open (results_file.Data(), std::ios::app);
   }
 
-  //----------- CONFIG FILE ------------------------
-  //  for each peak: 6 parameters
-  //  minx, maxx, norm1, mean1, norm2, mean2
+  //----------- CONFIG FILE -----------------------------------
+  //  for each peak: 7 parameters
+  //  ngaus (1 o 2), minx, maxx, norm1, mean1, norm2, mean2
   //  one for each line, no spacing lines
-  //------------------------------------------------
+  //  if only one gaus, will ignore the last two parameters
+  //-----------------------------------------------------------
 
   for(int i=0; i<nPeaks; i++)
   {
-    /*
     TH1F *histo_dat_copy = (TH1F*) histo_dat->Clone();
-    peak* peakfit = new peak(configdata.at(nPars*i), configdata.at(nPars*i+1), histo_dat_copy);
-    peakfit->FitDoubleGaus(configdata.at(nPars*i+2),configdata.at(nPars*i+3),configdata.at(nPars*i+4),configdata.at(nPars*i+5));
-    std::ostringstream name;
-    name << "peak" << i;
-    peakfit->DrawPeak(name.str());
-    peakfit->GetFitVariables();
-    peakfit->FitDiffFunc();
-    peakfit->GetFWHMtot();*/
+    peak* peakfit = new peak(configdata.at(nPars*i+1), configdata.at(nPars*i+2), histo_dat_copy);
 
-    TH1F *histo_dat_copy = (TH1F*) histo_dat->Clone();
-    peak* peakfit = new peak(configdata.at(nPars*i), configdata.at(nPars*i+1), histo_dat_copy);
-    peakfit->FitSingleGaus(configdata.at(nPars*i+2),configdata.at(nPars*i+3));
-    std::ostringstream name;
-    name << "peak" << i;
-    peakfit->DrawPeak(name.str());
-    peakfit->GetFitVariablesSingleGaus();
+    if (configdata.at(nPars*i) == 1)
+    {
+      peakfit->FitSingleGaus(configdata.at(nPars*i+3),configdata.at(nPars*i+4));
+      std::ostringstream name;
+      name << "peak" << i;
+      peakfit->DrawPeak(name.str());
+      peakfit->GetFitVariablesSingleGaus();
+    }
+    else if (configdata.at(nPars*i) == 2)
+    {
+      peakfit->FitDoubleGaus(configdata.at(nPars*i+3),configdata.at(nPars*i+4),configdata.at(nPars*i+5),configdata.at(nPars*i+6));
+      std::ostringstream name;
+      name << "peak" << i;
+      peakfit->DrawPeak(name.str());
+      peakfit->GetFitVariablesDoubleGaus();
+      peakfit->FitDiffFunc();
+      peakfit->GetFWHMtot();
+    }
+    else
+      std::cout << "ERROR number of gaussians" << std::endl;
 
     if(opt[1] == "bias") {
 	     output << peakfit->FWHM_tot << "\t";
