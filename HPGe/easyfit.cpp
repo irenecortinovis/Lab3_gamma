@@ -50,7 +50,8 @@ int main(int argc, char *argv[]) {
   }
   std::cout << "Number of lines in text file: " << number_of_lines;
 
-  int nPars = 6; //HARDCODED
+  //int nPars = 6; //HARDCODED
+  int nPars = 4; //HARDCODED
   int nPeaks = number_of_lines/nPars;
 
 
@@ -99,18 +100,27 @@ int main(int argc, char *argv[]) {
 
   for(int i=0; i<nPeaks; i++)
   {
+    /*
     TH1F *histo_dat_copy = (TH1F*) histo_dat->Clone();
     peak* peakfit = new peak(configdata.at(nPars*i), configdata.at(nPars*i+1), histo_dat_copy);
-    peakfit->FitFunc(configdata.at(nPars*i+2),configdata.at(nPars*i+3),configdata.at(nPars*i+4),configdata.at(nPars*i+5));
+    peakfit->FitDoubleGaus(configdata.at(nPars*i+2),configdata.at(nPars*i+3),configdata.at(nPars*i+4),configdata.at(nPars*i+5));
     std::ostringstream name;
     name << "peak" << i;
     peakfit->DrawPeak(name.str());
     peakfit->GetFitVariables();
     peakfit->FitDiffFunc();
-    peakfit->GetFWHMtot();
+    peakfit->GetFWHMtot();*/
+
+    TH1F *histo_dat_copy = (TH1F*) histo_dat->Clone();
+    peak* peakfit = new peak(configdata.at(nPars*i), configdata.at(nPars*i+1), histo_dat_copy);
+    peakfit->FitSingleGaus(configdata.at(nPars*i+2),configdata.at(nPars*i+3));
+    std::ostringstream name;
+    name << "peak" << i;
+    peakfit->DrawPeak(name.str());
+    peakfit->GetFitVariablesSingleGaus();
 
     if(opt[1] == "bias") {
-	output << peakfit->FWHM_tot << "\t";
+	     output << peakfit->FWHM_tot << "\t";
     }
 
     delete peakfit;

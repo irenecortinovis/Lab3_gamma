@@ -19,7 +19,18 @@ peak::~peak()
 
 // ----------------- METHODS --------------------
 
-void peak::FitFunc(double norm1, double mean1fit, double norm2, double mean2fit)
+void peak::FitSingleGaus(double norm1, double mean1fit)
+{
+  this->fitfunc = new TF1 ("fitgaus","gaus(0)",this->minx,this->maxx);
+	(this->fitfunc) -> SetNpx (100000);
+	(this->fitfunc) -> SetLineWidth (2);
+	(this->fitfunc) -> SetLineColor (kBlue);
+  (this->fitfunc) -> SetParameters (norm1,mean1fit,5);
+  (this->histo_dat) -> Fit("fitgaus","R");
+}
+
+
+void peak::FitDoubleGaus(double norm1, double mean1fit, double norm2, double mean2fit)
 {
   this->fitfunc = new TF1 ("fitfunc","gaus(0) + gaus(3) + pol1(6)",this->minx,this->maxx);
 	(this->fitfunc) -> SetNpx (100000);
@@ -38,7 +49,17 @@ void peak::DrawPeak(std::string namecanvas)
 	(this->c1)->Print(title.c_str());
 }
 
-void peak::GetFitVariables()
+void peak::GetFitVariablesSingleGaus()
+{
+  this->mean1 = (this->fitfunc) -> GetParameter (1);
+  this->err_mean1 = (this->fitfunc) -> GetParError (1);
+  this->FWHM1 = (this->fitfunc) -> GetParameter (2)*2.35;
+  this->err_FWHM1 = (this->fitfunc) -> GetParError (2)*2.35;
+
+  std::cout << "FWHM single gaussian:\t" << this->FWHM1 << std::endl;
+}
+
+void peak::GetFitVariablesDoubleGaus()
 {
   this->mean1 = (this->fitfunc) -> GetParameter (1);
   this->mean2 = (this->fitfunc) -> GetParameter (4);

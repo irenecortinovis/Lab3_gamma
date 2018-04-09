@@ -41,9 +41,11 @@ public:
   ~peak();
 
   //methods
-  void FitFunc(double norm1, double mean1fit, double norm2, double mean2fit);
+  void FitSingleGaus(double norm1, double mean1fit);
+  void FitDoubleGaus(double norm1, double mean1fit, double norm2, double mean2fit);
   void DrawPeak(std::string namecanvas="");
-  void GetFitVariables();
+  void GetFitVariablesDoubleGaus();
+  void GetFitVariablesSingleGaus();
   void FitDiffFunc();
   void GetFWHMtot();
 
