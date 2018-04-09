@@ -1,15 +1,15 @@
 void enc2(){
 
   TGraphErrors *encV0_05 = new TGraphErrors();
-  encV0_05->SetTitle("ENC^2 vs ST at V = 0.050; #tau (shaping time); ENC^2");
+  encV0_05->SetTitle("ENC^2 vs ST at V = 0.050; #tau (shaping time); ENC^{2}");
   encV0_05->SetMarkerColor(kBlue);
   encV0_05->SetMarkerStyle(7);
   TGraphErrors *encV0_075 = new TGraphErrors();
-  encV0_075->SetTitle("ENC^2 vs ST at V = 0.075; #tau (shaping time); ENC^2");
+  encV0_075->SetTitle("ENC^2 vs ST at V = 0.075; #tau (shaping time); ENC^{2}");
   encV0_075->SetMarkerColor(kBlue);
   encV0_075->SetMarkerStyle(7);
   TGraphErrors *encV0_1 = new TGraphErrors();
-  encV0_1->SetTitle("ENC^2 vs ST at V = 0.100; #tau (shaping time); ENC^2");
+  encV0_1->SetTitle("ENC^2 vs ST at V = 0.100; #tau (shaping time); ENC^{2}");
   encV0_1->SetMarkerColor(kBlue);
   encV0_1->SetMarkerStyle(7);
 
@@ -75,15 +75,19 @@ void enc2(){
 
   gStyle->SetOptFit(1111);
 
-  TF1 *enc_fit = new TF1("enc^2 fit","[0]/x+[1]*x");
+  TF1 *enc_fit = new TF1("enc^2 fit","[0]/x+[1]*x+[2]");
+  enc_fit->SetNpx(1000);
   enc_fit->SetLineColor(kRed);
   enc_fit->SetParNames("aC^{2}","bI_{fuga}");
+  enc_fit->SetParameter(2,0);
 
-  TCanvas *c1 = new TCanvas("enc2_V0_01","enc2_V0_01",400,400);
+  TCanvas *c1 = new TCanvas("enc2_V0_1","enc2_V0_1",400,400);
   encV0_1->Fit(enc_fit);
   encV0_1->Draw("ape");
   enc_fit->Draw("same");
-  c1->Print("enc2_V0_01.png");
+  c1->Print("enc2_V0_1.png");
+
+  cout << "\nST0_1 = " << enc_fit->GetMinimumX() << "\n" << endl;
 
   TCanvas *c2 = new TCanvas("enc2_V0_075","enc2_V0_075",400,400);
   encV0_075->Fit(enc_fit);
@@ -91,10 +95,14 @@ void enc2(){
   enc_fit->Draw("same");
   c2->Print("enc2_V0_075.png");
 
+  cout << "\nST0_075 = " << enc_fit->GetMinimumX() << "\n" << endl;
+
   TCanvas *c3 = new TCanvas("enc2_V0_05","enc2_V0_05",400,400);
   encV0_05->Fit(enc_fit);
   encV0_05->Draw("ape");
   enc_fit->Draw("same");
   c3->Print("enc2_V0_05.png");
+
+  cout << "\nST0_05 = " << enc_fit->GetMinimumX() << "\n" << endl;
 
 }
