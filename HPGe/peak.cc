@@ -25,7 +25,7 @@ void peak::FitSingleGaus(double norm1, double mean1fit)
 	(this->fitfunc) -> SetNpx (100000);
 	(this->fitfunc) -> SetLineWidth (2);
 	(this->fitfunc) -> SetLineColor (kBlue);
-  (this->fitfunc) -> SetParameters (norm1,mean1fit,5);
+  (this->fitfunc) -> SetParameters (norm1,mean1fit,3);
   (this->histo_dat) -> Fit("fitgaus","R");
 }
 
@@ -56,7 +56,7 @@ void peak::GetFitVariablesSingleGaus()
   this->FWHM1 = (this->fitfunc) -> GetParameter (2)*2.35;
   this->err_FWHM1 = (this->fitfunc) -> GetParError (2)*2.35;
 
-  std::cout << "FWHM single gaussian:\t" << this->FWHM1 << std::endl;
+  std::cout << "FWHM single gaussian:\t" << this->FWHM1 << " +- " << this->err_FWHM1 << std::endl;
 }
 
 void peak::GetFitVariablesDoubleGaus()
