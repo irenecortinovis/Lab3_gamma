@@ -1,0 +1,6 @@
+ADC Conversions Number : 9076444
+Time (ms) : 334609195
+Live Time (ms) : 334575376
+
+Hit any key to exit...
+N957 Stop Acquisition : Ok
