@@ -1,7 +1,6 @@
 /*
 compile with:
 g++ easyfit.cpp  -o easyfit.o `root-config --cflags --glibs`
-
 */
 
 #include "peak.cc"
@@ -87,7 +86,7 @@ int main(int argc, char *argv[]) {
 
   std::ofstream output (results_file.Data(), std::ios::app);
   if(opt[1] == "bias") {
-	results_file = "bias_choice.txt";
+	results_file = "../FWHM_vs_vbias.txt";
 	output.open (results_file.Data(), std::ios::app);
   }
 
@@ -135,8 +134,9 @@ int main(int argc, char *argv[]) {
 	output << std::endl;
 	output.close();
   }
+  else {
+	Grafica->Run();
+  }
 
-
-  Grafica->Run();
   return 0;
 }
