@@ -90,6 +90,11 @@ int main(int argc, char *argv[]) {
 	output.open (results_file.Data(), std::ios::app);
   }
 
+  if(opt[1] == "enc") {
+	results_file = "../../ENC_vs_ST.txt";
+	output.open (results_file.Data(), std::ios::app);
+  }
+
   //----------- CONFIG FILE -----------------------------------
   //  for each peak: 7 parameters
   //  ngaus (1 o 2), minx, maxx, norm1, mean1, norm2, mean2
@@ -126,12 +131,14 @@ int main(int argc, char *argv[]) {
     if(opt[1] == "bias") {
 	     output << peakfit->FWHM_tot << "\t";
     }
+    if(opt[1] == "enc") {
+	     output << peakfit->FWHM1 << "\t";
+    }
 
     delete peakfit;
   }
 
-  if(opt[1] == "bias") {
-	output << std::endl;
+  if(opt[1] == "bias" || opt[1] == "enc") {
 	output.close();
   }
   else {
