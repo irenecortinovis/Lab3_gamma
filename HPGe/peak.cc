@@ -96,3 +96,10 @@ void peak::GetFWHMtot()
   this->FWHM_tot = fabs(minimumX2-minimumX1);
   std::cout << "FWHM double gaussian:\t" << this->FWHM_tot << std::endl;
 }
+
+
+void peak::GetIntegral(int binmin, int binmax)
+{
+  double integrale = (this->histo_dat)->Integral(binmin, binmax);
+  std::cout << "Integral:\t" << integrale << std::endl;
+}

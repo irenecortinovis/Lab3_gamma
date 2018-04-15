@@ -48,6 +48,7 @@ public:
   void GetFitVariablesSingleGaus();
   void FitDiffFunc();
   void GetFWHMtot();
+  void GetIntegral(int binmin, int binmax);
 
 };
 

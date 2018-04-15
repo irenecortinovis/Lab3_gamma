@@ -124,6 +124,8 @@ int main(int argc, char *argv[]) {
     else
       std::cout << "ERROR number of gaussians" << std::endl;
 
+    peakfit->GetIntegral(configdata.at(nPars*i+1),configdata.at(nPars*i+2));
+
     if(opt[1] == "bias") {
 	     output << peakfit->FWHM_tot << "\t";
     }
