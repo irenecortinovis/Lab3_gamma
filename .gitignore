@@ -10,3 +10,5 @@
 *.pdf
 
 *results.txt
+*FWHM_vs_vbias.txt
+*ENC_vs_ST.txt

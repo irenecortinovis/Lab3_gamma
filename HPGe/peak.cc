@@ -53,7 +53,7 @@ void peak::GetFitVariablesSingleGaus()
 {
   this->mean1 = (this->fitfunc) -> GetParameter (1);
   this->err_mean1 = (this->fitfunc) -> GetParError (1);
-  this->FWHM1 = (this->fitfunc) -> GetParameter (2)*2.35;
+  this->FWHM1 = fabs((this->fitfunc) -> GetParameter (2)*2.35);
   this->err_FWHM1 = (this->fitfunc) -> GetParError (2)*2.35;
 
   std::cout << "FWHM single gaussian:\t" << this->FWHM1 << " +- " << this->err_FWHM1 << std::endl;
