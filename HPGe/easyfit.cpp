@@ -29,7 +29,7 @@ int main(int argc, char *argv[]) {
 
   TApplication* Grafica = new TApplication("Grafica", 0, NULL);
 	gStyle -> SetOptFit (1111);
-	TString data_file, results_file;
+	TString data_file, back_file, results_file;
 
 
 
@@ -65,6 +65,12 @@ int main(int argc, char *argv[]) {
 	histo_dat -> SetYTitle ("counts");
 	histo_dat -> SetAxisRange (200,8192,"X");
 
+  TH1F* histo_back = new TH1F ("Background","Background",8192,1,8192);
+  histo_back -> SetFillColor (kYellow);
+  histo_back -> SetXTitle ("channel");
+  histo_back -> SetYTitle ("counts");
+  histo_back -> SetAxisRange (200,8192,"X");
+
   data_file = argv[1];
 
   int counts = 0;
@@ -93,6 +99,24 @@ int main(int argc, char *argv[]) {
   if(opt[1] == "enc") {
 	results_file = "../../ENC_vs_ST.txt";
 	output.open (results_file.Data(), std::ios::app);
+  }
+
+  if(opt[1] == "att") {
+    std::cout << "Input background file: " << std::endl;
+    std::cin >> back_file;
+
+    int backcounts = 0;
+
+    std::ifstream backinput (back_file.Data(), std::ios::in);
+    for (int bin=1;bin<=8192;bin++)
+    {
+      backinput >> backcounts;
+      histo_back -> Fill (bin,backcounts);
+    }
+    backinput.close ();
+
+    results_file = "../../Attenuation.txt";
+  	output.open (results_file.Data(), std::ios::app);
   }
 
   //----------- CONFIG FILE -----------------------------------
@@ -128,19 +152,27 @@ int main(int argc, char *argv[]) {
     else
       std::cout << "ERROR number of gaussians" << std::endl;
 
-    peakfit->GetIntegral(configdata.at(nPars*i+1),configdata.at(nPars*i+2));
-
     if(opt[1] == "bias") {
 	     output << peakfit->FWHM_tot << "\t";
     }
     if(opt[1] == "enc") {
 	     output << peakfit->FWHM1 << "\t";
     }
+    if(opt[1] == "att") {
+      double data_counts = peakfit->GetIntegral(configdata.at(nPars*i+1),configdata.at(nPars*i+2));
+      double back_counts = histo_back->Integral(configdata.at(nPars*i+1),configdata.at(nPars*i+2));
+      //std::cout << "Signal + background counts:\t" << data_counts << std::endl;
+      //std::cout << "Background counts:\t" << back_counts << std::endl;
+      double integral = data_counts - back_counts;
+      std::cout << "Integral signal:\t" << integral << std::endl;
+
+      output << integral << "\t";
+    }
 
     delete peakfit;
   }
 
-  if(opt[1] == "bias" || opt[1] == "enc") {
+  if(opt[1] == "bias" || opt[1] == "enc" || opt[1] == "att") {
 	output.close();
   }
   else {

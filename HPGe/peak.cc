@@ -98,8 +98,8 @@ void peak::GetFWHMtot()
 }
 
 
-void peak::GetIntegral(int binmin, int binmax)
+double peak::GetIntegral(int binmin, int binmax)
 {
-  double integrale = (this->histo_dat)->Integral(binmin, binmax);
-  std::cout << "Integral:\t" << integrale << std::endl;
+  return (this->histo_dat)->Integral(binmin, binmax);
+  //std::cout << "Integral:\t" << integrale << std::endl;
 }
