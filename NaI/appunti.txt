@@ -1,0 +1,4 @@
+Il segnale dipende dal numero di portatori di segnale e dall'energia spesa per produrre i portatori. Non tutta l'energia del gamma va in produzione di elettrone-buca. Ci sono altri canali di disspazione.
+La statistica con cui vengono prodotte le coppie è poissoniana. Se ho un gamma di 1 MeV e un energy gap di 1 eV posso produrre 10^6 coppie con fluttuazioni statistiche poissoniane -> dN = 10^3
+Inoltre va considerato il tempo di scintillazione e il tempo di raccolta. Se il cristallo ha un tempo di raccolta troppo lungo, ci può essere raccolta incompleta.
+Il rapporto spalla Compton-picco sarà maggiore perché diminuendo i conteggi di picco (sbrodolati) ha più peso la spalla.
