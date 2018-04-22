@@ -96,6 +96,11 @@ int main(int argc, char *argv[]) {
 	output.open (results_file.Data(), std::ios::app);
   }
 
+  if(opt[1] == "bias_nai") {
+	results_file = "../../FWHM_vs_vbias.txt";
+	output.open (results_file.Data(), std::ios::app);
+  }
+
   if(opt[1] == "enc") {
 	results_file = "../../ENC_vs_ST.txt";
 	output.open (results_file.Data(), std::ios::app);
@@ -155,6 +160,10 @@ int main(int argc, char *argv[]) {
     if(opt[1] == "bias") {
 	     output << peakfit->FWHM_tot << "\t";
     }
+    if(opt[1] == "bias_nai") {
+	     output << peakfit->FWHM1 << "\t";
+	     output << peakfit->err_FWHM1 << "\t";
+    }
     if(opt[1] == "enc") {
 	     output << peakfit->FWHM1 << "\t";
     }
@@ -172,7 +181,7 @@ int main(int argc, char *argv[]) {
     delete peakfit;
   }
 
-  if(opt[1] == "bias" || opt[1] == "enc" || opt[1] == "att") {
+  if(opt[1] == "bias" || opt[1] == "bias_nai" || opt[1] == "enc" || opt[1] == "att") {
 	output.close();
   }
   else {
