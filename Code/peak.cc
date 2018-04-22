@@ -21,11 +21,11 @@ peak::~peak()
 
 void peak::FitSingleGaus(double norm1, double mean1fit)
 {
-  this->fitfunc = new TF1 ("fitgaus","gaus(0)",this->minx,this->maxx);
+  this->fitfunc = new TF1 ("fitgaus","gaus(0) + [3]",this->minx,this->maxx);
 	(this->fitfunc) -> SetNpx (100000);
 	(this->fitfunc) -> SetLineWidth (2);
 	(this->fitfunc) -> SetLineColor (kBlue);
-  (this->fitfunc) -> SetParameters (norm1,mean1fit,3);
+  (this->fitfunc) -> SetParameters (norm1,mean1fit,3,0);
   (this->histo_dat) -> Fit("fitgaus","R");
 }
 
@@ -101,5 +101,4 @@ void peak::GetFWHMtot()
 double peak::GetIntegral(int binmin, int binmax)
 {
   return (this->histo_dat)->Integral(binmin, binmax);
-  //std::cout << "Integral:\t" << integrale << std::endl;
 }
