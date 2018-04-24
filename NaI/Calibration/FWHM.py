@@ -7,7 +7,7 @@ args = (path + "/../../Code/easyfit.o", "histo.dat", "r", "bias_nai")
 #args = "/../../../Code/easyfit.o histo.dat r bias".split()
 
 file = open("FWHM_vs_vbias.txt","w")
-file.write("V_bias	gain	FWHM 1	err 1		FWHM 2	err 2\n")
+# file.write("V_bias  V_bias_err  gain    gain_err	FWHM 1	err 1		FWHM 2	err 2\n")
 
 for dir in reversed(list):
     if dir.find(".") >= 0:
@@ -23,8 +23,13 @@ for dir in list:
     for subdir in sublist:
         os.chdir(path)
         file = open("FWHM_vs_vbias.txt","a")
-        file.write(dir + "\t" + subdir + "\t")			#Scrivo bias e gain nelle prime due colonne
+        subdirtemp = subdir;
+        if subdir.find("_") >= 0:
+            subdirlist = subdir.split("_")
+            subdirtemp = str(int(subdirlist[0])+0.1*int(subdirlist[1]))
+        file.write(dir + "\t" + "1" + "\t" + subdirtemp + "\t" + "0" + "\t")			#Scrivo bias e gain nelle prime due colonne
         file.close()
+
         os.chdir(path + "/" + dir + "/" + subdir)
         popen = subprocess.run(args, stdout=subprocess.PIPE)	#Lancio easyfit.o sull'histo.dat della cartella 'dir/subdir'
         file = open(path + "/FWHM_vs_vbias.txt","a")
