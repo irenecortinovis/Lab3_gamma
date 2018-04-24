@@ -5,13 +5,12 @@ N957 Start Acquisition mode 1 : Ok
 Acquisition running ...
 
 Hit 'r' to reset histogram, any other to quit ...
-Warning: empty y range [0:0], adjusting to [-1:1]
 Any other to quit ...
-ADC Conversions Number : 2646502
-Time (ms) : 612676
-Live Time (ms) : 605331
+ADC Conversions Number : 2646120
+Time (ms) : 611493
+Live Time (ms) : 604145
 
 Hit any key to exit...
 N957 Stop Acquisition : Ok
 
-gain = 8x2 = 16
+gain = 64x(3+0.7*4) = 371.2

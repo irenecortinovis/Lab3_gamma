@@ -6,11 +6,15 @@ Acquisition running ...
 
 Hit 'r' to reset histogram, any other to quit ...
 Any other to quit ...
-ADC Conversions Number : 2627503
-Time (ms) : 611478
-Live Time (ms) : 604185
+ADC Conversions Number : 2629721
+Time (ms) : 612357
+Live Time (ms) : 605057
 
 Hit any key to exit...
 N957 Stop Acquisition : Ok
 
-gain = 4x1 = 4
+gain = 64x2 = 128
+
+
+
+troppo bello cercare vbias gain

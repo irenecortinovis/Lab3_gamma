@@ -6,11 +6,12 @@ Acquisition running ...
 
 Hit 'r' to reset histogram, any other to quit ...
 Any other to quit ...
-ADC Conversions Number : 2646120
-Time (ms) : 611493
-Live Time (ms) : 604145
+ADC Conversions Number : 2545123
+Time (ms) : 612028
+Live Time (ms) : 604960
 
 Hit any key to exit...
 N957 Stop Acquisition : Ok
 
-gain = 64x4 = 256
+
+gain = 4x0.1* = 12.3
