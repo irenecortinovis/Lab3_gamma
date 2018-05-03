@@ -1,8 +1,23 @@
 SHAPING TIME 0.5
 
-formula: deltaV/e - |(0 del segnale)|
-0 del segnale: -219 mV
 
-T_R(ns)	ERR_T_R(ns)	T_D(ns)	ERR_T_D(ns)	AMP_SIG(V)		ERR_AMP_SIG(V)	AMP_CAT(mV)		ERR_AMP_CAT(mV)	DELAY(ns)	DELAY_ERR(ns)
+formula: deltaV/e + (0 del segnale)
 
-1280		20				900			20				5.69			0.03			tes				tws				tes			tes
+
+T_Rs(ns)	ERR_T_Rs(ns)	T_Ds(ns)	ERR_T_Ds(ns)	AMP_SIG(V) 	ERR_AMP_SIG(V)
+T_Rp(mus)	ERR_T_Rp(mus)	T_Dp(mus)	ERR_T_Dp(mus)	AMP_PREAMP(mV)	ERR_AMP_PREAMP(mV)
+DELAY(ns)	DELAY_ERR(ns)
+
+1300		10		900		10		5.44		0.03
+1.7		0.4		59		1		131		1
+360		40
+
+
+1320		10		1040		10		3.69		0.02
+1.7		0.2		60		1		90.0		0.6
+350		40
+
+
+1300		10		910		10		5.31		0.03
+2.1		0.4		57		5		128		3
+360		20
