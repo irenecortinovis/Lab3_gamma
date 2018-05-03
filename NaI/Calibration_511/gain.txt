@@ -1,0 +1,2 @@
+Il gain utilizzato per avere il picco di 511 keV nella metà superiore dello spettro è:
+(3x0.7 + 3)x8 = 40.8
