@@ -1,0 +1,17 @@
+ADC Conversions Number : 0
+Time (ms) : 0
+Live Time (ms) : 0
+N957 Start Acquisition mode 0 : Ok
+Acquisition running ...
+
+Hit 'r' to reset histogram, any other to quit ...
+Warning: empty y range [0:0], adjusting to [-1:1]
+Any other to quit ...
+ADC Conversions Number : 156740
+Time (ms) : 1201072
+Live Time (ms) : 472
+
+Hit any key to exit...
+N957 Stop Acquisition : Ok
+
+Misura con gain x5, dopo aver ridotto la finestra energetica del gate.
