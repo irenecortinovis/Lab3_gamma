@@ -124,6 +124,11 @@ int main(int argc, char *argv[]) {
   	output.open (results_file.Data(), std::ios::app);
   }
 
+  if(opt[1] == "pet") {
+	results_file = "../Na22_correlation.txt";
+	output.open (results_file.Data(), std::ios::app);
+  }
+
   //----------- CONFIG FILE -----------------------------------
   //  for each peak: 7 parameters
   //  ngaus (1 o 2), minx, maxx, norm1, mean1, norm2, mean2
@@ -177,11 +182,17 @@ int main(int argc, char *argv[]) {
 
       output << integral << "\t";
     }
+    if(opt[1] == "pet") {
+    	//double integral = peakfit->GetIntegral(peakfit->mean1 - (2./2.35)*FWHM1, peakfit->mean1 + (2./2.35)*FWHM1);		//Integro entro 2 sigma
+    	double integral = peakfit->GetIntegral(5100, 5200);				//Integro tra 5100 e 5200 per tutti gli istogrammi (HARDCODED?)
+    	std::cout << "Integral signal + background:\t" << integral << std::endl;
+    	output << "\t" << integral << "\n";
+    }
 
     delete peakfit;
   }
 
-  if(opt[1] == "bias" || opt[1] == "bias_nai" || opt[1] == "enc" || opt[1] == "att") {
+  if(opt[1] == "bias" || opt[1] == "bias_nai" || opt[1] == "enc" || opt[1] == "att" || opt[1] == "pet") {
 	output.close();
   }
   else {

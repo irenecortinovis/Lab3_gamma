@@ -16,9 +16,7 @@ g++ correlation.cpp -o correlation.o `root-config --cflags --glibs`
 #include <string>
 #include <TLegend.h>
 
-
 int main(int argc, char **argv) {
-	//double alpha = argv[1];
 	TApplication* Grafica = new TApplication("Grafica", 0, NULL);
 	TGraphErrors *angles = new TGraphErrors("Na22_correlation.txt", "%lg %lg %lg");
 	double *x = angles->GetX();
@@ -32,20 +30,16 @@ int main(int argc, char **argv) {
 	fermidirac->SetParName(1, "#alpha");
 	fermidirac->SetParName(2, "#theta_{0}");
 	fermidirac->SetParameters(408710., 0.446, 14.);
-	//fermidirac->FixParameter(2, 14.);
 	cos2->SetParName(0, "N_{0}");
 	cos2->SetParName(1, "#omega");
 	cos2->SetParName(2, "N_{offset}");
 	cos2->SetParameters(410000., 0.1, 1800.);
-	//TLegend *legend = new TLegend(0.65, 0.65, 0.85, 0.85);
 	angles->SetTitle("Angular correlation 511 keV; #theta (#circ); N_{counts}");
 	angles->SetMarkerColor(kBlue);
 	angles->SetLineColor(kBlue);
 	angles->SetMarkerStyle(7);
 	angles->SetMarkerSize(5);
 
-
-	//legend->AddEntry(angles, "511keV", "l");
 	gStyle->SetOptFit(1111);
 
 	TCanvas *c1 = new TCanvas("counts_vs_theta","counts_vs_theta",800,600);
@@ -53,7 +47,6 @@ int main(int argc, char **argv) {
 	//fermidirac->Draw("same");
 	angles->Fit("fd", "R");
 	//angles->Fit("cos2", "R");
-	//legend->Draw();
 	c1->Print("counts_vs_theta.png");
 
 	Grafica->Run();
