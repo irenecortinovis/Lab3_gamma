@@ -1,0 +1,18 @@
+ADC Conversions Number : 0
+Time (ms) : 0
+Live Time (ms) : 0
+N957 Start Acquisition mode 0 : Ok
+Acquisition running ...
+
+Hit 'r' to reset histogram, any other to quit ...
+
+gnuplot> plot 'histo.dat' with histogram
+                               ^
+         line 0: warning: Skipping data file with no valid points
+Any other to quit ...
+ADC Conversions Number : 2192177
+Time (ms) : 6022057
+Live Time (ms) : 6602
+
+Hit any key to exit...
+N957 Stop Acquisition : Ok
