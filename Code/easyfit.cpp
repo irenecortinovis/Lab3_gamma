@@ -108,7 +108,8 @@ int main(int argc, char *argv[]) {
 
   if(opt[1] == "att") {
     std::cout << "Input background file: " << std::endl;
-    std::cin >> back_file;
+    //std::cin >> back_file;
+    back_file = "../../../../Background/Fondo_gain12-5/fondo_gain12-5.dat";
 
     int backcounts = 0;
 
@@ -120,7 +121,7 @@ int main(int argc, char *argv[]) {
     }
     backinput.close ();
 
-    results_file = "../../Attenuation.txt";
+    results_file = "../Attenuation.txt";
   	output.open (results_file.Data(), std::ios::app);
   }
 
@@ -180,7 +181,7 @@ int main(int argc, char *argv[]) {
       double integral = data_counts - back_counts;
       std::cout << "Integral signal:\t" << integral << std::endl;
 
-      output << integral << "\t";
+      output << "\t" << integral << "\n";
     }
     if(opt[1] == "pet") {
     	//double integral = peakfit->GetIntegral(peakfit->mean1 - (2./2.35)*FWHM1, peakfit->mean1 + (2./2.35)*FWHM1);		//Integro entro 2 sigma
