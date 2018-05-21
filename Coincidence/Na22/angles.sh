@@ -63,4 +63,10 @@ cd deg75
 cd ..
 #echo "3" >> Na22_correlation.txt
 
+echo -n "90" >> Na22_correlation.txt
+cd deg90
+../../../Code/easyfit.o histo.dat r pet
+cd ..
+#echo "3" >> Na22_correlation.txt
+
 cat Na22_correlation.txt
