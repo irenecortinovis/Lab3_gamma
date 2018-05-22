@@ -87,7 +87,7 @@ int main(int argc, char *argv[]) {
 	input.close ();
 	std::cout << "Total number of events: " << sumtot << std::endl;
 
-	histo_dat -> Draw();
+	histo_dat -> Draw("HIST");
 	c1->Print("spectrum.png");
 
   std::ofstream output (results_file.Data(), std::ios::app);
@@ -128,6 +128,11 @@ int main(int argc, char *argv[]) {
   if(opt[1] == "pet") {
 	 results_file = "../Na22_correlation.txt";
 	 output.open (results_file.Data(), std::ios::app);
+  }
+
+  if(opt[1] == "co60test" || opt[1] == "Co60test") {
+   results_file = "../Co60_test.txt";
+   output.open (results_file.Data(), std::ios::app);
   }
 
   if(opt[1] == "co60" || opt[1] == "Co60") {
@@ -194,16 +199,22 @@ int main(int argc, char *argv[]) {
     	std::cout << "Integral signal + background:\t" << integral << std::endl;
     	output << "\t" << integral << "\n";
     }
-    if(opt[1] == "co60" || opt[1] == "Co60") {
+    if(opt[1] == "co60test" || opt[1] == "Co60test") {
       double integral = peakfit->GetIntegral(6714, 6743);
       std::cout << "Integral signal + background:\t" << integral << std::endl;
       output << integral << "\n";
+    }
+    if(opt[1] == "co60" || opt[1] == "Co60") {
+      double integral = peakfit->GetIntegral(6714, 6743);
+      std::cout << "Integral signal + background:\t" << integral << std::endl;
+      output << "\t" << integral << "\n";
     }
 
     delete peakfit;
   }
 
-  if(opt[1] == "bias" || opt[1] == "bias_nai" || opt[1] == "enc" || opt[1] == "att" || opt[1] == "pet" || opt[1] == "co60" || opt[1] == "Co60") {
+  if(opt[1] == "bias" || opt[1] == "bias_nai" || opt[1] == "enc" || opt[1] == "att" || opt[1] == "pet" || opt[1] == "co60test" || opt[1] == "Co60test" || opt[1] == "co60" || opt[1] == "Co60") {
+  //if(opt[1] != "") {
 	output.close();
   }
   else {

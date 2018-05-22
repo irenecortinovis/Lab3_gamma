@@ -1,0 +1,25 @@
+ADC Conversions Number : 0
+Time (ms) : 0
+Live Time (ms) : 0
+N957 Start Acquisition mode 0 : Ok
+Acquisition running ...
+
+Hit 'r' to reset histogram, any other to quit ...
+
+gnuplot> plot 'histo.dat' with histogram
+                                        ^
+         line 0: Can't plot with an empty y range!
+
+
+gnuplot> plot 'histo.dat' with histogram
+                                        ^
+         line 0: Can't plot with an empty y range!
+
+Any other to quit ...
+ADC Conversions Number : 9075907
+Time (ms) : 14398689
+Live Time (ms) : 27341
+
+Hit any key to exit...
+N957 Stop Acquisition : Ok
+
