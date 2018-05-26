@@ -87,7 +87,7 @@ int main(int argc, char *argv[]) {
 	input.close ();
 	std::cout << "Total number of events: " << sumtot << std::endl;
 
-	histo_dat -> Draw("HIST");
+	histo_dat -> DrawCopy("HIST");
 	c1->Print("spectrum.png");
 
   std::ofstream output (results_file.Data(), std::ios::app);
@@ -138,6 +138,11 @@ int main(int argc, char *argv[]) {
   if(opt[1] == "co60" || opt[1] == "Co60") {
    results_file = "../Co60_correlation.txt";
    output.open (results_file.Data(), std::ios::app);
+  }
+
+  if(opt[1] == "co60ratio" || opt[1] == "Co60ratio") {
+   results_file = "../ratio.txt";
+   output.open (results_file.Data(), std::ios::out);
   }
 
   //----------- CONFIG FILE -----------------------------------
@@ -205,15 +210,26 @@ int main(int argc, char *argv[]) {
       output << integral << "\n";
     }
     if(opt[1] == "co60" || opt[1] == "Co60") {
-      double integral = peakfit->GetIntegral(6714, 6743);
+      //double integral = peakfit->GetIntegral(6714, 6743);
+      double integral = peakfit->GetIntegral(peakfit->minx, peakfit->maxx);
       std::cout << "Integral signal + background:\t" << integral << std::endl;
-      output << "\t" << integral << "\n";
+      output << "\t" << integral;
+      if(i == 1)
+      	output << "\n";
+    }
+    if(opt[1] == "co60ratio" || opt[1] == "Co60ratio") {
+      double integral2 = peakfit->GetIntegral(6710, 6737);
+      double integral1 = peakfit->GetIntegral(5900, 5924);
+      double ratio = integral2/integral1;
+      std::cout << "Ratio gamma2/gamma1:\t" << ratio << std::endl;
+      if(i == 0)
+        output << ratio << "\n";
     }
 
     delete peakfit;
   }
 
-  if(opt[1] == "bias" || opt[1] == "bias_nai" || opt[1] == "enc" || opt[1] == "att" || opt[1] == "pet" || opt[1] == "co60test" || opt[1] == "Co60test" || opt[1] == "co60" || opt[1] == "Co60") {
+  if(opt[1] == "bias" || opt[1] == "bias_nai" || opt[1] == "enc" || opt[1] == "att" || opt[1] == "pet" || opt[1] == "co60test" || opt[1] == "Co60test" || opt[1] == "co60" || opt[1] == "Co60" || opt[1] == "co60ratio" || opt[1] == "Co60ratio") {
   //if(opt[1] != "") {
 	output.close();
   }
