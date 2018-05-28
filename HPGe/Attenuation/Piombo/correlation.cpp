@@ -44,17 +44,17 @@ int main(int argc, char **argv) {
 
   TGraphErrors *graph_depths1 = new TGraphErrors(x_depth.size(), &x_depth[0], &y_peak1[0]);
 	for(int i = 0; i < x_depth.size(); i++) {
-		graph_depths1->SetPointError(i, 3, sqrt(y_peak1.at(i)));
+		graph_depths1->SetPointError(i, 0.1, sqrt(y_peak1.at(i)));
 	}
 
   TGraphErrors *graph_depths2 = new TGraphErrors(x_depth.size(), &x_depth[0], &y_peak2[0]);
 	for(int i = 0; i < x_depth.size(); i++) {
-		graph_depths2->SetPointError(i, 3, sqrt(y_peak2.at(i)));
+		graph_depths2->SetPointError(i, 0.1, sqrt(y_peak2.at(i)));
 	}
 
   TGraphErrors *graph_depths3 = new TGraphErrors(x_depth.size(), &x_depth[0], &y_peak3[0]);
 	for(int i = 0; i < x_depth.size(); i++) {
-		graph_depths3->SetPointError(i, 3, sqrt(y_peak3.at(i)));
+		graph_depths3->SetPointError(i, 0.1, sqrt(y_peak3.at(i)));
 	}
 
 	TF1 *expon1 = new TF1("fd1", "[0]*(exp(-[1]*x))", 0., 110.);
