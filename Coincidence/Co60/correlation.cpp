@@ -29,14 +29,15 @@ int main(int argc, char **argv) {
 	char buffer[20];
 	infile >> buffer >> buffer >> buffer;
 	std::cout << "Calcolo dell'errore con 2 metodi: statistica di Poisson e propagazione degli errori (errori su N1, N2, ratio)" << std::endl;
-	std::cout << "theta\tpoisson\tpropagation" << std::endl;
+	std::cout << "theta\tpoisson\tpropagation\tvariation" << std::endl;
 	while(infile.good()) {
 		infile >> theta[j] >> count1[j] >> count2[j];
 		count2_acc[j] = ratio*count1[j];
 		count2_corr[j] = count2[j] - count2_acc[j];		//Sottraggo dai conteggi del picco 2 le false coincidenze
 		err_acc[j] = count2_acc[j]*sqrt(pow(err_ratio/ratio, 2) + 1./count1[j]);
 		err_corr[j] = sqrt(count2[j] + pow(err_acc[j], 2));
-		std::cout << theta[j] << "\t" << sqrt(count2_corr[j]) << "\t" << err_corr[j] << std::endl;
+		std::cout << theta[j] << "\t" << sqrt(count2_corr[j]) << "\t" << err_corr[j];
+		std::cout << "\t\t+" << 100*(err_corr[j] - sqrt(count2_corr[j]))/sqrt(count2_corr[j]) << "%"<< std::endl;
 		j++;
 	}
 	infile.close();
