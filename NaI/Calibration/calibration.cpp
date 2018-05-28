@@ -64,7 +64,7 @@ int main(){
 	double b_fit_err = fitC1->GetParError(1);
 
 	gr->Draw("A*");
-	c1->Print("Calibration.eps", "eps");
+	c1->Print("Calibration.png", "png");
 
 	TLegend* legend1 = new TLegend(0.1,0.75,0.5,0.9);
 	legend1->AddEntry(fitC1,"I = ax + b","l");
