@@ -221,9 +221,11 @@ int main(int argc, char *argv[]) {
       double integral2 = peakfit->GetIntegral(6710, 6737);
       double integral1 = peakfit->GetIntegral(5900, 5924);
       double ratio = integral2/integral1;
+      double err_ratio = ratio*sqrt(1./integral1 + 1./integral2);	//errore del rapporto
       std::cout << "Ratio gamma2/gamma1:\t" << ratio << std::endl;
+      std::cout << "ErrRatio gamma2/gamma1:\t" << err_ratio << std::endl;
       if(i == 0)
-        output << ratio << "\n";
+        output << ratio << "\n" << err_ratio << "\n";
     }
 
     delete peakfit;
