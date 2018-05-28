@@ -4,7 +4,7 @@
 touch Co60_correlation.txt
 echo "Theta	peak1	peak2" > Co60_correlation.txt
 echo -n "0" >> Co60_correlation.txt
-cd deg00
+cd deg0_retake
 ../../../Code/easyfit.o histo.dat r Co60
 cd ..
 
@@ -59,4 +59,4 @@ cd ..
 
 cat Co60_correlation.txt
 echo "ratio = $(cat ratio.txt)"
-./correlation.o 
+./correlation.o
