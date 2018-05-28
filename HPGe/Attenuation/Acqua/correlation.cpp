@@ -17,6 +17,7 @@ g++ correlation.cpp -o correlation.o `root-config --cflags --glibs`
 #include <string>
 #include <vector>
 #include <TLegend.h>
+#include <cmath>
 
 int main(int argc, char **argv) {
 	TApplication* Grafica = new TApplication("Grafica", 0, NULL);
@@ -59,7 +60,7 @@ int main(int argc, char **argv) {
 
 	TF1 *expon1 = new TF1("fd1", "[0]*(exp(-[1]*x))", 0., 110.);
 	expon1->SetParName(0, "N_{0}");
-	expon1->SetParName(1, "#alpha");
+	expon1->SetParName(1, "#mu");
 	expon1->SetParameters(40000., 0.005);
 	graph_depths1->SetTitle("Attenuation for water peak1; #depth (#mm); N_{counts}");
 	graph_depths1->SetMarkerColor(kBlue);
@@ -69,7 +70,7 @@ int main(int argc, char **argv) {
 
   TF1 *expon2 = new TF1("fd2", "[0]*(exp(-[1]*x))", 0., 110.);
 	expon2->SetParName(0, "N_{0}");
-	expon2->SetParName(1, "#alpha");
+	expon2->SetParName(1, "#mu");
 	expon2->SetParameters(40000., 0.005);
 	graph_depths2->SetTitle("Attenuation for water peak2; #depth (#mm); N_{counts}");
 	graph_depths2->SetMarkerColor(kBlue);
@@ -79,7 +80,7 @@ int main(int argc, char **argv) {
 
   TF1 *expon3 = new TF1("fd3", "[0]*(exp(-[1]*x))", 0., 110.);
 	expon3->SetParName(0, "N_{0}");
-	expon3->SetParName(1, "#alpha");
+	expon3->SetParName(1, "#mu");
 	expon3->SetParameters(700., 0.005);
 	graph_depths3->SetTitle("Attenuation for water peak K40; #depth (#mm); N_{counts}");
 	graph_depths3->SetMarkerColor(kBlue);
@@ -88,7 +89,8 @@ int main(int argc, char **argv) {
 	graph_depths3->SetMarkerSize(5);
 
 
-	TCanvas *c1 = new TCanvas("counts_vs_depth","counts_vs_depth",800,600);
+
+	TCanvas *c1 = new TCanvas("counts_vs_depth","counts_vs_depth",1400,800);
   c1->Divide(3,1);
   c1->cd(1);
 	graph_depths1->Draw("ape");
@@ -100,6 +102,17 @@ int main(int argc, char **argv) {
   graph_depths3->Draw("ape");
 	graph_depths3->Fit("fd3", "R");
 
+  //Value of mu
+  double weight1 = 1/pow(expon1->GetParError(1),2);
+  double weight2 = 1/pow(expon2->GetParError(1),2);
+  double mu1 = expon1->GetParameter(1);
+  double mu2 = expon2->GetParameter(1);
+
+  double mu_final = (mu1*weight1+mu2*weight2)/(weight1+weight2);
+  double mu_final_err = sqrt(1/(weight1+weight2));
+  std::cout << "Mu = " << mu_final*1000 << "\t +- \t" << mu_final_err*1000 << "m-1" << std::endl;
+
+  
 	c1->Print("counts_vs_depth.png");
 
 	Grafica->Run();
