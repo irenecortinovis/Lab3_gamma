@@ -24,12 +24,12 @@ int main(int argc, char **argv) {
 		angles->SetPointError(i, 3, sqrt(x[i]));		//(i, ex, ey)
 	}
 
-	TF1 *fermidirac = new TF1("fd", "[0]/(exp([1]*(x-[2])) + 1)", 0., 30.);
-	TF1 *cos2 = new TF1("cos2", "[0]*cos([1]*x)**2 + [2]", 0., 30.);
+	TF1 *fermidirac = new TF1("fd", "[0]/(exp([1]*(x-[2])) + 1)", 180., 210.);
+	TF1 *cos2 = new TF1("cos2", "[0]*cos([1]*x)**2 + [2]", 180., 210.);
 	fermidirac->SetParName(0, "N_{0}");
 	fermidirac->SetParName(1, "#alpha");
 	fermidirac->SetParName(2, "#theta_{0}");
-	fermidirac->SetParameters(408710., 0.446, 14.);
+	fermidirac->SetParameters(408710., 0.446, 194.);
 	cos2->SetParName(0, "N_{0}");
 	cos2->SetParName(1, "#omega");
 	cos2->SetParName(2, "N_{offset}");
