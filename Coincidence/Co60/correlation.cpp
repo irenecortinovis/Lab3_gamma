@@ -15,6 +15,7 @@ g++ correlation.cpp -o correlation.o `root-config --cflags --glibs`
 #include <TROOT.h>
 #include <string>
 #include <TLegend.h>
+#include <cmath>
 
 int main(int argc, char **argv) {
 	const int n = 20;
@@ -42,11 +43,12 @@ int main(int argc, char **argv) {
 		angles->SetPointError(i, 3, sqrt(y[i]));		//(i, ex, ey)
 	}
 
-	TF1 *cos2 = new TF1("cos2", "[0]*cos([1]*x)**2 + [2]", 0., 30.);
+	TF1 *cos2 = new TF1("cos2", "[0]*([1]*(cos(x/180*pi))**2 + [2]*(cos(x/180*pi))**4) + [3]", 180., 270.);
 	cos2->SetParName(0, "N_{0}");
-	cos2->SetParName(1, "#omega");
-	cos2->SetParName(2, "N_{offset}");
-	cos2->SetParameters(410000., 0.1, 1800.);
+	cos2->SetParName(1, "a1");
+	cos2->SetParName(2, "a2");
+  cos2->SetParName(3, "offset");
+	cos2->SetParameters(1000, 0.125, 0.04, 6000);
 	angles->SetTitle("Angular correlation #gamma-#gamma ^{60}Co; #theta (#circ); N_{counts}");
 	angles->SetMarkerColor(kBlue);
 	angles->SetLineColor(kBlue);
@@ -57,7 +59,7 @@ int main(int argc, char **argv) {
 
 	TCanvas *c1 = new TCanvas("counts_vs_theta","counts_vs_theta",800,600);
 	angles->Draw("ape");
-	//angles->Fit("cos2", "R");
+	angles->Fit("cos2", "R");
 	c1->Print("counts_vs_theta.png");
 
 	Grafica->Run();
