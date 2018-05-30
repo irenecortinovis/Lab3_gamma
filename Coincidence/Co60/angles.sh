@@ -34,7 +34,7 @@ cd deg50
 cd ..
 
 echo -n "240" >> Co60_correlation.txt
-cd deg60
+cd deg60_retake
 ../../../Code/easyfit.o histo.dat r Co60
 cd ..
 
