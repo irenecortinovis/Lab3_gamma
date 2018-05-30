@@ -2,7 +2,7 @@
 import os, subprocess
 path = os.getcwd()
 list = os.listdir(path)
-args = (path + "/../easyfit.o", "histo.dat", "r", "bias")
+args = (path + "/../../Code/easyfit.o", "histo.dat", "r", "bias")
 
 #Or just:
 #args = "/../easyfit.o histo.dat r bias".split()
