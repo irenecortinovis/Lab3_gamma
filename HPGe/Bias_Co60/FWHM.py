@@ -8,7 +8,7 @@ args = (path + "/../../Code/easyfit.o", "histo.dat", "r", "bias")
 #args = "/../easyfit.o histo.dat r bias".split()
 
 file = open("FWHM_vs_vbias.txt","w")
-file.write("V_bias	FWHM 1	FWHM 2\n")
+file.write("V_bias  FWHM 1	err_FWHM1    FWHM 2  err_FWHM2\n")
 
 for dir in reversed(list):				#Seleziono solo le cartelle bias_****
     if dir.find(".") >= 0 or dir[0:4] != "bias":

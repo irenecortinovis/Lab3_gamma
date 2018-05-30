@@ -34,6 +34,7 @@ public:
   double maximumx;
 
   double FWHM_tot;
+  double err_FWHM_tot;
 
   //constructor
   peak(double minimum, double maximum, TH1F* histo);

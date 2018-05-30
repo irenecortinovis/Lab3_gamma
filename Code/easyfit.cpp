@@ -11,6 +11,8 @@ g++ easyfit.cpp  -o easyfit.o `root-config --cflags --glibs`
 #include <string>
 #include <sstream>
 #include <vector>
+#include <iomanip>
+
 
 
 
@@ -179,7 +181,9 @@ int main(int argc, char *argv[]) {
       std::cout << "ERROR number of gaussians" << std::endl;
 
     if(opt[1] == "bias") {
-	     output << peakfit->FWHM_tot << "\t";
+	     output << std::fixed << std::setprecision(2) << peakfit->FWHM_tot << "\t\t";
+       output << std::fixed << std::setprecision(2) << peakfit->err_FWHM_tot << "\t";
+
     }
     if(opt[1] == "bias_nai") {
 	     output << peakfit->FWHM1 << "\t";
