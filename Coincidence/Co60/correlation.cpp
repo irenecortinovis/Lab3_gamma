@@ -48,15 +48,19 @@ int main(int argc, char **argv) {
 	double *y = angles->GetY();
 	for(int i = 0; i < angles->GetN(); i++) {
 		angles->SetPointError(i, 3, err_corr[i]);		//(i, ex, ey)
-		std::cout << "(ex, ey) = " << angles->GetErrorX(i) << "\t" << angles->GetErrorY(i) << std::endl;
 	}
 
-	TF1 *cos2 = new TF1("cos2", "[0]*([1]*(cos(x/180*pi))**2 + [2]*(cos(x/180*pi))**4) + [3]", 180., 270.);
+	//TF1 *cos2 = new TF1("cos2", "[0]*([1]*(cos(x/180*pi))**2 + [2]*(cos(x/180*pi))**4) + [3]", 180., 270.);
+	TF1 *cos2 = new TF1("cos2", "[0]*([1]*(cos(pi*x/180))**2 + [2]*(cos(pi*x/180))**4 + 1)", 180., 270.);
 	cos2->SetParName(0, "N_{0}");
 	cos2->SetParName(1, "a1");
 	cos2->SetParName(2, "a2");
-  cos2->SetParName(3, "offset");
-	cos2->SetParameters(1000, 0.125, 0.04, 6000);
+	//cos2->SetParName(3, "offset");
+	//cos2->SetParameters(1000, 0.125, 0.04, 6000);
+	cos2->SetParameters(6400, 0.125, 0.04);
+	//cos2->FixParameter(0, count2_corr[7]);
+	cos2->SetParLimits(1, 0.118, 0.138);
+	cos2->SetParLimits(2, 0.038, 0.044);
 	angles->SetTitle("Angular correlation #gamma-#gamma ^{60}Co; #theta (#circ); N_{counts}");
 	angles->SetMarkerColor(kBlue);
 	angles->SetLineColor(kBlue);
