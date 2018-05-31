@@ -49,6 +49,15 @@ void peak::DrawPeak(std::string namecanvas)
 	(this->c1)->Print(title.c_str());
 }
 
+void peak::DrawSignal(std::string namecanvas)
+{
+  (this->c2) = new TCanvas(namecanvas.c_str(), namecanvas.c_str(), 1200, 800);
+  (this->histo_signal) -> Draw();
+  (this->histo_signal)->GetXaxis()->SetRange(this->minx,this->maxx);
+  std::string title = namecanvas + ".png";
+  (this->c2)->Print(title.c_str());
+}
+
 void peak::GetFitVariablesSingleGaus()
 {
   this->mean1 = (this->fitfunc) -> GetParameter (1);
@@ -122,4 +131,30 @@ void peak::Getmeantot()
 double peak::GetIntegral(int binmin, int binmax)
 {
   return (this->histo_dat)->Integral(binmin, binmax);
+}
+
+double peak::GetSignalIntegral()
+{
+  return (this->histo_signal)->Integral(this->minx, this->maxx);
+}
+
+void peak::GetSignal(std::string namehisto, int ngaus)
+{
+  this->histo_signal = new TH1F (namehisto.c_str(), namehisto.c_str(), this->maxx - this->minx, this->minx, this->maxx);
+  if(ngaus == 2) {
+    double m = (this->fitfunc)->GetParameter(7);
+    double q = (this->fitfunc)->GetParameter(6);
+    for(int x = this->minx; x < this->maxx; x++) {
+      double y = m*((double)x+0.5) + q;
+      (this->histo_signal)->SetBinContent(x - this->minx, (this->histo_dat)->GetBinContent(x) - y);
+    }
+  }
+
+  if(ngaus == 1) {
+    double y = (this->fitfunc)->GetParameter(3);
+    for(int x = this->minx; x < this->maxx; x++) {
+      (this->histo_signal)->SetBinContent(x - this->minx, (this->histo_dat)->GetBinContent(x) - y);
+    }
+  }
+  (this->histo_signal)->SetFillColor(kGreen);
 }

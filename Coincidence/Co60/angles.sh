@@ -13,10 +13,10 @@ cd deg10
 ../../../Code/easyfit.o histo.dat r Co60
 cd ..
 
-echo -n "200" >> Co60_correlation.txt
-cd deg20_retake2
-../../../Code/easyfit.o histo.dat r Co60
-cd ..
+#echo -n "200" >> Co60_correlation.txt
+#cd deg20_retake2
+#../../../Code/easyfit.o histo.dat r Co60
+#cd ..
 
 echo -n "210" >> Co60_correlation.txt
 cd deg30
@@ -34,7 +34,7 @@ cd deg50
 cd ..
 
 echo -n "240" >> Co60_correlation.txt
-cd deg60_retake2
+cd deg60_retake3
 ../../../Code/easyfit.o histo.dat r Co60
 cd ..
 

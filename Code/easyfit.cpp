@@ -168,20 +168,28 @@ int main(int argc, char *argv[]) {
     {
       peakfit->FitSingleGaus(configdata.at(nPars*i+3),configdata.at(nPars*i+4));
       std::ostringstream name;
+      std::ostringstream name_signal;
       name << "peak" << i;
+      name_signal << "signal" << i;
       peakfit->DrawPeak(name.str());
       peakfit->GetFitVariablesSingleGaus();
+      peakfit->GetSignal(name_signal.str(), 1);
+      peakfit->DrawSignal(name_signal.str());
     }
     else if (configdata.at(nPars*i) == 2)
     {
       peakfit->FitDoubleGaus(configdata.at(nPars*i+3),configdata.at(nPars*i+4),configdata.at(nPars*i+5),configdata.at(nPars*i+6));
       std::ostringstream name;
+      std::ostringstream name_signal;
       name << "peak" << i;
+      name_signal << "signal" << i;
       peakfit->DrawPeak(name.str());
       peakfit->GetFitVariablesDoubleGaus();
       peakfit->FitDiffFunc();
       peakfit->GetFWHMtot();
       peakfit->Getmeantot();
+      peakfit->GetSignal(name_signal.str(), 2);
+      peakfit->DrawSignal(name_signal.str());
     }
 
     else
@@ -223,8 +231,11 @@ int main(int argc, char *argv[]) {
     if(opt[1] == "co60" || opt[1] == "Co60") {
       //double integral = peakfit->GetIntegral(6714, 6743);
       double integral = peakfit->GetIntegral(peakfit->minx, peakfit->maxx);
-      std::cout << "Integral signal + background:\t" << integral << std::endl;
-      output << "\t" << integral;
+      double signal = peakfit->GetSignalIntegral();
+      std::cout << "Integral signal + background = \t" << integral << std::endl;
+      std::cout << "Integral signal = \t" << signal << std::endl;
+      std::cout << "Integral difference = \t" << integral - signal << std::endl;
+      output << "\t" << signal;
       if(i == 1)
       	output << "\n";
     }
