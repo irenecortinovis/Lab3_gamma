@@ -94,7 +94,9 @@ void peak::GetFWHMtot()
   std::cout << "min dx \t " << minimumX2 << std::endl;
 
   this->FWHM_tot = fabs(minimumX2-minimumX1);
-  std::cout << "FWHM double gaussian:\t" << this->FWHM_tot << std::endl;
+  this->err_FWHM_tot = (this->fitfunc)->GetParError(2)*2.35 + (this->fitfunc)->GetParError(5)*2.35;
+
+  std::cout << "FWHM double gaussian:\t" << this->FWHM_tot << "\t +- \t" << this->err_FWHM_tot << std::endl;
 }
 
 
