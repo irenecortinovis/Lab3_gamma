@@ -33,6 +33,8 @@ public:
   double maximum;
   double maximumx;
 
+  double mean_tot;
+  double err_mean_tot;
   double FWHM_tot;
   double err_FWHM_tot;
 
@@ -49,6 +51,7 @@ public:
   void GetFitVariablesSingleGaus();
   void FitDiffFunc();
   void GetFWHMtot();
+  void Getmeantot();
   double GetIntegral(int binmin, int binmax);
 
 };

@@ -147,7 +147,7 @@ int main(int argc, char *argv[]) {
    output.open (results_file.Data(), std::ios::out);
   }
 
-  if(opt[1] == "fano") {
+  if(opt[1] == "fanohpge" || opt[1] == "fanonai") {
   	results_file = "../FWHM_vs_Energy.txt";
 	output.open (results_file.Data(), std::ios::app);
   }
@@ -181,7 +181,9 @@ int main(int argc, char *argv[]) {
       peakfit->GetFitVariablesDoubleGaus();
       peakfit->FitDiffFunc();
       peakfit->GetFWHMtot();
+      peakfit->Getmeantot();
     }
+
     else
       std::cout << "ERROR number of gaussians" << std::endl;
 
@@ -236,16 +238,23 @@ int main(int argc, char *argv[]) {
       if(i == 0)
         output << ratio << "\n" << err_ratio << "\n";
     }
-    if(opt[1] == "fano") {
-    	output << peakfit->mean1 << "\t" << peakfit->FWHM_tot;		//valutare il centro del picco!!
-    	if(i+1 == nPeaks)
-    		output << "\n";
+    if(opt[1] == "fanohpge") {
+      output << peakfit->mean_tot / 5.09 << "\t" << peakfit->FWHM_tot / 5.09 << "\t"
+      << peakfit->err_mean_tot / 5.09 << "\t" << peakfit->err_FWHM_tot / 5.09;
+  		output << "\n";
     }
+    if(opt[1] == "fanonai") {
+      output << peakfit->mean_tot / 4.04 << "\t" << peakfit->FWHM_tot / 4.04 << "\t"
+      << peakfit->err_mean_tot / 4.04 << "\t" << peakfit->err_FWHM_tot / 4.04;
+  		output << "\n";
+    }
+
+
 
     delete peakfit;
   }
 
-  if(opt[1] == "bias" || opt[1] == "bias_nai" || opt[1] == "enc" || opt[1] == "att" || opt[1] == "pet" || opt[1] == "co60test" || opt[1] == "Co60test" || opt[1] == "co60" || opt[1] == "Co60" || opt[1] == "co60ratio" || opt[1] == "Co60ratio" || opt[1] == "fano") {
+  if(opt[1] == "bias" || opt[1] == "bias_nai" || opt[1] == "enc" || opt[1] == "att" || opt[1] == "pet" || opt[1] == "co60test" || opt[1] == "Co60test" || opt[1] == "co60" || opt[1] == "Co60" || opt[1] == "co60ratio" || opt[1] == "Co60ratio" || opt[1] == "fanohpge" || opt[1] == "fanonai") {
   //if(opt[1] != "") {
 	output.close();
   }

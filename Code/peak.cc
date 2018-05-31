@@ -52,11 +52,16 @@ void peak::DrawPeak(std::string namecanvas)
 void peak::GetFitVariablesSingleGaus()
 {
   this->mean1 = (this->fitfunc) -> GetParameter (1);
+  this->mean_tot = (this->fitfunc) -> GetParameter (1);
   this->err_mean1 = (this->fitfunc) -> GetParError (1);
+  this->err_mean_tot = (this->fitfunc) -> GetParError (1);
   this->FWHM1 = fabs((this->fitfunc) -> GetParameter (2)*2.35);
+  this->FWHM_tot = fabs((this->fitfunc) -> GetParameter (2)*2.35);
   this->err_FWHM1 = (this->fitfunc) -> GetParError (2)*2.35;
+  this->err_FWHM_tot = (this->fitfunc) -> GetParError (2)*2.35;
 
-  std::cout << "FWHM single gaussian:\t" << this->FWHM1 << " +- " << this->err_FWHM1 << std::endl;
+  std::cout << "FWHM single gaussian:\t" << this->FWHM_tot << " +- " << this->err_FWHM_tot << std::endl;
+  std::cout << "mean single gaussian:\t" << this->mean_tot << " +- " << this->err_mean_tot << std::endl;
 }
 
 void peak::GetFitVariablesDoubleGaus()
@@ -65,8 +70,8 @@ void peak::GetFitVariablesDoubleGaus()
   this->mean2 = (this->fitfunc) -> GetParameter (4);
   this->err_mean1 = (this->fitfunc) -> GetParError (1);
   this->err_mean2 = (this->fitfunc) -> GetParError (4);
-  this->FWHM1 = (this->fitfunc) -> GetParameter (2)*2.35;
-  this->FWHM2 = (this->fitfunc) -> GetParameter (5)*2.35;
+  this->FWHM1 = fabs((this->fitfunc) -> GetParameter (2)*2.35);
+  this->FWHM2 = fabs((this->fitfunc) -> GetParameter (5)*2.35);
   this->err_FWHM1 = (this->fitfunc) -> GetParError (2)*2.35;
   this->err_FWHM2 = (this->fitfunc) -> GetParError (5)*2.35;
 
@@ -94,9 +99,10 @@ void peak::GetFWHMtot()
   std::cout << "min dx \t " << minimumX2 << std::endl;
 
   this->FWHM_tot = fabs(minimumX2-minimumX1);
-  this->err_FWHM_tot = (this->fitfunc)->GetParError(2)*2.35 + (this->fitfunc)->GetParError(5)*2.35;
+  this->err_FWHM_tot = fabs((this->fitfunc)->GetParError(2)*2.35) + fabs((this->fitfunc)->GetParError(5)*2.35);
 
-  std::cout << "FWHM double gaussian:\t" << this->FWHM_tot << "\t +- \t" << this->err_FWHM_tot << std::endl;
+  std::cout << "FWHM double gaussian:\t" << this->FWHM_tot << " +- " << this->err_FWHM_tot << std::endl;
+  std::cout << "mean double gaussian:\t" << this->mean_tot << " +- " << this->err_mean_tot << std::endl;
 }
 
 

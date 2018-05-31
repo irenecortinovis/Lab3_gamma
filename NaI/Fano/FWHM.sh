@@ -4,15 +4,15 @@
 touch FWHM_vs_Energy.txt
 echo "Energy	err_Energy FWHM  err_FWHM" > FWHM_vs_Energy.txt
 cd Na22
-../../../Code/easyfit.o histo.dat r fanohpge
+../../../Code/easyfit.o histo.dat r fanonai
 cd ..
 
-cd K40
-../../../Code/easyfit.o histo.dat r fanohpge
+cd Th228
+../../../Code/easyfit.o histo.dat r fanonai
 cd ..
 
-cd Co60
-../../../Code/easyfit.o histo.dat r fanohpge
-cd ..
+#cd Co60
+#../../../Code/easyfit.o histo.dat r fanonai
+#cd ..
 
 cat FWHM_vs_Energy.txt
