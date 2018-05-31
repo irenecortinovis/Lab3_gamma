@@ -100,6 +100,19 @@ void peak::GetFWHMtot()
 }
 
 
+void peak::Getmeantot()
+{
+  this->mean_tot = (((this->fitfunc)->GetParameter(1)) * ((this->fitfunc)->GetParameter(0))
+  + ((this->fitfunc)->GetParameter(4)) * ((this->fitfunc)->GetParameter(3))) /
+  ((this->fitfunc)->GetParameter(0) + (this->fitfunc)->GetParameter(3));
+
+  this->err_mean_tot = (((this->fitfunc)->GetParError(1)) * ((this->fitfunc)->GetParameter(0))
+  + ((this->fitfunc)->GetParError(4)) * ((this->fitfunc)->GetParameter(3))) /
+  ((this->fitfunc)->GetParameter(0) + (this->fitfunc)->GetParameter(3));
+}
+
+
+
 double peak::GetIntegral(int binmin, int binmax)
 {
   return (this->histo_dat)->Integral(binmin, binmax);
