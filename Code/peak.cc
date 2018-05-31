@@ -43,7 +43,7 @@ void peak::FitDoubleGaus(double norm1, double mean1fit, double norm2, double mea
 void peak::DrawPeak(std::string namecanvas)
 {
   (this->c1) = new TCanvas(namecanvas.c_str(), namecanvas.c_str(), 1200, 800);
-  (this->histo_dat) -> Draw("HIST");
+  (this->histo_dat) -> Draw();
   (this->histo_dat)->GetXaxis()->SetRange(this->minx,this->maxx);
   std::string title = namecanvas + ".png";
 	(this->c1)->Print(title.c_str());
