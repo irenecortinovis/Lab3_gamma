@@ -111,7 +111,6 @@ void peak::GetFWHMtot()
   this->err_FWHM_tot = fabs((this->fitfunc)->GetParError(2)*2.35) + fabs((this->fitfunc)->GetParError(5)*2.35);
 
   std::cout << "FWHM double gaussian:\t" << this->FWHM_tot << " +- " << this->err_FWHM_tot << std::endl;
-  std::cout << "mean double gaussian:\t" << this->mean_tot << " +- " << this->err_mean_tot << std::endl;
 }
 
 
@@ -124,6 +123,9 @@ void peak::Getmeantot()
   this->err_mean_tot = (((this->fitfunc)->GetParError(1)) * ((this->fitfunc)->GetParameter(0))
   + ((this->fitfunc)->GetParError(4)) * ((this->fitfunc)->GetParameter(3))) /
   ((this->fitfunc)->GetParameter(0) + (this->fitfunc)->GetParameter(3));
+
+  std::cout << "mean double gaussian:\t" << this->mean_tot << " +- " << this->err_mean_tot << std::endl;
+
 }
 
 
