@@ -230,12 +230,19 @@ int main(int argc, char *argv[]) {
     }
     if(opt[1] == "co60" || opt[1] == "Co60") {
       //double integral = peakfit->GetIntegral(6714, 6743);
-      double integral = peakfit->GetIntegral(peakfit->minx, peakfit->maxx);
-      double signal = peakfit->GetSignalIntegral();
-      std::cout << "Integral signal + background = \t" << integral << std::endl;
-      std::cout << "Integral signal = \t" << signal << std::endl;
-      std::cout << "Integral difference = \t" << integral - signal << std::endl;
-      output << "\t" << signal;
+      std::cout << "minx = " << peakfit->minx << std::endl;
+      std::cout << "maxx = " << peakfit->maxx << std::endl;
+      //double integral = peakfit->GetIntegral(peakfit->minx, peakfit->maxx);
+      double signal = peakfit->GetSignalIntegral(peakfit->minx, peakfit->maxx);
+      double integral = 0;
+      if(i == 0)
+        integral = peakfit->GetIntegral(5900, 5924);
+      if(i == 1)
+        integral = peakfit->GetIntegral(6710, 6737);
+      //std::cout << "Integral signal + background = \t" << integral << std::endl;
+      //std::cout << "Integral signal = \t" << signal << std::endl;
+      //std::cout << "Integral difference = \t" << integral - signal << std::endl;
+      output << "\t" << signal << "\t" << integral;
       if(i == 1)
       	output << "\n";
     }

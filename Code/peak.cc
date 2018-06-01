@@ -135,9 +135,9 @@ double peak::GetIntegral(int binmin, int binmax)
   return (this->histo_dat)->Integral(binmin, binmax);
 }
 
-double peak::GetSignalIntegral()
+double peak::GetSignalIntegral(int binmin, int binmax)
 {
-  return (this->histo_signal)->Integral(this->minx, this->maxx);
+  return (this->histo_signal)->Integral(0., binmax - binmin);
 }
 
 void peak::GetSignal(std::string namehisto, int ngaus)

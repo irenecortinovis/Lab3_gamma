@@ -2,9 +2,9 @@
 #Script per generare il TGraph counts_vs_theta
 #Viene creato il file Co60_correlation.txt
 touch Co60_correlation.txt
-echo "Theta	peak1	peak2" > Co60_correlation.txt
+echo "Theta	peak1	peak2	sb1		sb2" > Co60_correlation.txt
 echo -n "180" >> Co60_correlation.txt
-cd deg0_retake
+cd deg00
 ../../../Code/easyfit.o histo.dat r Co60
 cd ..
 

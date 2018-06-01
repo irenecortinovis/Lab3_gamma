@@ -56,7 +56,7 @@ public:
   void GetFWHMtot();
   void Getmeantot();
   double GetIntegral(int binmin, int binmax);
-  double peak::GetSignalIntegral();
+  double GetSignalIntegral(int binmin, int binmax);
   void GetSignal(std::string namehisto="", int ngaus=0);
 
 };
