@@ -191,7 +191,18 @@ int main(int argc, char *argv[]) {
       peakfit->GetSignal(name_signal.str(), 2);
       peakfit->DrawSignal(name_signal.str());
     }
-
+    else if (configdata.at(nPars*i) == 3)
+    {
+      peakfit->FitStepGaus(configdata.at(nPars*i+3),configdata.at(nPars*i+4));
+      std::ostringstream name;
+      std::ostringstream name_signal;
+      name << "peak" << i;
+      name_signal << "signal" << i;
+      peakfit->DrawPeak(name.str());
+      peakfit->GetFitVariablesStepGaus();
+      peakfit->GetSignal(name_signal.str(), 3);
+      peakfit->DrawSignal(name_signal.str()); 
+    }
     else
       std::cout << "ERROR number of gaussians" << std::endl;
 
@@ -229,24 +240,15 @@ int main(int argc, char *argv[]) {
       output << integral << "\n";
     }
     if(opt[1] == "co60" || opt[1] == "Co60") {
-      //double integral = peakfit->GetIntegral(6714, 6743);
       std::cout << "minx = " << peakfit->minx << std::endl;
       std::cout << "maxx = " << peakfit->maxx << std::endl;
-      //double integral = peakfit->GetIntegral(peakfit->minx, peakfit->maxx);
       double signal = peakfit->GetSignalIntegral(peakfit->minx, peakfit->maxx);
-      double integral = 0;
-      if(i == 0)
-        integral = peakfit->GetIntegral(5900, 5924);
-      if(i == 1)
-        integral = peakfit->GetIntegral(6710, 6737);
-      //std::cout << "Integral signal + background = \t" << integral << std::endl;
-      //std::cout << "Integral signal = \t" << signal << std::endl;
-      //std::cout << "Integral difference = \t" << integral - signal << std::endl;
-      output << "\t" << signal << "\t" << integral;
+      std::cout << "Integral signal = \t" << signal << std::endl;
+      output << "\t" << signal;
       if(i == 1)
       	output << "\n";
     }
-    if(opt[1] == "co60ratio" || opt[1] == "Co60ratio") {
+/*    if(opt[1] == "co60ratio" || opt[1] == "Co60ratio") {
       double integral2 = peakfit->GetIntegral(6710, 6737);
       double integral1 = peakfit->GetIntegral(5900, 5924);
       double ratio = integral2/integral1;
@@ -255,6 +257,22 @@ int main(int argc, char *argv[]) {
       std::cout << "ErrRatio gamma2/gamma1:\t" << err_ratio << std::endl;
       if(i == 0)
         output << ratio << "\n" << err_ratio << "\n";
+    }*/
+    double ratio;
+    double err_ratio;
+    if(opt[1] == "co60ratio" || opt[1] == "Co60ratio") {
+      double integral = peakfit->GetSignalIntegral(peakfit->minx, peakfit->maxx);
+      if(i == 0) {          //N.B.: si suppone che il primo picco in config.txt sia il primo picco del cobalto
+        ratio = 1./integral;
+        err_ratio = 1./integral;
+      }
+      if(i == 1) {
+        ratio *= integral;
+        err_ratio = ratio*sqrt(err_ratio + 1./integral);
+        std::cout << "Ratio gamma2/gamma1:\t" << ratio << std::endl;
+        std::cout << "ErrRatio gamma2/gamma1:\t" << err_ratio << std::endl;
+        output << ratio << "\n" << err_ratio << "\n";
+      }
     }
     if(opt[1] == "fanohpge") {
       output << peakfit->mean_tot / 5.09 << "\t" << peakfit->FWHM_tot / 5.09 << "\t"
@@ -266,8 +284,6 @@ int main(int argc, char *argv[]) {
       << peakfit->err_mean_tot / 4.04 << "\t" << peakfit->err_FWHM_tot / 4.04;
   		output << "\n";
     }
-
-
 
     delete peakfit;
   }
