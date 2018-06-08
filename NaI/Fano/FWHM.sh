@@ -11,8 +11,8 @@ cd Th228
 ../../../Code/easyfit.o histo.dat r fanonai
 cd ..
 
-#cd Co60
-#../../../Code/easyfit.o histo.dat r fanonai
-#cd ..
+cd Co60
+../../../Code/easyfit.o histo.dat r fanonai
+cd ..
 
 cat FWHM_vs_Energy.txt

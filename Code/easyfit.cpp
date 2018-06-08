@@ -180,8 +180,8 @@ int main(int argc, char *argv[]) {
       peakfit->DrawPeak(name.str());
       peakfit->GetFitVariablesDoubleGaus();
       peakfit->FitDiffFunc();
-      peakfit->GetFWHMtot();
       peakfit->Getmeantot();
+      peakfit->GetFWHMtot();
     }
 
     else

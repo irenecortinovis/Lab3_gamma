@@ -15,4 +15,8 @@ cd Co60
 ../../../Code/easyfit.o histo.dat r fanohpge
 cd ..
 
+cd Th228
+../../../Code/easyfit.o histo.dat r fanohpge
+cd ..
+
 cat FWHM_vs_Energy.txt

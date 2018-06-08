@@ -25,17 +25,17 @@ int main() {
 	fwhm->SetMarkerSize(5);
 
 
-  /*TF1 *fitfano = new TF1("fitfano", "sqrt([0] + [1]*(x) + [2]*(x**2)) ", 0, 1600.);
+  TF1 *fitfano = new TF1("fitfano", "sqrt([0] + [1]*(x) + [2]*(x**2)) ", 0, 1600.);
 	fitfano->SetParName(0, "b^{2}");
   fitfano->SetParName(1, "a^{2}");
   fitfano->SetParName(2, "c^{2}");
   fitfano->SetParameter(0,1);
-  fitfano->SetParameter(0,1);
-	fitfano->SetParameter(0,1);*/
+  //fitfano->SetParameter(1,1);
+	//fitfano->SetParameter(2,0);
 
-  TF1 *fitfano = new TF1("fitfano", "sqrt([0]*2.94*x) ", 0, 1600.);
-	fitfano->SetParName(0, "b^{2}");
-	fitfano->SetParameter(0,0.1);
+  /*TF1 *fitfano = new TF1("fitfano", "2.35*sqrt([0]*2.96*x) ", 0, 1600.);
+	fitfano->SetParName(0, "F");
+	fitfano->SetParameter(0,0.0002);*/
 
 
 	gStyle->SetOptFit(1111);

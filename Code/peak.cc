@@ -89,12 +89,13 @@ void peak::FitDiffFunc()
   this->diffunc = new TF1 ("diffunc","abs(-[9] + fitfunc)",this->minx,this->maxx);
   (this->diffunc) -> SetNpx (100000);
   (this->diffunc) -> FixParameter(9,this->maximum*0.5);
+  this->diffunc->Draw();
 }
 
 void peak::GetFWHMtot()
 {
-  double minimumX1 = (this->diffunc)->GetMinimumX(this->minx,this->mean1);
-  double minimumX2 = (this->diffunc)->GetMinimumX(this->mean1,this->maxx);
+  double minimumX1 = (this->diffunc)->GetMinimumX(this->minx,this->mean_tot);
+  double minimumX2 = (this->diffunc)->GetMinimumX(this->mean_tot,this->maxx);
   std::cout << "min sx \t " << minimumX1 << std::endl;
   std::cout << "min dx \t " << minimumX2 << std::endl;
 

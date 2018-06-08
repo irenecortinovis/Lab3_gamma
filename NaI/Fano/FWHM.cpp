@@ -34,7 +34,7 @@ int main() {
 	fitfano->SetParameter(2,0);*/
 
 
-  TF1 *fitfano = new TF1("fitfano", "sqrt([0]*2.94*x) ", 0, 1600.);
+  TF1 *fitfano = new TF1("fitfano", "sqrt([0]*2.96*x) ", 0, 1600.);
 	fitfano->SetParName(0, "b^{2}");
 	fitfano->SetParameter(0,0.1);
 
