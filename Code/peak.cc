@@ -40,6 +40,18 @@ void peak::FitDoubleGaus(double norm1, double mean1fit, double norm2, double mea
   (this->histo_dat) -> Fit("fitfunc","R");
 }
 
+
+void peak::FitStepGaus(double norm1, double mean1fit)
+{
+  this->fitfunc = new TF1 ("fitfunc","gaus(0) + [3]/(exp((x - [1])/([2]*[2])) + 1) + [4]",this->minx,this->maxx);
+  (this->fitfunc) -> SetNpx (100000);
+  (this->fitfunc) -> SetLineWidth (2);
+  (this->fitfunc) -> SetLineColor (kBlue);
+  (this->fitfunc) -> SetParameters (norm1,mean1fit,5,30,10);
+  (this->histo_dat) -> Fit("fitfunc","R");
+}
+
+
 void peak::DrawPeak(std::string namecanvas)
 {
   (this->c1) = new TCanvas(namecanvas.c_str(), namecanvas.c_str(), 1200, 800);
@@ -47,6 +59,15 @@ void peak::DrawPeak(std::string namecanvas)
   (this->histo_dat)->GetXaxis()->SetRange(this->minx,this->maxx);
   std::string title = namecanvas + ".png";
 	(this->c1)->Print(title.c_str());
+}
+
+void peak::DrawSignal(std::string namecanvas)
+{
+  (this->c2) = new TCanvas(namecanvas.c_str(), namecanvas.c_str(), 1200, 800);
+  (this->histo_signal) -> Draw();
+  (this->histo_signal)->GetXaxis()->SetRange(this->minx,this->maxx);
+  std::string title = namecanvas + ".png";
+  (this->c2)->Print(title.c_str());
 }
 
 void peak::GetFitVariablesSingleGaus()
@@ -83,6 +104,20 @@ void peak::GetFitVariablesDoubleGaus()
   std::cout << "x of maximum value \t" << this->maximumx << std::endl;
 }
 
+void peak::GetFitVariablesStepGaus()
+{
+  this->mean1 = (this->fitfunc) -> GetParameter (1);
+  this->mean_tot = (this->fitfunc) -> GetParameter (1);
+  this->err_mean1 = (this->fitfunc) -> GetParError (1);
+  this->err_mean_tot = (this->fitfunc) -> GetParError (1);
+  this->FWHM1 = fabs((this->fitfunc) -> GetParameter (2)*2.35);
+  this->FWHM_tot = fabs((this->fitfunc) -> GetParameter (2)*2.35);
+  this->err_FWHM1 = (this->fitfunc) -> GetParError (2)*2.35;
+  this->err_FWHM_tot = (this->fitfunc) -> GetParError (2)*2.35;
+
+  std::cout << "FWHM step gaussian:\t" << this->FWHM_tot << " +- " << this->err_FWHM_tot << std::endl;
+  std::cout << "mean step gaussian:\t" << this->mean_tot << " +- " << this->err_mean_tot << std::endl;
+}
 
 void peak::FitDiffFunc()
 {
@@ -125,4 +160,41 @@ void peak::Getmeantot()
 double peak::GetIntegral(int binmin, int binmax)
 {
   return (this->histo_dat)->Integral(binmin, binmax);
+}
+
+double peak::GetSignalIntegral(int binmin, int binmax)
+{
+  return (this->histo_signal)->Integral(0., binmax - binmin);
+}
+
+void peak::GetSignal(std::string namehisto, int ngaus)
+{
+  this->histo_signal = new TH1F (namehisto.c_str(), namehisto.c_str(), this->maxx - this->minx, this->minx, this->maxx);
+  if(ngaus == 2) {
+    double m = (this->fitfunc)->GetParameter(7);
+    double q = (this->fitfunc)->GetParameter(6);
+    for(int x = this->minx; x < this->maxx; x++) {
+      double y = m*((double)x+0.5) + q;
+      (this->histo_signal)->SetBinContent(x - this->minx, (this->histo_dat)->GetBinContent(x) - y);
+    }
+  }
+
+  if(ngaus == 1) {
+    double y = (this->fitfunc)->GetParameter(3);
+    for(int x = this->minx; x < this->maxx; x++) {
+      (this->histo_signal)->SetBinContent(x - this->minx, (this->histo_dat)->GetBinContent(x) - y);
+    }
+  }
+
+  if(ngaus == 3) {
+    double m = (this->fitfunc)->GetParameter(1);
+    double s = (this->fitfunc)->GetParameter(2);
+    double N = (this->fitfunc)->GetParameter(3);
+    double offset = (this->fitfunc)->GetParameter(4);
+    for(int x = this->minx; x < this->maxx; x++) {
+      double y = N/(exp((x+0.5-m)/(s*s)) + 1) + offset;
+      (this->histo_signal)->SetBinContent(x - this->minx, (this->histo_dat)->GetBinContent(x) - y);
+    }
+  }
+  (this->histo_signal)->SetFillColor(kGreen);
 }

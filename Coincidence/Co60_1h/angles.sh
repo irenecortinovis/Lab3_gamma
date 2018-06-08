@@ -4,7 +4,7 @@
 touch Co60_correlation.txt
 echo "Theta	peak1	peak2" > Co60_correlation.txt
 echo -n "180" >> Co60_correlation.txt
-cd deg0_retake
+cd deg00
 ../../../Code/easyfit.o histo.dat r Co60
 cd ..
 
@@ -14,7 +14,7 @@ cd deg10
 cd ..
 
 echo -n "200" >> Co60_correlation.txt
-cd deg20_retake2
+cd deg20
 ../../../Code/easyfit.o histo.dat r Co60
 cd ..
 
@@ -34,7 +34,7 @@ cd deg50
 cd ..
 
 echo -n "240" >> Co60_correlation.txt
-cd deg60_retake3
+cd deg60
 ../../../Code/easyfit.o histo.dat r Co60
 cd ..
 
@@ -53,10 +53,10 @@ cd deg90
 ../../../Code/easyfit.o histo.dat r Co60
 cd ..
 
-cd HPGe_alone
-../../../Code/easyfit.o histo.dat r Co60ratio
-cd ..
+#cd HPGe_alone
+#../../../Code/easyfit.o histo.dat r Co60ratio
+#cd ..
 
 cat Co60_correlation.txt
-#echo "ratio = $(cat ratio.txt)"
-#./correlation.o
+echo "ratio = $(cat ratio.txt)"
+./correlation.o

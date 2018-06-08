@@ -17,7 +17,9 @@ public:
   double minx;
   double maxx;
   TCanvas* c1;
+  TCanvas* c2;
   TH1F* histo_dat;
+  TH1F* histo_signal;
   TF1* fitfunc;
   TF1* diffunc;
 
@@ -46,13 +48,18 @@ public:
   //methods
   void FitSingleGaus(double norm1, double mean1fit);
   void FitDoubleGaus(double norm1, double mean1fit, double norm2, double mean2fit);
+  void FitStepGaus(double norm1, double mean1fit);
   void DrawPeak(std::string namecanvas="");
+  void DrawSignal(std::string namecanvas="");
   void GetFitVariablesDoubleGaus();
   void GetFitVariablesSingleGaus();
+  void GetFitVariablesStepGaus();
   void FitDiffFunc();
   void GetFWHMtot();
   void Getmeantot();
   double GetIntegral(int binmin, int binmax);
+  double GetSignalIntegral(int binmin, int binmax);
+  void GetSignal(std::string namehisto="", int ngaus=0);
 
 };
 
