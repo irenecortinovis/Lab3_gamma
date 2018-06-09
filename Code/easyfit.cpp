@@ -89,7 +89,8 @@ int main(int argc, char *argv[]) {
 	input.close ();
 	std::cout << "Total number of events: " << sumtot << std::endl;
 
-	histo_dat -> DrawCopy("HIST");
+	//histo_dat -> DrawCopy("HIST");
+	histo_dat -> Draw("HIST");
 	c1->Print("spectrum.png");
 
   std::ofstream output (results_file.Data(), std::ios::app);
@@ -194,6 +195,18 @@ int main(int argc, char *argv[]) {
     else if (configdata.at(nPars*i) == 3)
     {
       peakfit->FitStepGaus(configdata.at(nPars*i+3),configdata.at(nPars*i+4));
+      std::ostringstream name;
+      std::ostringstream name_signal;
+      name << "peak" << i;
+      name_signal << "signal" << i;
+      peakfit->DrawPeak(name.str());
+      peakfit->GetFitVariablesErfGaus();
+      peakfit->GetSignal(name_signal.str(), 4);
+      peakfit->DrawSignal(name_signal.str());
+    }
+    else if (configdata.at(nPars*i) == 4)
+    {
+      peakfit->FitErfGaus(configdata.at(nPars*i+3),configdata.at(nPars*i+4));
       std::ostringstream name;
       std::ostringstream name_signal;
       name << "peak" << i;
