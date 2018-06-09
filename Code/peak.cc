@@ -54,10 +54,12 @@ void peak::FitStepGaus(double norm1, double mean1fit)
 void peak::FitErfGaus(double norm1, double mean1fit)
 {
   this->fitfunc = new TF1 ("fitfunc","gaus(0) - [4]*TMath::Erf((x - [1])/[3]) + [5]",this->minx,this->maxx);
+  //this->fitfunc = new TF1 ("fitfunc","gaus(0) - [4]*TMath::Erf((x - [6])/[3]) + [5]",this->minx,this->maxx);
   (this->fitfunc) -> SetNpx (100000);
   (this->fitfunc) -> SetLineWidth (2);
   (this->fitfunc) -> SetLineColor (kBlue);
   (this->fitfunc) -> SetParameters (norm1,mean1fit,5,5,20,40);
+  //(this->fitfunc) -> SetParameters (norm1,mean1fit,5,5,20,40,mean1fit);
   (this->fitfunc) -> SetParLimits (3, 0., 10000.);
   (this->fitfunc) -> SetParLimits (4, 0., 10000.);
   (this->histo_dat) -> Fit("fitfunc","R");
