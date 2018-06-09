@@ -59,4 +59,4 @@ cd ..
 
 cat Co60_correlation.txt
 echo "ratio = $(cat ratio.txt)"
-./correlation.o
+./correlation.o Co60_correlation.txt
