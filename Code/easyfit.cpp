@@ -206,7 +206,11 @@ int main(int argc, char *argv[]) {
     }
     else if (configdata.at(nPars*i) == 4)
     {
-      peakfit->FitErfGaus(configdata.at(nPars*i+3),configdata.at(nPars*i+4));
+      //peakfit->FitErfGaus(configdata.at(nPars*i+3),configdata.at(nPars*i+4));
+      if(configdata.at(nPars*i+5) == 0 && configdata.at(nPars*i+6) == 0)
+        peakfit->FitErfGaus(configdata.at(nPars*i+3),configdata.at(nPars*i+4));
+      else
+        peakfit->FitErfDoubleGaus(configdata.at(nPars*i+3),configdata.at(nPars*i+4),configdata.at(nPars*i+5),configdata.at(nPars*i+6));
       std::ostringstream name;
       std::ostringstream name_signal;
       name << "peak" << i;

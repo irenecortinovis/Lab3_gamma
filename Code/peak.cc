@@ -51,17 +51,40 @@ void peak::FitStepGaus(double norm1, double mean1fit)
   (this->histo_dat) -> Fit("fitfunc","R");
 }
 
+//void peak::FitErfGaus(double norm1, double mean1fit)
 void peak::FitErfGaus(double norm1, double mean1fit)
 {
   this->fitfunc = new TF1 ("fitfunc","gaus(0) - [4]*TMath::Erf((x - [1])/[3]) + [5]",this->minx,this->maxx);
-  //this->fitfunc = new TF1 ("fitfunc","gaus(0) - [4]*TMath::Erf((x - [6])/[3]) + [5]",this->minx,this->maxx);
   (this->fitfunc) -> SetNpx (100000);
   (this->fitfunc) -> SetLineWidth (2);
   (this->fitfunc) -> SetLineColor (kBlue);
   (this->fitfunc) -> SetParameters (norm1,mean1fit,5,5,20,40);
-  //(this->fitfunc) -> SetParameters (norm1,mean1fit,5,5,20,40,mean1fit);
+  (this->fitfunc) -> SetParLimits (0, 0., 10000.);
+  (this->fitfunc) -> SetParLimits (1, 0., 10000.);
+  (this->fitfunc) -> SetParLimits (2, 0., 10000.);
   (this->fitfunc) -> SetParLimits (3, 0., 10000.);
   (this->fitfunc) -> SetParLimits (4, 0., 10000.);
+  (this->fitfunc) -> SetParLimits (5, 0., 10000.);
+  (this->fitfunc) -> SetParLimits (6, 0., 10000.);
+  (this->histo_dat) -> Fit("fitfunc","R");
+}
+
+void peak::FitErfDoubleGaus(double norm1, double mean1fit, double norm2, double mean2fit)
+{
+  this->fitfunc = new TF1 ("fitfunc","gaus(0) + gaus(6) - [4]*TMath::Erf((x - [1])/[3]) + [5]",this->minx,this->maxx);
+  (this->fitfunc) -> SetNpx (100000);
+  (this->fitfunc) -> SetLineWidth (2);
+  (this->fitfunc) -> SetLineColor (kBlue);
+  (this->fitfunc) -> SetParameters (norm1,mean1fit,5,5,20,40,norm2,mean2fit,8);
+  (this->fitfunc) -> SetParLimits (0, 0., 10000.);
+  (this->fitfunc) -> SetParLimits (1, 0., 10000.);
+  (this->fitfunc) -> SetParLimits (2, 0., 10000.);
+  (this->fitfunc) -> SetParLimits (3, 0., 10000.);
+  (this->fitfunc) -> SetParLimits (4, 0., 10000.);
+  (this->fitfunc) -> SetParLimits (5, 0., 10000.);
+  (this->fitfunc) -> SetParLimits (6, 0., 10000.);
+  (this->fitfunc) -> SetParLimits (7, 0., 10000.);
+  (this->fitfunc) -> SetParLimits (8, 0., 10000.);
   (this->histo_dat) -> Fit("fitfunc","R");
 }
 
@@ -70,7 +93,9 @@ void peak::DrawPeak(std::string namecanvas)
   (this->c1) = new TCanvas(namecanvas.c_str(), namecanvas.c_str(), 1200, 800);
   //(this->histo_dat) -> Draw("HIST");
   (this->histo_dat) -> Draw();
-  (this->background)->Draw("same");
+  (this->background)->Draw("same");   //da rimuovere
+
+  //(this->background)->Draw("same");
   (this->histo_dat)->GetXaxis()->SetRange(this->minx,this->maxx);
   std::string title = namecanvas + ".png";
 	(this->c1)->Print(title.c_str());

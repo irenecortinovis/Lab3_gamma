@@ -51,6 +51,7 @@ public:
   void FitDoubleGaus(double norm1, double mean1fit, double norm2, double mean2fit);
   void FitStepGaus(double norm1, double mean1fit);
   void FitErfGaus(double norm1, double mean1fit);
+  void FitErfDoubleGaus(double norm1, double mean1fit, double norm2, double mean2fit);
   void DrawPeak(std::string namecanvas="");
   void DrawSignal(std::string namecanvas="");
   void GetFitVariablesDoubleGaus();
