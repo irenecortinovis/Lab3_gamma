@@ -8,6 +8,9 @@
 #include <TGraphErrors.h>
 #include <TStyle.h>
 #include <TLegend.h>
+#include <TLatex.h>
+#include <TROOT.h>
+
 
 //c++ calibration.cpp `root-config --cflags --glibs` -o calibration.o
 
@@ -51,12 +54,26 @@ int main(){
 	gr->GetXaxis()->SetTitle("Teoric_peak [keV]");
 	gr->GetYaxis()->SetTitle("Measured_peak");
 
+  TLatex *latex0 = new TLatex(gr->GetX()[0], gr->GetY()[0],"Na22");
+  TLatex *latex1 = new TLatex(gr->GetX()[1], gr->GetY()[1],"Co60");
+  TLatex *latex2 = new TLatex(gr->GetX()[2], gr->GetY()[2],"Na22");
+  TLatex *latex3 = new TLatex(gr->GetX()[3], gr->GetY()[3],"Co60");
+  TLatex *latex4 = new TLatex(gr->GetX()[4], gr->GetY()[4],"K40");
+  gr->GetListOfFunctions()->Add(latex0);
+  gr->GetListOfFunctions()->Add(latex1);
+  gr->GetListOfFunctions()->Add(latex2);
+  gr->GetListOfFunctions()->Add(latex3);
+  gr->GetListOfFunctions()->Add(latex4);
+
 
 	TF1 *fitC1 = new TF1("fitC1","[0]*x+[1]",picco_teorico[0],picco_teorico[n-1]);
 	fitC1->SetParameter(5, -70);
   fitC1->SetParName(0, "a");
   fitC1->SetParName(1, "b");
-	gr->Fit("fitC1");
+  //gr->Fit("fitC1");
+
+  TF1 *fitC2 = new TF1("fitC2", "pol2",picco_teorico[0],picco_teorico[n-1]);
+  gr->Fit("fitC2");
 
 	double a_fit = fitC1->GetParameter(0);
 	double a_fit_err = fitC1->GetParError(0);
