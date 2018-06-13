@@ -51,11 +51,51 @@ void peak::FitStepGaus(double norm1, double mean1fit)
   (this->histo_dat) -> Fit("fitfunc","R");
 }
 
+//void peak::FitErfGaus(double norm1, double mean1fit)
+void peak::FitErfGaus(double norm1, double mean1fit)
+{
+  this->fitfunc = new TF1 ("fitfunc","gaus(0) - [4]*TMath::Erf((x - [1])/[3]) + [5]",this->minx,this->maxx);
+  (this->fitfunc) -> SetNpx (100000);
+  (this->fitfunc) -> SetLineWidth (2);
+  (this->fitfunc) -> SetLineColor (kBlue);
+  (this->fitfunc) -> SetParameters (norm1,mean1fit,5,5,20,40);
+  (this->fitfunc) -> SetParLimits (0, 0., 10000.);
+  (this->fitfunc) -> SetParLimits (1, 0., 10000.);
+  (this->fitfunc) -> SetParLimits (2, 0., 10000.);
+  (this->fitfunc) -> SetParLimits (3, 0., 10000.);
+  (this->fitfunc) -> SetParLimits (4, 0., 10000.);
+  (this->fitfunc) -> SetParLimits (5, 0., 10000.);
+  (this->fitfunc) -> SetParLimits (6, 0., 10000.);
+  (this->histo_dat) -> Fit("fitfunc","R");
+}
+
+void peak::FitErfDoubleGaus(double norm1, double mean1fit, double norm2, double mean2fit)
+{
+  this->fitfunc = new TF1 ("fitfunc","gaus(0) + gaus(6) - [4]*TMath::Erf((x - [1])/[3]) + [5]",this->minx,this->maxx);
+  (this->fitfunc) -> SetNpx (100000);
+  (this->fitfunc) -> SetLineWidth (2);
+  (this->fitfunc) -> SetLineColor (kBlue);
+  (this->fitfunc) -> SetParameters (norm1,mean1fit,5,5,20,40,norm2,mean2fit,8);
+  (this->fitfunc) -> SetParLimits (0, 0., 10000.);
+  (this->fitfunc) -> SetParLimits (1, 0., 10000.);
+  (this->fitfunc) -> SetParLimits (2, 0., 10000.);
+  (this->fitfunc) -> SetParLimits (3, 0., 10000.);
+  (this->fitfunc) -> SetParLimits (4, 0., 10000.);
+  (this->fitfunc) -> SetParLimits (5, 0., 10000.);
+  (this->fitfunc) -> SetParLimits (6, 0., 10000.);
+  (this->fitfunc) -> SetParLimits (7, 0., 10000.);
+  (this->fitfunc) -> SetParLimits (8, 0., 10000.);
+  (this->histo_dat) -> Fit("fitfunc","R");
+}
 
 void peak::DrawPeak(std::string namecanvas)
 {
   (this->c1) = new TCanvas(namecanvas.c_str(), namecanvas.c_str(), 1200, 800);
+  //(this->histo_dat) -> Draw("HIST");
   (this->histo_dat) -> Draw();
+  (this->background)->Draw("same");   //da rimuovere
+
+  //(this->background)->Draw("same");
   (this->histo_dat)->GetXaxis()->SetRange(this->minx,this->maxx);
   std::string title = namecanvas + ".png";
 	(this->c1)->Print(title.c_str());
@@ -117,6 +157,24 @@ void peak::GetFitVariablesStepGaus()
 
   std::cout << "FWHM step gaussian:\t" << this->FWHM_tot << " +- " << this->err_FWHM_tot << std::endl;
   std::cout << "mean step gaussian:\t" << this->mean_tot << " +- " << this->err_mean_tot << std::endl;
+}
+
+void peak::GetFitVariablesErfGaus()
+{
+  this->mean1 = (this->fitfunc) -> GetParameter (1);
+  this->mean_tot = (this->fitfunc) -> GetParameter (1);
+  this->err_mean1 = (this->fitfunc) -> GetParError (1);
+  this->err_mean_tot = (this->fitfunc) -> GetParError (1);
+  this->FWHM1 = fabs((this->fitfunc) -> GetParameter (2)*2.35);
+  this->FWHM_tot = fabs((this->fitfunc) -> GetParameter (2)*2.35);
+  this->err_FWHM1 = (this->fitfunc) -> GetParError (2)*2.35;
+  this->err_FWHM_tot = (this->fitfunc) -> GetParError (2)*2.35;
+  this->background = new TF1 ("background","(-1)*[2]*TMath::Erf((x - [0])/[1]) + [3]",this->minx,this->maxx);
+  (this->background)->SetParameters(mean1, (this->fitfunc)->GetParameter(3), (this->fitfunc)->GetParameter(4), (this->fitfunc)->GetParameter(5));
+  (this->background)->SetLineColor(kGreen);
+
+  std::cout << "FWHM erf gaussian:\t" << this->FWHM_tot << " +- " << this->err_FWHM_tot << std::endl;
+  std::cout << "mean erf gaussian:\t" << this->mean_tot << " +- " << this->err_mean_tot << std::endl;
 }
 
 void peak::FitDiffFunc()
@@ -196,5 +254,12 @@ void peak::GetSignal(std::string namehisto, int ngaus)
       (this->histo_signal)->SetBinContent(x - this->minx, (this->histo_dat)->GetBinContent(x) - y);
     }
   }
+
+  if(ngaus == 4) {
+    for(int x = this->minx; x < this->maxx; x++) {
+      (this->histo_signal)->SetBinContent(x - this->minx, (this->histo_dat)->GetBinContent(x) - (this->background)->Eval(x+0.5));
+    }
+  }
+
   (this->histo_signal)->SetFillColor(kGreen);
 }

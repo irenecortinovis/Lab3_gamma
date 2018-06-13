@@ -77,7 +77,8 @@ int main(int argc, char **argv) {
 	angles->Draw("ape");
 	angles->Fit("cos2", "R");
 	TF1 *cos2_exp = new TF1("cos2", "[0]*([1]*(cos(pi*x/180))**2 + [2]*(cos(pi*x/180))**4 + 1)", 180., 270.);
-	cos2_exp->SetParameter(0, (angles->GetFunction("cos2"))->GetParameter(0));
+	//cos2_exp->SetParameter(0, (angles->GetFunction("cos2"))->GetParameter(0));
+	cos2_exp->SetParameter(0, y[angles->GetN() - 1]);
 	cos2_exp->SetParameter(1, 0.125);
 	cos2_exp->SetParameter(2, 0.042);
 	cos2_exp->SetLineStyle(7);

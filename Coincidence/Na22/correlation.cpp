@@ -28,7 +28,7 @@ int main(int argc, char **argv) {
 	acc_counts /= 3;	//stimo acc_counts come media aritmetica degli ultimi 4 conteggi (da 225° in su)
 	for(int i = 0; i < angles->GetN(); i++) {
 		angles->SetPoint(i, x[i], y[i] - acc_counts);
-		angles->SetPointError(i, 3, sqrt(y[i] + acc_counts));		//(i, ex, ey)
+		angles->SetPointError(i, 2, sqrt(y[i] + acc_counts));		//(i, ex, ey)
 	}
 	y = angles->GetY();
 	for (int i = 0; i < angles->GetN(); ++i)
@@ -38,6 +38,7 @@ int main(int argc, char **argv) {
 
 	TF1 *fermidirac = new TF1("fd", "[0]/(exp([1]*(x-[2])) + 1)", 180., 230.);
 	TF1 *cos2 = new TF1("cos2", "[0]*cos([1]*x)**2 + [2]", 180., 210.);
+	TF1 *erf = new TF1("erf", "-[2]*TMath::Erf((x-[0])/[1]) + [3]", 180., 210.);
 	fermidirac->SetParName(0, "N_{0}");
 	fermidirac->SetParName(1, "#alpha");
 	fermidirac->SetParName(2, "#theta_{0}");
@@ -46,6 +47,11 @@ int main(int argc, char **argv) {
 	cos2->SetParName(1, "#omega");
 	cos2->SetParName(2, "N_{offset}");
 	cos2->SetParameters(410000., 0.1, 1800.);
+	erf->SetParName(0, "#mu");
+	erf->SetParName(1, "#delta");
+	erf->SetParName(2, "N_{0}");
+	erf->SetParName(3, "N_{offset}");
+	erf->SetParameters(180., 5., 205000., 100000.);	
 	angles->SetTitle("Angular correlation 511 keV - no accidentals; #theta (#circ); N_{counts}");
 	angles->SetMarkerColor(kBlue);
 	angles->SetLineColor(kBlue);
@@ -57,8 +63,9 @@ int main(int argc, char **argv) {
 	TCanvas *c1 = new TCanvas("counts_vs_theta","counts_vs_theta",800,600);
 	angles->Draw("ape");
 	//fermidirac->Draw("same");
-	angles->Fit("fd", "R");
+	//angles->Fit("fd", "R");
 	//angles->Fit("cos2", "R");
+	angles->Fit("erf", "R");
 	c1->Print("counts_vs_theta.png");
 
 	Grafica->Run();

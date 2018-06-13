@@ -53,10 +53,10 @@ cd deg90
 ../../../Code/easyfit.o histo.dat r Co60
 cd ..
 
-#cd HPGe_alone
+#cd ../Co60/HPGe_alone
 #../../../Code/easyfit.o histo.dat r Co60ratio
-#cd ..
+#cd ../../Co60_1h
 
 cat Co60_correlation.txt
-echo "ratio = $(cat ratio.txt)"
-./correlation.o
+#echo "ratio = $(cat ratio.txt)"
+#./correlation.o Co60_correlation.txt
