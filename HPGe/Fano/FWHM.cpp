@@ -51,7 +51,7 @@ int main() {
   fwhm->GetListOfFunctions()->Add(latex6);
   fwhm->GetListOfFunctions()->Add(latex7);
 
-  /*TF1 *fitfano = new TF1("fitfano", "2.35*sqrt([0]*2.96*x) ", 0, 1600.);
+  /*TF1 *fitfano = new TF1("fitfano", "2.35*sqrt([0]*0.00296*x) ", 0, 1600.);
 	fitfano->SetParName(0, "F");
 	fitfano->SetParameter(0,0.0002);*/
 
@@ -66,8 +66,8 @@ int main() {
   double asquare = fitfano->GetParameter(1);
   double asquare_err = fitfano->GetParError(1);
 
-  double fanofactor = asquare / (2.35*2.35*2.96);
-  double fanofactor_err = asquare_err / (2.35*2.35*2.96);
+  double fanofactor = asquare / (2.35*2.35*0.00296);
+  double fanofactor_err = asquare_err / (2.35*2.35*0.00296);
 
   std::cout << "Fano factor = \t" << fanofactor << "\t +- \t" << fanofactor_err << std::endl;
 
